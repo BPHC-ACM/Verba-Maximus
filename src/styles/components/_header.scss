@@ -1,0 +1,40 @@
+.HEADER {
+	.navbar {
+		position: fixed;
+		top: 1.5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 5;
+		display: flex;
+
+		a {
+			font-size: 1rem;
+			font-weight: 550;
+			color: $light;
+			border-radius: 10rem;
+			padding: 0.75rem 1.25rem;
+			text-decoration: none;
+			white-space: nowrap;
+
+			&:hover {
+				background-color: $light;
+				cursor: pointer;
+				color: $dark;
+				transition: 0.35s;
+			}
+		}
+	}
+
+	.glass {
+		background: linear-gradient(
+			135deg,
+			rgba(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0)
+		);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border-radius: 50rem;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+	}
+}
