@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Route, Routes, Navigate } from 'react-router-dom';
+import Home from './pages/Home';
+import Events from './pages/Events';
+import EventPage from './pages/EventPage';
+import Access from './pages/Access';
+import ErrorPage from './pages/ErrorPage';
+import Schedule from './pages/Schedule';
+import Sponsors from './pages/Sponsors';
+import ScrollToTop from './components/ScrollToTop';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+	return (
+		<>
+			<ScrollToTop />
+			<Routes>
+				<Route path='/' element={<Navigate to='/home' />} />
+				<Route path='/home' element={<Home />} />
+				<Route path='/events' element={<Events />} />
+				<Route path='/events/:eventId' element={<EventPage />} />
+				<Route path='/fest-access' element={<Access />} />
+				<Route path='/schedule' element={<Schedule />} />
+				<Route path='/sponsors' element={<Sponsors />} />
+				<Route path='*' element={<ErrorPage />} />
+			</Routes>
+		</>
+	);
 }
-
-export default App
