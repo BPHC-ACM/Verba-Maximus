@@ -4,7 +4,6 @@
 
 @import './pages/access';
 @import './pages/errorpage';
-@import './pages/eventpage';
 @import './pages/events';
 @import './pages/home';
 @import './pages/schedule';
@@ -13,4 +12,21 @@
 * {
 	margin: 0;
 	font-family: 'Poppins';
+}
+
+.heading {
+	background: hsla(111, 15%, 24%, 1);
+	background: linear-gradient(
+		180deg,
+		hsla(111, 15%, 24%, 1) 0%,
+		hsla(110, 15%, 48%, 1) 100%
+	);
+	h1 {
+		text-align: center;
+		font-family: $header-font;
+		font-size: 8.5rem;
+		letter-spacing: 1rem;
+		color: $light;
+		padding: 8rem 3rem 1rem 3rem;
+	}
 }

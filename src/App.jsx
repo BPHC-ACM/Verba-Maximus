@@ -1,7 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Events from './pages/Events';
-import EventPage from './pages/EventPage';
 import Access from './pages/Access';
 import ErrorPage from './pages/ErrorPage';
 import Schedule from './pages/Schedule';
@@ -16,7 +15,6 @@ export default function App() {
 				<Route path='/' element={<Navigate to='/home' />} />
 				<Route path='/home' element={<Home />} />
 				<Route path='/events' element={<Events />} />
-				<Route path='/events/:eventId' element={<EventPage />} />
 				<Route path='/fest-access' element={<Access />} />
 				<Route path='/schedule' element={<Schedule />} />
 				<Route path='/sponsors' element={<Sponsors />} />
