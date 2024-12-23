@@ -57,12 +57,15 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background-color: #130f0b;
+		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+		color: $light;
 
 		h1 {
-			color: $dark;
 			font-family: $header-font;
 			font-size: 6rem;
-			padding: 4rem 0;
+			padding: 5rem 0;
+			word-spacing: 1.5rem;
 		}
 
 		p {
