@@ -1,39 +1,8 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
-import { Carousel } from '@mantine/carousel';
+import HomeSlider from '../components/HomeSlider';
+import { Box, Button } from '@mui/material';
 import { IconPhoto, IconArrowRight } from '@tabler/icons-react';
-import { Button } from '@mantine/core';
-import '@mantine/carousel/styles.css';
-
-const images = [
-	'/assets/gallery/image-1.webp',
-	'/assets/gallery/image-2.webp',
-	'/assets/gallery/image-3.webp',
-	'/assets/gallery/image-4.webp',
-	'/assets/gallery/image-5.webp',
-	'/assets/gallery/image-6.webp',
-	'/assets/gallery/image-7.webp',
-];
-
-function ImageCarousel() {
-	return (
-		<Carousel slideSize='60%' slideGap='md' loop>
-			{images.map((src, index) => (
-				<Carousel.Slide key={index}>
-					<img
-						src={src}
-						alt={`Gallery Image ${index + 1}`}
-						loading='lazy'
-						style={{
-							width: '80%',
-							objectFit: 'cover',
-						}}
-					/>
-				</Carousel.Slide>
-			))}
-		</Carousel>
-	);
-}
 
 const Home = () => {
 	useEffect(() => {
@@ -42,7 +11,7 @@ const Home = () => {
 
 	return (
 		<div className='HOME'>
-			<img className='heroimage' src='/assets/hero.png' />
+			<img className='heroimage' src='/assets/hero.png' alt='Hero' />
 			<Header />
 			<div className='hero'>
 				<h1>Verba Maximus</h1>
@@ -71,16 +40,28 @@ const Home = () => {
 			</div>
 			<div className='gallery'>
 				<h1>Gallery</h1>
-				<ImageCarousel />
+				<HomeSlider />
 				<Button
-					component='a'
+					variant='contained'
+					color='success'
 					href='https://drive.google.com/drive/folders/1Xukam2vUZau7mOIDwtMCVEnDofb2wNop'
 					target='_blank'
 					rel='noopener noreferrer'
-					leftSection={<IconPhoto size={14} />}
-					rightSection={<IconArrowRight size={14} />}
+					sx={{
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'space-between',
+						padding: '0.5rem 1rem',
+						marginTop: '4rem',
+						textTransform: 'none',
+						gap: '0.5rem',
+					}}
 				>
-					View more
+					<Box display='flex' alignItems='center' gap='0.5rem'>
+						<IconPhoto size={14} />
+						View more
+					</Box>
+					<IconArrowRight size={14} />
 				</Button>
 			</div>
 		</div>

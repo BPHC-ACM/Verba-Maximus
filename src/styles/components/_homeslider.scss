@@ -1,0 +1,25 @@
+.slider-container {
+	width: 90%;
+	height: 25rem;
+	.slide {
+		text-align: center;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 80%;
+		}
+	}
+	.slick-list,
+	.slick-slider,
+	.slick-track {
+		height: 25rem;
+	}
+
+	.slick-slide,
+	.slick-track {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
