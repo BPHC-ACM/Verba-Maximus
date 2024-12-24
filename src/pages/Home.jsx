@@ -1,5 +1,47 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Header from '../components/Header';
+import { Carousel } from '@mantine/carousel';
+import Autoplay from 'embla-carousel-autoplay';
+import '@mantine/carousel/styles.css';
+
+const images = [
+	'/assets/gallery/image-1.webp',
+	'/assets/gallery/image-2.webp',
+	'/assets/gallery/image-3.webp',
+	'/assets/gallery/image-4.webp',
+	'/assets/gallery/image-5.webp',
+	'/assets/gallery/image-6.webp',
+	'/assets/gallery/image-7.webp',
+];
+
+function ImageCarousel() {
+	const autoplay = useRef(Autoplay({ delay: 2000 }));
+
+	return (
+		<Carousel
+			slideSize='60%'
+			slideGap='md'
+			loop
+			plugins={[autoplay.current]}
+			onMouseEnter={autoplay.current.stop}
+			onMouseLeave={autoplay.current.reset}
+		>
+			{images.map((src, index) => (
+				<Carousel.Slide key={index}>
+					<img
+						src={src}
+						alt={`Gallery Image ${index + 1}`}
+						loading='lazy'
+						style={{
+							width: '80%',
+							objectFit: 'cover',
+						}}
+					/>
+				</Carousel.Slide>
+			))}
+		</Carousel>
+	);
+}
 
 const Home = () => {
 	useEffect(() => {
@@ -8,7 +50,7 @@ const Home = () => {
 
 	return (
 		<div className='HOME'>
-			<img src='/assets/hero.png' />
+			<img className='heroimage' src='/assets/hero.png' />
 			<Header />
 			<div className='hero'>
 				<h1>Verba Maximus</h1>
@@ -31,6 +73,14 @@ const Home = () => {
 					we return with our thirteenth edition and invite you to step
 					into our world and witness the magic unfold.
 				</p>
+			</div>
+			<div className='events'>
+				<h1>Events</h1>
+			</div>
+
+			<div className='events'>
+				<h1>Gallery</h1>
+				<ImageCarousel />
 			</div>
 		</div>
 	);
