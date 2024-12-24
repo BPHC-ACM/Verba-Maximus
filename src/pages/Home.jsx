@@ -1,7 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import Header from '../components/Header';
 import { Carousel } from '@mantine/carousel';
-import Autoplay from 'embla-carousel-autoplay';
+import { IconPhoto, IconArrowRight } from '@tabler/icons-react';
+import { Button } from '@mantine/core';
 import '@mantine/carousel/styles.css';
 
 const images = [
@@ -15,17 +16,8 @@ const images = [
 ];
 
 function ImageCarousel() {
-	const autoplay = useRef(Autoplay({ delay: 2000 }));
-
 	return (
-		<Carousel
-			slideSize='60%'
-			slideGap='md'
-			loop
-			plugins={[autoplay.current]}
-			onMouseEnter={autoplay.current.stop}
-			onMouseLeave={autoplay.current.reset}
-		>
+		<Carousel slideSize='60%' slideGap='md' loop>
 			{images.map((src, index) => (
 				<Carousel.Slide key={index}>
 					<img
@@ -77,10 +69,19 @@ const Home = () => {
 			<div className='events'>
 				<h1>Events</h1>
 			</div>
-
-			<div className='events'>
+			<div className='gallery'>
 				<h1>Gallery</h1>
 				<ImageCarousel />
+				<Button
+					component='a'
+					href='https://drive.google.com/drive/folders/1Xukam2vUZau7mOIDwtMCVEnDofb2wNop'
+					target='_blank'
+					rel='noopener noreferrer'
+					leftSection={<IconPhoto size={14} />}
+					rightSection={<IconArrowRight size={14} />}
+				>
+					View more
+				</Button>
 			</div>
 		</div>
 	);

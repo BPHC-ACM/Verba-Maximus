@@ -84,13 +84,33 @@
 		padding: 2rem 0 6rem 0;
 		background-color: $darkbrown;
 		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+	}
+
+	.gallery {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem 0 6rem 0;
+		background-color: $darkgreen;
+		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
 		.mantine-Carousel-slide {
 			text-align: center;
 		}
 		.mantine-Carousel-control {
 			transform: scale(1.5);
 			color: $light;
-			background-color: $darkbrown;
+			background-color: $darkgreen;
+		}
+		.mantine-Button-root {
+			margin: 3rem 0;
+			transform: scale(1.2);
+			background: none;
+			--button-color: $light !important;
+			&:hover {
+				background: $darkgreen;
+			}
 		}
 	}
 }
