@@ -3,7 +3,11 @@ import Header from '../components/Header';
 import HomeEvents from '../components/HomeEvents';
 import HomeSlider from '../components/HomeSlider';
 import { Box, Button } from '@mui/material';
-import { IconPhoto, IconArrowRight, IconTrophy } from '@tabler/icons-react';
+import {
+	IconPhoto,
+	IconArrowRight,
+	IconMicrophone2,
+} from '@tabler/icons-react';
 
 const Home = () => {
 	useEffect(() => {
@@ -54,7 +58,7 @@ const Home = () => {
 					}}
 				>
 					<Box display='flex' alignItems='center' gap='0.5rem'>
-						<IconTrophy size={14} />
+						<IconMicrophone2 size={14} />
 						View all events
 					</Box>
 					<IconArrowRight size={14} />
