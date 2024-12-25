@@ -1,0 +1,203 @@
+{
+	"events": [
+		{
+			"Name": "Escape Room",
+			"Short Description": "Prevent the catastrophic Kurukshetra War by solving intricate puzzles inspired by Hindi mythology and literature.",
+			"Details": [
+				"Recall the epic tale of the Mahabharata. You will be transported to the eve of the great Kurukshetra War. Unravel the intricate plot, decipher ancient prophecies, and prevent the catastrophic battle.",
+				"A dimly lit chamber adorned with ancient symbols and artifacts. The room is filled with cryptic clues and puzzles inspired by the epic tale, including references to renowned Hindi literature like the works of Tulsidas, Premchand, and Dinkar to name a few.",
+				"Decipher codes hidden within a series of riddles and shayari, inspired by the poetic style of eminent Hindi poets. Solve puzzles and strategic dilemmas related to Hindi mythology.",
+				"By solving these challenges and decoding the final passcode, you can avert the war, restore peace, and emerge as the hero of the Mahabharata."
+			],
+			"Tags": ["Puzzle", "Hindi Literature", "Mythology"]
+		},
+		{
+			"Name": "Antakshari",
+			"Short Description": "An exciting Bollywood-themed journey through music and drama.",
+			"Details": [
+				"Get ready for an exciting journey through the magic of Bollywood with VM Antakshari by Hindi Tarang! This event blends nostalgia, fun, and friendly competition with three thrilling rounds: Bollywood Song Guessing, Dialogue Delivery Drama, and The Song and Dance Challenge.",
+				"The competition heats up as teams showcase their creativity and passion for Bollywood, leading to a grand finale where the ultimate Antakshari champions will be crowned!"
+			],
+			"Tags": ["Music", "Bollywood", "Competition"]
+		},
+		{
+			"Name": "Decipher The Script",
+			"Short Description": "Decode ancient mysteries and futuristic challenges in this linguistic quest.",
+			"Details": [
+				"Embark on a thrilling linguistic journey with Decipher the Script – a competition where ancient mysteries meet futuristic challenges.",
+				"Participants will decode cryptic symbols, complex patterns, and enigmatic scripts that transcend time. From deciphering ancient hieroglyphs to interpreting futuristic symbols, this event demands sharp wit, creativity, and a keen eye for detail.",
+				"This isn't just a competition—it's a mind-bending quest to unravel the very essence of language. Rally your team, refine your decoding skills, and dive into the unparalleled world of linguistic prowess."
+			],
+			"Tags": ["Linguistics", "Puzzles", "Decoding"]
+		},
+		{
+			"Name": "Geeta Spardha",
+			"Short Description": "Recite slokas from the Bhagavad Gita and connect deeply with Sanskrit.",
+			"Details": [
+				"Geeta Spardha is an event where participants, typically students or devotees, recite slokas from the Bhagavad Gita from any adhyay of their choice.",
+				"The purpose of the competition is to encourage participants to engage deeply with the holy Bhagavad Gita and appreciate the Sanskrit language."
+			],
+			"Tags": ["Spiritual", "Sanskrit", "Bhagavad Gita"]
+		},
+		{
+			"Name": "Bamboozled",
+			"Short Description": "A strategic adventure inspired by anime, testing trust and tactics.",
+			"Details": [
+				"Step into the electrifying world of Bamboozled, where cunning strategy meets heart-pounding adventure.",
+				"Inspired by the mind-bending tension of anime like Tomodachi Game and Kakegurui, this event is not just a game – it's a battle of wits, loyalty, and survival.",
+				"Prepare to question every decision as you face thrilling challenges that will test your trust, tactics, and teamwork.",
+				"Across four uniquely intense rounds, you'll dive into games that will push your mental acumen to the limit. Each round will introduce a new layer of complexity, from navigating shifting alliances to mastering deception and probability.",
+				"Every game will challenge a different facet of your intellect and instincts, ensuring there's never a dull moment. With every elimination, the stakes climb higher, keeping you on the edge of your seat."
+			],
+			"Tags": ["Strategy", "Adventure", "Anime"]
+		},
+		{
+			"Name": "HELM Quiz",
+			"Short Description": "A quiz exploring History, Etymology, Literature, and Mythology.",
+			"Details": [
+				"The HELM Quiz is a fascinating journey through the realms of History, Etymology, Literature, and Mythology.",
+				"It's an intellectually stimulating event that invites participants to delve into the stories, origins, and cultural treasures that shape our world.",
+				"Whether you're a history buff, a lover of words, a literary enthusiast, or intrigued by ancient myths and legends, the HELM Quiz offers a unique opportunity to explore these interconnected fields."
+			],
+			"Tags": ["Quiz", "History", "Literature", "Mythology"]
+		},
+		{
+			"Name": "Prose Pose Parade",
+			"Short Description": "Showcase your creativity by impersonating iconic figures.",
+			"Details": [
+				"This event invites participants to step into the world of fiction or nonfiction by dressing up as iconic personalities, fictional characters, or literary figures.",
+				"Attendees will not only showcase their creativity in costume design but also present captivating speeches emulating the body language and essence of their chosen personas."
+			],
+			"Tags": ["Creativity", "Impersonation", "Performance"]
+		},
+		{
+			"Name": "Bullseye",
+			"Short Description": "A thrilling quiz on art, media, mythology, and literature.",
+			"Details": [
+				"Eden is not as idyllic as it seems... This Verba Maximus, the Journal Club brings back Bullseye, a thrilling round-based quiz that challenges your knowledge of art, media, mythology, literature, and all things related.",
+				"Venture through paradise eternal as we test how deep your wisdom goes, and claim prizes for you and your companions."
+			],
+			"Tags": ["Quiz", "Art", "Mythology", "Media"]
+		},
+		{
+			"Name": "Handout Handicrafts",
+			"Short Description": "Design creative handouts to showcase your niche ideas.",
+			"Details": [
+				"Ever wanted people to know why you're into your niche? This is the perfect chance to show off the stuff you love.",
+				"Think outside the box and design handouts that creatively showcase your ideas and expertise."
+			],
+			"Tags": ["Creativity", "Design", "Presentation"]
+		},
+		{
+			"Name": "Symphonies of the Soul",
+			"Short Description": "Translate music into poetry in this collaborative event.",
+			"Details": [
+				"Lose yourself in the music, and translate the moment into words.",
+				"The Music Club is here to bring out the poet within you. They play the instruments, and you write the songs. Let the music guide you, and help create your masterpiece."
+			],
+			"Tags": ["Music", "Poetry", "Creativity"]
+		},
+		{
+			"Name": "Sherlocked",
+			"Short Description": "Solve a complex murder mystery and uncover hidden truths.",
+			"Details": [
+				"'Never trust to general impressions, my boy, but concentrate yourself upon details.'",
+				"Do you have it in you to solve a complex murder mystery with intricate plot lines and webs of lies?",
+				"Can you see past the veils of deception from enigmas with dark secrets to hide? In a world of locked rooms, the man with the key is king.",
+				"Can you unlock the truth behind this thrilling dark tale?"
+			],
+			"Tags": ["Mystery", "Detective", "Problem Solving", "Important"]
+		},
+		{
+			"Name": "Augmented Reality Game",
+			"Short Description": "Immerse yourself in a narrative-driven puzzle adventure.",
+			"Details": [
+				"Join us for a thrilling immersion into a world that challenges players to unravel a 5-hour narrative through teamwork, puzzles, and exploration!",
+				"With the theme 'Echoes of Eden,' this year's ARG invites participants into a richly crafted world filled with lore and mysteries.",
+				"Each clue and challenge brings them closer to uncovering hidden truths. Players navigate through interconnected levels, solve intricate puzzles, and explore a collaborative storytelling experience designed to engage their creativity and wit."
+			],
+			"Tags": [
+				"Immersive",
+				"Storytelling",
+				"Adventure",
+				"Puzzle",
+				"Important"
+			]
+		},
+		{
+			"Name": "Lexicon League",
+			"Short Description": "Word games and linguistic challenges for enthusiasts.",
+			"Details": [
+				"For fans of NYT games, grammar enthusiasts, and word game lovers, this is the ultimate playground.",
+				"Dive into challenging crosswords, fast-paced word searches, and thrilling spelling bees designed to test your linguistic skills and competitive edge.",
+				"Whether you're a casual word geek or a die-hard language aficionado, this event promises fun, wit, and a celebration of all things words!"
+			],
+			"Tags": ["Linguistics", "Word Games", "Puzzle", "Important"]
+		},
+		{
+			"Name": "Just A Minute",
+			"Short Description": "Fast-paced wordplay where every second counts.",
+			"Details": [
+				"Enter a realm of linguistic brilliance with JAM, where every word counts.",
+				"Rise to the challenge, where every second adds to your score. With only a minute to speak, every pause, mistake, and hesitation threatens the balance.",
+				"Others stand ready to seize on your every flaw. Join us to experience a fast-paced wordplay with fun twists."
+			],
+			"Tags": [
+				"Word Games",
+				"Public Speaking",
+				"Competition",
+				"Important"
+			]
+		},
+		{
+			"Name": "Shipwrecked",
+			"Short Description": "Persuade others why you deserve the coveted life jacket.",
+			"Details": [
+				"Embark on a unique challenge with 'Shipwrecked,' where participants find themselves on a sinking ship, embodying characters as diverse as the high seas themselves.",
+				"From donuts to cunning villains, these characters can be anything and everything!",
+				"It's a mixed bowl to play around with satire, wit, banter, pop culture references, and beyond.",
+				"In this test of persuasion and spontaneity, the coveted life jacket becomes the focal point, and individuals must articulate why they stand as the most deserving passenger."
+			],
+			"Tags": ["Improv", "Creativity", "Persuasion", "Important"]
+		},
+		{
+			"Name": "Devil's Advocate",
+			"Short Description": "Defend morally challenging opinions with conviction.",
+			"Details": [
+				"Do you often find yourself questioning the rationale behind mainstream morality?",
+				"Do you feel you can force society to rethink their principles purely through argumentation?",
+				"Put your convincing and speaking skills to the test by defending the indefensible and advocating for the most morally reprehensible opinions across geopolitics, culture, science, and art with Devil's Advocate."
+			],
+			"Tags": ["Debate", "Philosophy", "Public Speaking", "Important"]
+		},
+		{
+			"Name": "Rhyme Rodeo",
+			"Short Description": "Collaboratively create poetry in a fast-paced team challenge.",
+			"Details": [
+				"Rhyme Rodeo is a fast-paced, collaborative poetry game where teams of 3 to 5 participants take turns crafting stanzas, building on each other's verses to create a flowing, rhyming poem.",
+				"The challenge? You've got just 5 minutes to whip up the best masterpiece while keeping the rhyming scheme intact.",
+				"Do you think your team's got what it takes to gallop to glory?"
+			],
+			"Tags": ["Poetry", "Collaboration", "Creativity", "Important"]
+		},
+		{
+			"Name": "Debate Casino",
+			"Short Description": "Theme-based 3v3 debates to push your mental faculties.",
+			"Details": [
+				"Debating is an art which leads us to bring out the zenith of our creative skills.",
+				"It enhances our views and makes us deliver what we want to deliver rather than what the world expects us to deliver.",
+				"Debate Casino is a 3v3 debate with theme-based topics where you can push your mental faculties to the extreme and really test the depths of reason."
+			],
+			"Tags": ["Debate", "Logic", "Competition", "Important"]
+		},
+		{
+			"Name": "Yin-Yang",
+			"Short Description": "Write complementary pieces that together form a harmonious whole.",
+			"Details": [
+				"Black and white. Day and night. Fire and water. The universe has always thrived on the notion of duality, and this literary event aims to focus on striking that balance.",
+				"Participate in teams of two to write complementary pieces that together make up a whole."
+			],
+			"Tags": ["Creativity", "Writing", "Collaboration", "Important"]
+		}
+	]
+}

@@ -61,12 +61,6 @@
 		text-align: center;
 	}
 
-	p {
-		font-size: 1.5rem;
-		text-align: center;
-		padding: 0 10rem 3rem 10rem;
-	}
-
 	.introduction {
 		display: flex;
 		width: 100%;
@@ -76,12 +70,20 @@
 		justify-content: center;
 		background-color: $darkgreen;
 		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+		p {
+			font-size: 1.5rem;
+			text-align: center;
+			padding: 0 10rem 3rem 10rem;
+		}
 	}
 
 	.events {
 		width: 100%;
 		height: 100%;
 		padding: 2rem 0 6rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		background-color: $darkbrown;
 		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
 	}

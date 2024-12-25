@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
+import HomeEvents from '../components/HomeEvents';
 import HomeSlider from '../components/HomeSlider';
 import { Box, Button } from '@mui/material';
-import { IconPhoto, IconArrowRight } from '@tabler/icons-react';
+import { IconPhoto, IconArrowRight, IconTrophy } from '@tabler/icons-react';
 
 const Home = () => {
 	useEffect(() => {
@@ -37,6 +38,27 @@ const Home = () => {
 			</div>
 			<div className='events'>
 				<h1>Events</h1>
+				<HomeEvents />
+				<Button
+					variant='contained'
+					color='warning'
+					href='/events'
+					sx={{
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'space-between',
+						padding: '0.5rem 1rem',
+						marginTop: '4rem',
+						textTransform: 'none',
+						gap: '0.5rem',
+					}}
+				>
+					<Box display='flex' alignItems='center' gap='0.5rem'>
+						<IconTrophy size={14} />
+						View all events
+					</Box>
+					<IconArrowRight size={14} />
+				</Button>
 			</div>
 			<div className='gallery'>
 				<h1>Gallery</h1>

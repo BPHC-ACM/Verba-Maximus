@@ -1,0 +1,67 @@
+.EVENTCARD {
+	.glass {
+		background: linear-gradient(
+			135deg,
+			rgba(255, 255, 255, 0.1),
+			rgba(255, 255, 255, 0)
+		);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+
+		h5,
+		p {
+			font-family: 'Poppins';
+			color: $light;
+			height: 2.5rem;
+			text-align: center;
+		}
+
+		h5 {
+			font-weight: 500;
+			letter-spacing: 0.35rem;
+			text-transform: uppercase;
+			height: 3.5rem;
+			padding-bottom: 1rem;
+			text-align: center;
+		}
+
+		p {
+			opacity: 0.6;
+		}
+	}
+
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.05);
+		transition: 0.25s;
+	}
+}
+.MuiModal-root {
+	.modal {
+		background-color: darken($darkbrown, 5%);
+		color: $light !important;
+		width: 50rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h2 {
+			font-family: 'Poppins';
+			text-transform: uppercase;
+			font-size: 3rem;
+			padding: 1rem 0;
+			letter-spacing: 2px;
+			text-align: center;
+		}
+		p {
+			font-family: 'Poppins';
+			opacity: 0.6;
+			text-align: center;
+			font-size: 1.25rem;
+			padding: 0.75rem 0;
+		}
+	}
+	backdrop-filter: blur(3px);
+}
