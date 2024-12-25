@@ -8,6 +8,7 @@ import {
 	IconArrowRight,
 	IconMicrophone2,
 } from '@tabler/icons-react';
+import Footer from '../components/Footer';
 
 const Home = () => {
 	useEffect(() => {
@@ -90,6 +91,7 @@ const Home = () => {
 					<IconArrowRight size={14} />
 				</Button>
 			</div>
+			<Footer />
 		</div>
 	);
 };

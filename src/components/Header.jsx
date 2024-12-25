@@ -9,8 +9,9 @@ const Header = () => {
 				<Link to='/events'>Events</Link>
 				<Link to='/fest-access'>Fest Access</Link>
 				<Link to='/schedule'>Schedule</Link>
-				<Link to='/sponsors'>Sponsors</Link>
-				<Link to='/contact-us'>Contact Us</Link>
+			</div>
+			<div className='navbar glass'>
+				<Link to='/schedule'>Register</Link>
 			</div>
 		</div>
 	);

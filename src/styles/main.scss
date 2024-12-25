@@ -3,6 +3,7 @@
 @import './variables';
 
 @import './components/header';
+@import './components/footer';
 @import './components/homeslider';
 @import './components/eventcard';
 
@@ -11,7 +12,6 @@
 @import './pages/events';
 @import './pages/home';
 @import './pages/schedule';
-@import './pages/sponsors';
 
 * {
 	margin: 0;

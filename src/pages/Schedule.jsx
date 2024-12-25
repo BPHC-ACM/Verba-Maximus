@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Schedule = () => {
-	return <div>Schedule</div>;
+const Sponsors = () => {
+	return <div>Sponsors</div>;
 };
 
-export default Schedule;
+export default Sponsors;

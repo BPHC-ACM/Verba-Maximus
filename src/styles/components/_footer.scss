@@ -1,0 +1,13 @@
+.FOOTER {
+	width: 100%;
+	background-color: $darkgreen;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	> * {
+		padding: 1.5rem;
+	}
+	.socials > * {
+		padding: 1rem 1rem;
+	}
+}

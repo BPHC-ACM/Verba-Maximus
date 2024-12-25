@@ -1,12 +1,13 @@
 .HEADER {
+	left: 50%;
+	transform: translateX(-50%);
+	position: fixed;
+	top: 1.5rem;
+	z-index: 5;
+	display: flex;
+	gap: 1rem;
 	.navbar {
-		position: fixed;
-		top: 1.5rem;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 5;
 		display: flex;
-
 		a {
 			font-size: 1rem;
 			font-weight: 550;
