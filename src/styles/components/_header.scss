@@ -35,7 +35,6 @@
 		.hamburger {
 			padding: 0.5rem;
 			display: none;
-			cursor: pointer;
 			width: 30px;
 			height: 20px;
 			display: flex;
@@ -48,7 +47,6 @@
 				height: 3px;
 				background-color: $light;
 				border-radius: 10px;
-				transition: all 0.3s ease-in-out;
 			}
 		}
 
@@ -71,16 +69,13 @@
 		}
 
 		@media (max-width: 768px) {
+			flex-direction: row-reverse;
 			.hamburger {
 				display: flex;
 			}
 
 			> a {
-				display: none; // Hide desktop links
-			}
-
-			.mobile-menu.open {
-				display: flex;
+				display: none;
 			}
 		}
 	}
