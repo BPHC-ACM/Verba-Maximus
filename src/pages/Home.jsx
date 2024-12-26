@@ -25,12 +25,12 @@ const Home = () => {
 				<div className='dates glass'>
 					<div className='start'>
 						<div className='month'>JAN</div>
-						<div className='date'>26</div>
+						<div className='date'>25</div>
 					</div>
 					<IconArrowRight size={20} />
 					<div className='end'>
 						<div className='month'>JAN</div>
-						<div className='date'>27</div>
+						<div className='date'>26</div>
 					</div>
 				</div>
 			</div>
