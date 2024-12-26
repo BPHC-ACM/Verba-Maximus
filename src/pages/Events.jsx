@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
-
+import Footer from '../components/Footer'
 const Events = () => {
 	useEffect(() => {
 		document.title = 'Verba Maximus - Events';
@@ -12,6 +12,7 @@ const Events = () => {
 			<div className='heading'>
 				<h1>Events</h1>
 			</div>
+			<Footer/>
 		</div>
 	);
 };

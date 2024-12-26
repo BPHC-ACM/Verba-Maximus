@@ -20,12 +20,15 @@
 }
 
 .heading {
-	background: hsla(111, 15%, 24%, 1);
-	background: linear-gradient(
-		180deg,
-		hsla(111, 15%, 24%, 1) 0%,
-		hsla(110, 15%, 48%, 1) 100%
-	);
+	// background: hsla(111, 15%, 24%, 1);
+	// background: linear-gradient(
+	// 	180deg,
+	// 	hsla(111, 15%, 24%, 1) 0%,
+	// 	hsla(110, 15%, 48%, 1) 100%
+	// );
+	background-image:url('public/assets/greenbg2.jpg');
+	// background-size:cover;
+	// background-position:center;
 	h1 {
 		text-align: center;
 		font-family: $header-font;
