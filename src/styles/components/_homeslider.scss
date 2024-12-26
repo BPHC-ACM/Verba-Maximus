@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .slider-container {
 	width: 90%;
 	height: 25rem;
@@ -21,5 +23,20 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	@media only screen and (max-width: 768px) {
+		.slick-list,
+		.slick-slider,
+		.slick-track {
+			height: unset;
+		}
+
+		.slick-slide,
+		.slick-track {
+			display: block;
+		}
+		.slide {
+			margin: 3.5rem 0;
+		}
 	}
 }

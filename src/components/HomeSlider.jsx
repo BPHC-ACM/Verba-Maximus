@@ -2,16 +2,19 @@ import React from 'react';
 import Slider from 'react-slick';
 
 function HomeSlider() {
-	const totalImages = 7;
+	const totalImages = 8;
+	const isMobile = window.innerWidth <= 768;
 
 	const settings = {
-		slidesToShow: 2,
+		slidesToShow: isMobile ? 1 : 2,
 		slidesToScroll: 1,
 		centerMode: true,
 		infinite: true,
 		autoplay: true,
 		speed: 1000,
+		rows: isMobile ? 2 : 1,
 		autoplaySpeed: 4000,
+		arrows: !isMobile,
 		pauseOnHover: true,
 	};
 	return (

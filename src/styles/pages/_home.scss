@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .HOME {
 	display: flex;
 	flex-direction: column;
@@ -125,6 +127,46 @@
 			border-radius: 0.5rem;
 			border: 1px solid rgba(255, 255, 255, 0.18);
 			box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		.hero {
+			h1 {
+				font-size: 4rem;
+				padding: 4rem 0 2rem 0;
+			}
+			h2 {
+				letter-spacing: 0.5rem;
+				font-size: 1rem;
+			}
+		}
+
+		h1 {
+			font-size: 3.75rem;
+		}
+
+		.introduction {
+			p {
+				padding: 0 3rem;
+				font-size: 1.15rem;
+			}
+		}
+
+		.events,
+		.gallery,
+		.introduction {
+			padding: 0 0 3rem 0;
+		}
+
+		.gallery {
+			h1 {
+				padding-bottom: 1rem;
+			}
+		}
+
+		.dates {
+			margin-top: 3rem;
 		}
 	}
 }

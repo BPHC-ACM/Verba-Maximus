@@ -1,17 +1,18 @@
+@use 'sass:color';
+@use './variables' as *;
+@use './components/header' as *;
+@use './components/footer' as *;
+@use './components/homeslider' as *;
+@use './components/eventcard' as *;
+
+@use './pages/access' as *;
+@use './pages/errorpage' as *;
+@use './pages/events' as *;
+@use './pages/home' as *;
+@use './pages/schedule' as *;
+
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
-@import './variables';
-
-@import './components/header';
-@import './components/footer';
-@import './components/homeslider';
-@import './components/eventcard';
-
-@import './pages/access';
-@import './pages/errorpage';
-@import './pages/events';
-@import './pages/home';
-@import './pages/schedule';
 
 * {
 	margin: 0;
