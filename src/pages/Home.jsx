@@ -22,6 +22,17 @@ const Home = () => {
 			<div className='hero'>
 				<h1>Verba Maximus</h1>
 				<h2>echoes of eden</h2>
+				<div className='dates glass'>
+					<div className='start'>
+						<div className='month'>JAN</div>
+						<div className='date'>26</div>
+					</div>
+					<IconArrowRight size={20} />
+					<div className='end'>
+						<div className='month'>JAN</div>
+						<div className='date'>27</div>
+					</div>
+				</div>
 			</div>
 			<div className='introduction'>
 				<h1>Echoes of Eden</h1>
