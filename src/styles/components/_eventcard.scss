@@ -13,11 +13,18 @@
 		border-radius: 0.35rem;
 		box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
 
+		> div {
+			height: 7rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+
 		h5,
 		p {
 			font-family: 'Poppins';
 			color: $light;
-			height: 2.5rem;
+			padding: 0.25rem 0;
 			text-align: center;
 		}
 
@@ -25,8 +32,6 @@
 			font-weight: 500;
 			letter-spacing: 0.35rem;
 			text-transform: uppercase;
-			height: 3.5rem;
-			padding-bottom: 1rem;
 			text-align: center;
 		}
 
