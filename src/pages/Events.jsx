@@ -11,7 +11,7 @@ const Events = () => {
 		<div className='EVENTS'>
 			<Header />
 			<div className='heading'>
-				<h1>Events</h1>
+				<h1 id="mainheadingev">Events</h1>
 			</div>
 			<div className="mainevents">
 				<div className="Searchnfilter">
@@ -21,24 +21,24 @@ const Events = () => {
                     	// value={searchTerm}
                    	 	// onChange={(e) => setSearchTerm(e.target.value)}
               	  	/>
-					<select class="filter glass"
+					<select className="glass filter"
                     value={filterClub}
                     onChange={(e) => setFilterClub(e.target.value)}
                 	>
-                    <option value="">Filter by club</option>
-                    <option value="ELAS">ELAS</option>
-                    <option value="Hindi Tarang">Hindi Tarang</option>
-                    <option value="SAFL">SAFL</option>
-					<option value="Quiz Club">Quiz Club</option>
-					<option value="Fashion Club">Fashion Club</option>
-					<option value="Journal Club">Journal Club</option>
-					<option value="Music Club">Music Club</option>
+                    <option className="cluboptions" value="">Filter by club</option>
+                    <option className="cluboptions" value="ELAS">ELAS</option>
+                    <option className="cluboptions" value="Hindi Tarang">Hindi Tarang</option>
+                    <option className="cluboptions" value="SAFL">SAFL</option>
+					<option className="cluboptions" value="Quiz Club">Quiz Club</option>
+					<option className="cluboptions" value="Fashion Club">Fashion Club</option>
+					<option className="cluboptions" value="Journal Club">Journal Club</option>
+					<option className="cluboptions" value="Music Club">Music Club</option>
                 </select>
 				</div>
 				<div className="ClubEventsHolder">
 					{filterClub === "" || filterClub === "ELAS" ? (
                     	<div className="bgbrown">
-							<h1 className="Elashead">Elas Events</h1>
+							<h1 className="head">Elas Events</h1>
 							<div className="eventsholder">
 								{/* <Events_card/> */}
 							</div>
@@ -46,7 +46,7 @@ const Events = () => {
                 	) : null}
 					{filterClub === "" || filterClub === "Hindi Tarang" ? (
                     	<div className="bggreen">
-							<h1 className="Elashead">Hindi Tarang Events</h1>
+							<h1 className="head">Hindi Tarang Events</h1>
 							<div className="eventsholder">
 								{/* <Events_card/> */}
 							</div>
@@ -54,7 +54,7 @@ const Events = () => {
                 	) : null}
 					{filterClub === "" || filterClub === "SAFL" ? (
                     	<div className="bgbrown">
-							<h1 className="Elashead">Safl Events</h1>
+							<h1 className="head">Safl Events</h1>
 							<div className="eventsholder">
 								{/* <Events_card/> */}
 							</div>
@@ -62,7 +62,7 @@ const Events = () => {
                 	) : null}
 					{filterClub === "" || filterClub === "Quiz Club" ? (
                     	<div className="bggreen">
-							<h1 className="Elashead">Quiz Club Events</h1>
+							<h1 className="head">Quiz Club Events</h1>
 							<div className="eventsholder">
 								{/* <Events_card/> */}
 							</div>
@@ -70,7 +70,7 @@ const Events = () => {
                 	) : null}
 					{filterClub === "" || filterClub === "Fashion Club" ? (
                     	<div className="bgbrown">
-							<h1 className="Elashead">Fashion Club Events</h1>
+							<h1 className="head">Fashion Club Events</h1>
 							<div className="eventsholder">
 								{/* <Events_card/> */}
 							</div>
@@ -78,7 +78,7 @@ const Events = () => {
                 	) : null}
 					{filterClub === "" || filterClub === "Journal Club" ? (
                     	<div className="bggreen">
-							<h1 className="Elashead">Journal Club Events</h1>
+							<h1 className="head">Journal Club Events</h1>
 							<div className="eventsholder">
 								{/* <Events_card/> */}
 							</div>
@@ -86,7 +86,7 @@ const Events = () => {
                 	) : null}
 					{filterClub === "" || filterClub === "Music Club" ? (
                     	<div className="bgbrown">
-							<h1 className="Elashead">Music Club Events</h1>
+							<h1 className="head">Music Club Events</h1>
 							<div className="eventsholder">
 								{/* <Events_card/> */}
 							</div>
