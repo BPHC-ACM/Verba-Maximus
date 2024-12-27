@@ -1,9 +1,55 @@
 @use '../variables' as *;
 
 .EVENTS {
-	background-color: $light;
+	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
+	background-color:$darkgreen;
 	
 }
 .heading{
 	background-color:black;
+}
+
+.Searchnfilter{
+	display:flex;
+	justify-content:center;
+	margin:50px;
+	gap:30px;
+}
+.searchinput{
+	height:50px;
+	width:60vw;
+	border-radius:75px;
+	padding-left:20px;
+	font-size:1.5rem;
+	letter-spacing:2px;
+	caret-color:light;
+	color:$light;
+	transition: border-color 0.3s;
+}
+
+.glass {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	// border-radius: 0.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+}
+.searchinput:focus{
+	border: 1px solid black;
+	caret-color:$light;
+}
+.filter{
+	color:$light;
+	// background-color: red;
+	border-radius:75px;
+	font-size:1.1rem;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+	letter-spacing:1px;
 }

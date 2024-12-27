@@ -15,7 +15,8 @@
 				"Problem Solving",
 				"Teamwork",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Lexicon League",
@@ -25,7 +26,8 @@
 				"Dive into challenging crosswords, fast-paced word searches, and thrilling spelling bees designed to test your linguistic skills and competitive edge.",
 				"Whether you’re a casual word geek or a die-hard language aficionado, this event promises fun, wit, and a celebration of all things words!"
 			],
-			"Tags": ["Linguistics", "Word Games", "Competition", "Important"]
+			"Tags": ["Linguistics", "Word Games", "Competition", "Important"],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Just a Minute",
@@ -41,7 +43,8 @@
 				"Public Speaking",
 				"Competition",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Shipwrecked",
@@ -58,7 +61,8 @@
 				"Persuasion",
 				"Character Acting",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Devil's Advocate",
@@ -74,7 +78,8 @@
 				"Public Speaking",
 				"Morality",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Rhyme Rodeo",
@@ -90,7 +95,8 @@
 				"Creativity",
 				"Teamwork",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Debate Casino",
@@ -106,7 +112,8 @@
 				"Competition",
 				"Teamwork",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Yin-Yang",
@@ -121,7 +128,8 @@
 				"Teamwork",
 				"Duality",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		},
 		{
 			"Name": "Antakshari",
@@ -130,7 +138,8 @@
 				"Get ready for an exciting journey through the magic of Bollywood with VM Antakshari by Hindi Tarang!",
 				"This event blends nostalgia, fun, and friendly competition with three thrilling rounds:"
 			],
-			"Tags": ["Bollywood", "Music", "Competition", "Performance"]
+			"Tags": ["Bollywood", "Music", "Competition", "Performance"],
+			"Club": "Hindi Tarang"
 		},
 		{
 			"Name": "Escape Room",
@@ -150,7 +159,8 @@
 				"Mythology",
 				"Problem Solving",
 				"Escape Room"
-			]
+			],
+			"Club": "Hindi Tarang"
 		},
 		{
 			"Name": "Geeta Spardha",
@@ -171,7 +181,8 @@
 				"This isn’t just a competition—it’s a mind-bending quest to unravel the very essence of language.",
 				"Rally your team, refine your decoding skills, and dive into the unparalleled world of linguistic prowess. Will you emerge victorious in uncovering the hidden secrets?"
 			],
-			"Tags": ["Linguistics", "Puzzles", "Decoding", "Problem Solving"]
+			"Tags": ["Linguistics", "Puzzles", "Decoding", "Problem Solving"],
+			"Club": "SAFL"
 		},
 		{
 			"Name": "Bamboozled",
@@ -190,7 +201,8 @@
 				"Anime",
 				"Teamwork",
 				"Problem Solving"
-			]
+			],
+			"Club":"SAFL"
 		},
 		{
 			"Name": "HELM Quiz (History, Etymology, Literature and Mythology)",
@@ -201,7 +213,8 @@
 				"Whether you’re a history buff, a lover of words, a literary enthusiast, or intrigued by ancient myths and legends, the HELM Quiz offers a unique opportunity to explore these interconnected fields.",
 				"With thought-provoking questions and engaging rounds, it’s an event that challenges the mind while celebrating the richness of human heritage."
 			],
-			"Tags": ["Quiz", "History", "Etymology", "Literature", "Mythology"]
+			"Tags": ["Quiz", "History", "Etymology", "Literature", "Mythology"],
+			"Club":"Quiz Club"
 		},
 		{
 			"Name": "Prose Pose Parade",
@@ -210,7 +223,8 @@
 				"This event invites participants to step into the world of fiction or nonfiction by dressing up as iconic personalities, fictional characters, or literary figures.",
 				"Attendees will not only showcase their creativity in costume design but also present captivating speeches emulating the body language and essence of their chosen personas."
 			],
-			"Tags": ["Fashion", "Impersonation", "Performance", "Creativity"]
+			"Tags": ["Fashion", "Impersonation", "Performance", "Creativity"],
+			"Club":"Fashion Club"
 		},
 		{
 			"Name": "Bullseye",
@@ -219,7 +233,8 @@
 				"Eden is not as idyllic as it seems... This Verba Maximus, the Journal Club brings back Bullseye, a thrilling round based quiz that challenges your knowledge of art, media, mythology, literature, and all things related.",
 				"Venture through paradise eternal as we test how deep your wisdom goes, and claim prizes for you and your companions."
 			],
-			"Tags": ["Quiz", "Art", "Media", "Mythology", "Literature"]
+			"Tags": ["Quiz", "Art", "Media", "Mythology", "Literature"],
+			"Club":"Journal Club"
 		},
 		{
 			"Name": "Handout Handicrafts",
@@ -228,7 +243,8 @@
 				"Ever wanted people to know why you're into your niche? This is the perfect chance to show off the stuff you love.",
 				"Think outside the box and design handouts that creatively showcase your ideas and expertise."
 			],
-			"Tags": ["Creativity", "Design", "Presentation", "Handicrafts"]
+			"Tags": ["Creativity", "Design", "Presentation", "Handicrafts"],
+			"Club":"Fashion Club"
 		},
 		{
 			"Name": "Symphonies of the Soul",
@@ -238,7 +254,8 @@
 				"The Music club is here to bring out the poet within you. They play the instruments and you write the songs.",
 				"Let the music guide you, and help create your masterpiece."
 			],
-			"Tags": ["Music", "Poetry", "Creativity", "Collaboration"]
+			"Tags": ["Music", "Poetry", "Creativity", "Collaboration"],
+			"Club":"Music Club"
 		},
 		{
 			"Name": "A.R.G",
@@ -254,7 +271,8 @@
 				"Adventure",
 				"Puzzle",
 				"Important"
-			]
+			],
+			"Club":"ELAS"
 		}
 	]
 }
