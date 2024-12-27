@@ -4,6 +4,7 @@
 @use './components/footer' as *;
 @use './components/homeslider' as *;
 @use './components/eventcard' as *;
+@use './components/eventscard' as *;
 
 @use './pages/access' as *;
 @use './pages/errorpage' as *;
@@ -23,8 +24,8 @@
 	// background: hsla(111, 15%, 24%, 1);
 	// background: linear-gradient(
 	// 	180deg,
-	// 	hsla(111, 15%, 24%, 1) 0%,
-	// 	hsla(110, 15%, 48%, 1) 100%
+	// 	rgb(171, 101, 25) 0%,
+	// 	rgb(118, 41, 6) 100%
 	// );
 	background-image:url('public/assets/greenbg2.jpg');
 	// background-size:cover;

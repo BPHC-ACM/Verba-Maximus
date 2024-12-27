@@ -2,9 +2,9 @@
 
 .EVENTS {
 	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
-	background-color:$darkgreen;
-	
+	background-color:$darkbrown;
 }
+
 .heading{
 	background-color:black;
 }
@@ -52,4 +52,20 @@
 	padding-right:5px;
 	text-align:center;
 	letter-spacing:1px;
+}
+.Elashead{
+	font-family: $header-font;
+	font-size: 6rem;
+	padding: 4rem 0;
+	word-spacing: 1.5rem;
+	text-align: center;
+	color:$light;
+}
+.bggreen{
+	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
+	background-color:$darkgreen;
+}
+.bgbrown{
+	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
+	background-color:$darkbrown;
 }
