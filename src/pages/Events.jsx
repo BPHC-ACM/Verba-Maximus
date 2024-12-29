@@ -1,12 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import eventsData from "../events.json"
 import Events_card from '../components/Events_card';
+
+const groupEventsbyClub = (e)=>{
+	return e.reduce((groups, event) =>{
+		if(!groups[event.Club]){
+			groups[event.Club]=[];
+		}
+		groups[event.Club].push(event);
+		return groups;
+	}, {});
+};
 const Events = () => {
 	useEffect(() => {
 		document.title = 'Verba Maximus - Events';
 	}, []);
-	const [filterClub, setFilterClub]= useState("");
+	const [filter, setFilter]= useState("All");
+	const [searchTerm, setSearchTerm]=useState("");
+	const filteredEvents = eventsData.filter((event) => {
+		const matchesSearch = event.name.toLowerCase().includes(searchTerm.toLowerCase());
+		const matchesFilter = filter == "All" || event.category == filter;
+		return matchesSearch && matchesFilter;
+	  });
+	
+	  const groupedEvents = groupEventsbyClub(filteredEvents);
 	return (
 		<div className='EVENTS'>
 			<Header />
@@ -18,80 +37,35 @@ const Events = () => {
 					<input className="searchinput glass"
                     	type="text"
                     	placeholder="Search events..."
-                    	// value={searchTerm}
-                   	 	// onChange={(e) => setSearchTerm(e.target.value)}
+                    	value={searchTerm}
+                   	 	onChange={(e) => setSearchTerm(e.target.value)}
               	  	/>
-					<select className="glass filter"
-                    value={filterClub}
-                    onChange={(e) => setFilterClub(e.target.value)}
-                	>
-                    <option className="cluboptions" value="">Filter by club</option>
-                    <option className="cluboptions" value="ELAS">ELAS</option>
-                    <option className="cluboptions" value="Hindi Tarang">Hindi Tarang</option>
-                    <option className="cluboptions" value="SAFL">SAFL</option>
-					<option className="cluboptions" value="Quiz Club">Quiz Club</option>
-					<option className="cluboptions" value="Fashion Club">Fashion Club</option>
-					<option className="cluboptions" value="Journal Club">Journal Club</option>
-					<option className="cluboptions" value="Music Club">Music Club</option>
-                </select>
+					<div className="filter">
+						<div>Filter:</div>
+						<div className="filterlist glass">
+								<span onClick={() => setFilter("All")}>All</span>
+								<span onClick={() => setFilter("Expression")}>Expression</span>
+								<span onClick={() => setFilter("Puzzles")}>Puzzles</span>
+								<span onClick={() => setFilter("Litreary Arts")}>Litrary Arts</span>
+								<span onClick={() => setFilter("Discussions")}>Discussions</span>
+								<span onClick={() => setFilter("Quizzes")}>Quizzes</span>
+								<span onClick={() => setFilter("Traditional")}>Traditional</span>
+						</div>
+					</div>
 				</div>
 				<div className="ClubEventsHolder">
-					{filterClub === "" || filterClub === "ELAS" ? (
-                    	<div className="bgbrown">
-							<h1 className="head">Elas Events</h1>
-							<div className="eventsholder">
-								{/* <Events_card/> */}
+					{Object.keys(groupedEvents).map((club)=>(
+						<div key={club}>
+							<h2>{club}</h2>
+							<div>
+								{groupedEvents[club].map((event)=>(
+									<div>
+										<h3>{event.name}</h3>
+									</div>
+								))}
 							</div>
 						</div>
-                	) : null}
-					{filterClub === "" || filterClub === "Hindi Tarang" ? (
-                    	<div className="bggreen">
-							<h1 className="head">Hindi Tarang Events</h1>
-							<div className="eventsholder">
-								{/* <Events_card/> */}
-							</div>
-						</div>
-                	) : null}
-					{filterClub === "" || filterClub === "SAFL" ? (
-                    	<div className="bgbrown">
-							<h1 className="head">Safl Events</h1>
-							<div className="eventsholder">
-								{/* <Events_card/> */}
-							</div>
-						</div>
-                	) : null}
-					{filterClub === "" || filterClub === "Quiz Club" ? (
-                    	<div className="bggreen">
-							<h1 className="head">Quiz Club Events</h1>
-							<div className="eventsholder">
-								{/* <Events_card/> */}
-							</div>
-						</div>
-                	) : null}
-					{filterClub === "" || filterClub === "Fashion Club" ? (
-                    	<div className="bgbrown">
-							<h1 className="head">Fashion Club Events</h1>
-							<div className="eventsholder">
-								{/* <Events_card/> */}
-							</div>
-						</div>
-                	) : null}
-					{filterClub === "" || filterClub === "Journal Club" ? (
-                    	<div className="bggreen">
-							<h1 className="head">Journal Club Events</h1>
-							<div className="eventsholder">
-								{/* <Events_card/> */}
-							</div>
-						</div>
-                	) : null}
-					{filterClub === "" || filterClub === "Music Club" ? (
-                    	<div className="bgbrown">
-							<h1 className="head">Music Club Events</h1>
-							<div className="eventsholder">
-								{/* <Events_card/> */}
-							</div>
-						</div>
-                	) : null}
+					))}
 				</div>
 				
 			</div>

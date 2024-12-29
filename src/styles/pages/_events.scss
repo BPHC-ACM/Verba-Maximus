@@ -9,9 +9,34 @@
 
 .Searchnfilter{
 	display:flex;
+	flex-direction:column;
 	justify-content:center;
+	align-items:center;
 	margin:50px;
 	gap:30px;
+}
+.filter{
+	color:$light;
+	display:flex;
+	align-items:center;
+	gap:30px;
+	font-size:1.5rem;
+}
+.filterlist{
+	border-radius:75px;
+	display:flex;
+	font-size:1.1rem;
+	gap:15px;
+}
+.filterlist span{
+	padding:10px;
+	border-radius:75px;
+	cursor:pointer;
+}
+.filterlist span:hover{
+	background-color:$light;
+	color:black;
+	transition:0.35s;
 }
 .searchinput{
 	height:50px;
@@ -41,16 +66,7 @@
 	border: 1px solid black;
 	caret-color:$light;
 }
-.filter{
-	color:$light;
-	// background-color: red;
-	border-radius:75px;
-	font-size:1.1rem;
-	padding-left:5px;
-	padding-right:5px;
-	text-align:center;
-	letter-spacing:1px;
-}
+
 option{
 	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
 	background-color:$darkbrown;

@@ -1,7 +1,7 @@
-{
-	"events": [
+
+[
 		{
-			"Name": "Sherlocked",
+			"name": "Sherlocked",
 			"Short Description": "Solve a complex murder mystery through teamwork, puzzles, and exploration.",
 			"Details": [
 				"In a world of locked rooms, the man with the key is king. Can you unlock the truth behind this thrilling dark tale?",
@@ -16,10 +16,11 @@
 				"Teamwork",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Puzzles"
 		},
 		{
-			"Name": "Lexicon League",
+			"name": "Lexicon League",
 			"Short Description": "Compete in challenging crosswords, word searches, and spelling bees.",
 			"Details": [
 				"For fans of NYT games, grammar enthusiasts, and word game lovers, this is the ultimate playground.",
@@ -27,10 +28,11 @@
 				"Whether you’re a casual word geek or a die-hard language aficionado, this event promises fun, wit, and a celebration of all things words!"
 			],
 			"Tags": ["Linguistics", "Word Games", "Competition", "Important"],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Literary Arts"
 		},
 		{
-			"Name": "Just a Minute",
+			"name": "Just a Minute",
 			"Short Description": "Engage in fast-paced wordplay where every second and word counts.",
 			"Details": [
 				"Enter a realm of linguistic brilliance with JAM, where every word counts.",
@@ -44,10 +46,11 @@
 				"Competition",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Literary Arts"
 		},
 		{
-			"Name": "Shipwrecked",
+			"name": "Shipwrecked",
 			"Short Description": "Embody unique characters and persuade others why you deserve the life jacket on a sinking ship.",
 			"Details": [
 				"Embark on a unique challenge with 'Shipwrecked', where participants find themselves on a sinking ship, embodying characters as diverse as the high seas themselves.",
@@ -62,10 +65,11 @@
 				"Character Acting",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Expression"
 		},
 		{
-			"Name": "Devil's Advocate",
+			"name": "Devil's Advocate",
 			"Short Description": "Defend morally challenging opinions and put your debating skills to the test.",
 			"Details": [
 				"Do you often find yourself questioning the rationale behind mainstream morality?",
@@ -79,10 +83,11 @@
 				"Morality",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Discussions"
 		},
 		{
-			"Name": "Rhyme Rodeo",
+			"name": "Rhyme Rodeo",
 			"Short Description": "Collaborate to create a rhyming poem in a fast-paced, team-based challenge.",
 			"Details": [
 				"Rhyme Rodeo is a fast-paced, collaborative poetry game where teams of 3 to 5 participants take turns crafting stanzas, building on each other's verses to create a flowing, rhyming poem.",
@@ -96,10 +101,11 @@
 				"Teamwork",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Literary Arts"
 		},
 		{
-			"Name": "Debate Casino",
+			"name": "Debate Casino",
 			"Short Description": "Participate in themed 3v3 debates and test your reasoning abilities.",
 			"Details": [
 				"Debating is an art which leads us to bring out the zenith of our creative skills.",
@@ -113,10 +119,11 @@
 				"Teamwork",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Discussions"
 		},
 		{
-			"Name": "Yin-Yang",
+			"name": "Yin-Yang",
 			"Short Description": "Write complementary pieces that embody the concept of duality and create a harmonious whole.",
 			"Details": [
 				"Black and white. Day and night. Fire and water. The universe has always thrived on the notion of duality and this literary event aims to focus on striking that balance.",
@@ -129,20 +136,22 @@
 				"Duality",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Literary Arts"
 		},
 		{
-			"Name": "Antakshari",
+			"name": "Antakshari",
 			"Short Description": "Celebrate Bollywood through song guessing, dialogue delivery, and a song and dance challenge.",
 			"Details": [
 				"Get ready for an exciting journey through the magic of Bollywood with VM Antakshari by Hindi Tarang!",
 				"This event blends nostalgia, fun, and friendly competition with three thrilling rounds:"
 			],
 			"Tags": ["Bollywood", "Music", "Competition", "Performance"],
-			"Club": "Hindi Tarang"
+			"Club": "Hindi Tarang",
+			"filter":"Traditional"
 		},
 		{
-			"Name": "Escape Room",
+			"name": "Escape Room",
 			"Short Description": "Solve puzzles inspired by Hindi literature and mythology to prevent the Kurukshetra War.",
 			"Details": [
 				"Recall the epic tale of the Mahabharata.",
@@ -160,20 +169,22 @@
 				"Problem Solving",
 				"Escape Room"
 			],
-			"Club": "Hindi Tarang"
+			"Club": "Hindi Tarang",
+			"filter":"Puzzles"
 		},
 		{
-			"Name": "Geeta Spardha",
+			"name": "Geeta Spardha",
 			"Short Description": "Recite slokas from the Bhagavad Gita and demonstrate your understanding of Sanskrit.",
 			"Details": [
 				"Geeta spardha is an event where participants, typically students or devotees, recite slokas of Bhagavad Gita from any adhyay of their choice",
 				"The purpose of the competition is to encourage participants to engage deeply with the holy bhagavad Gita and appreciate the Sanskrit language.",
 				"Participants have to recite a minimum of 8 Slokas ."
 			],
-			"Tags": ["Spiritual", "Sanskrit", "Bhagavad Gita", "Recitation"]
+			"Tags": ["Spiritual", "Sanskrit", "Bhagavad Gita", "Recitation"],
+			"Club":"SAFL"
 		},
 		{
-			"Name": "Decipher the Script",
+			"name": "Decipher the Script",
 			"Short Description": "Decode ancient and futuristic scripts, testing your linguistic prowess and problem-solving skills.",
 			"Details": [
 				"Embark on a thrilling linguistic journey with Decipher the Script – a competition where ancient mysteries meet futuristic challenges.",
@@ -185,7 +196,7 @@
 			"Club": "SAFL"
 		},
 		{
-			"Name": "Bamboozled",
+			"name": "Bamboozled",
 			"Short Description": "Inspired by anime, this strategic adventure tests trust, tactics, and teamwork across four intense rounds.",
 			"Details": [
 				"Step into the electrifying world of Bamboozled, where cunning strategy meets heart-pounding adventure.",
@@ -202,10 +213,11 @@
 				"Teamwork",
 				"Problem Solving"
 			],
-			"Club":"SAFL"
+			"Club":"SAFL",
+			"filter":"Puzzles"
 		},
 		{
-			"Name": "HELM Quiz (History, Etymology, Literature and Mythology)",
+			"name": "HELM Quiz (History, Etymology, Literature and Mythology)",
 			"Short Description": "Test your knowledge of history, etymology, literature, and mythology in this intellectually stimulating quiz.",
 			"Details": [
 				"The HELM Quiz is a fascinating journey through the realms of History, Etymology, Literature, and Mythology.",
@@ -214,30 +226,33 @@
 				"With thought-provoking questions and engaging rounds, it’s an event that challenges the mind while celebrating the richness of human heritage."
 			],
 			"Tags": ["Quiz", "History", "Etymology", "Literature", "Mythology"],
-			"Club":"Quiz Club"
+			"Club":"Quiz Club",
+			"filter":"Quizzes"
 		},
 		{
-			"Name": "Prose Pose Parade",
+			"name": "Prose Pose Parade",
 			"Short Description": "Impersonate iconic figures through costume and speech in this creative fashion event.",
 			"Details": [
 				"This event invites participants to step into the world of fiction or nonfiction by dressing up as iconic personalities, fictional characters, or literary figures.",
 				"Attendees will not only showcase their creativity in costume design but also present captivating speeches emulating the body language and essence of their chosen personas."
 			],
 			"Tags": ["Fashion", "Impersonation", "Performance", "Creativity"],
-			"Club":"Fashion Club"
+			"Club":"Fashion Club",
+			"filter":"Expression"
 		},
 		{
-			"Name": "Bullseye",
+			"name": "Bullseye",
 			"Short Description": "Participate in a round-based quiz testing your knowledge across various domains.",
 			"Details": [
 				"Eden is not as idyllic as it seems... This Verba Maximus, the Journal Club brings back Bullseye, a thrilling round based quiz that challenges your knowledge of art, media, mythology, literature, and all things related.",
 				"Venture through paradise eternal as we test how deep your wisdom goes, and claim prizes for you and your companions."
 			],
 			"Tags": ["Quiz", "Art", "Media", "Mythology", "Literature"],
-			"Club":"Journal Club"
+			"Club":"Journal Club",
+			"filter":"Discussions"
 		},
 		{
-			"Name": "Handout Handicrafts",
+			"name": "Handout Handicrafts",
 			"Short Description": "Design creative handouts to showcase your passion and expertise on a niche topic.",
 			"Details": [
 				"Ever wanted people to know why you're into your niche? This is the perfect chance to show off the stuff you love.",
@@ -247,7 +262,7 @@
 			"Club":"Fashion Club"
 		},
 		{
-			"Name": "Symphonies of the Soul",
+			"name": "Symphonies of the Soul",
 			"Short Description": "Let music inspire you to write poetry in this collaborative event.",
 			"Details": [
 				"Lose yourself in the music, and translate the moment into words.",
@@ -255,10 +270,11 @@
 				"Let the music guide you, and help create your masterpiece."
 			],
 			"Tags": ["Music", "Poetry", "Creativity", "Collaboration"],
-			"Club":"Music Club"
+			"Club":"Music Club",
+			"filter":"Expression"
 		},
 		{
-			"Name": "A.R.G",
+			"name": "A.R.G",
 			"Short Description": "Immerse yourself in a narrative-driven augmented reality puzzle adventure.",
 			"Details": [
 				"Join us for a thrilling immersion into a world that challenges players to unravel a 5-hour narrative through teamwork, puzzles, and exploration!",
@@ -272,7 +288,8 @@
 				"Puzzle",
 				"Important"
 			],
-			"Club":"ELAS"
+			"Club":"ELAS",
+			"filter":"Puzzles"
 		}
-	]
-}
+]
+

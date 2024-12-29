@@ -1,8 +1,9 @@
 import React from 'react'
-// import '../styles/components/_eventscard.scss'
 const Events_card = (props) => {
   return (
-    <div className="Event_cards">fjdfjlk</div>
+    <div className="Event_cards">
+      <h3></h3>
+    </div>
   )
 }
 
