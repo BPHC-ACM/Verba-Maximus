@@ -193,7 +193,8 @@
 				"Rally your team, refine your decoding skills, and dive into the unparalleled world of linguistic prowess. Will you emerge victorious in uncovering the hidden secrets?"
 			],
 			"Tags": ["Linguistics", "Puzzles", "Decoding", "Problem Solving"],
-			"Club": "SAFL"
+			"Club": "SAFL",
+			"filter":"Traditional"
 		},
 		{
 			"name": "Bamboozled",
@@ -259,7 +260,8 @@
 				"Think outside the box and design handouts that creatively showcase your ideas and expertise."
 			],
 			"Tags": ["Creativity", "Design", "Presentation", "Handicrafts"],
-			"Club":"Fashion Club"
+			"Club":"Fashion Club",
+			"filter":"Traditional"
 		},
 		{
 			"name": "Symphonies of the Soul",

@@ -21,7 +21,7 @@ const Events = () => {
 	const [searchTerm, setSearchTerm]=useState("");
 	const filteredEvents = eventsData.filter((event) => {
 		const matchesSearch = event.name.toLowerCase().includes(searchTerm.toLowerCase());
-		const matchesFilter = filter == "All" || event.category == filter;
+		const matchesFilter = filter == "All" || event.filter == filter;
 		return matchesSearch && matchesFilter;
 	  });
 	
@@ -40,18 +40,30 @@ const Events = () => {
                     	value={searchTerm}
                    	 	onChange={(e) => setSearchTerm(e.target.value)}
               	  	/>
-					<div className="filter">
-						<div>Filter:</div>
-						<div className="filterlist glass">
-								<span onClick={() => setFilter("All")}>All</span>
-								<span onClick={() => setFilter("Expression")}>Expression</span>
-								<span onClick={() => setFilter("Puzzles")}>Puzzles</span>
-								<span onClick={() => setFilter("Litreary Arts")}>Litrary Arts</span>
-								<span onClick={() => setFilter("Discussions")}>Discussions</span>
-								<span onClick={() => setFilter("Quizzes")}>Quizzes</span>
-								<span onClick={() => setFilter("Traditional")}>Traditional</span>
-						</div>
-					</div>
+				<div className="filter">
+                	<div>Filter:</div>
+                	<div className="filterlist glass">
+                    	{[
+                        	"All",
+                        	"Expression",
+                        	"Puzzles",
+                        	"Literary Arts",
+                        	"Discussions",
+                        	"Quizzes",
+                        	"Traditional",
+                    	].map((category) => (
+                        	<span
+                            	key={category}
+                            	onClick={() => 
+									setFilter(category)
+								
+									}
+                        	>
+                            	{category}
+                       		</span>
+                    	))}
+                	</div>
+            </div>
 				</div>
 				<div className="ClubEventsHolder">
 					{Object.keys(groupedEvents).map((club)=>(
