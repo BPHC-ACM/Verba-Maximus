@@ -46,7 +46,7 @@ const Events = () => {
               	  	/>
 				<div className="filter">
                 	<div>Filter:</div>
-                	<div className="filterlist glass">
+                	<div className="filterlist">
                     	{[
                         	"All",
                         	"Expression",
