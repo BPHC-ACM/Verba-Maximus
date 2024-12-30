@@ -3,6 +3,10 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import eventsData from "../events.json"
 import Events_card from '../components/Events_card';
+import EventCard from '../components/EventCard';
+import {
+	IconHandClick
+} from '@tabler/icons-react';
 
 const groupEventsbyClub = (e)=>{
 	return e.reduce((groups, event) =>{
@@ -25,7 +29,7 @@ const Events = () => {
 		return matchesSearch && matchesFilter;
 	  });
 	
-	  const groupedEvents = groupEventsbyClub(filteredEvents);
+	const groupedEvents = groupEventsbyClub(filteredEvents);
 	return (
 		<div className='EVENTS'>
 			<Header />
@@ -63,17 +67,22 @@ const Events = () => {
                        		</span>
                     	))}
                 	</div>
-            </div>
-				</div>
+           		</div>	
+			</div>
 				<div className="ClubEventsHolder">
+					<div id="knowmore">
+						<p id="knowmoretext">For additional information, tap on the event    
+						    <IconHandClick />
+						 .</p>
+						 </div>
 					{Object.keys(groupedEvents).map((club)=>(
-						<div key={club}>
-							<h2>{club}</h2>
-							<div>
+						<div key={club} className={`club-section ${
+        				["elas", "quiz club", "fashion club"].includes(club.toLowerCase()) ? "bgbrown" : "bggreen"
+    					}`}>
+							<h2 className="clubname">{club}</h2>
+							<div className="eventsholder">
 								{groupedEvents[club].map((event)=>(
-									<div>
-										<h3>{event.name}</h3>
-									</div>
+									<Events_card name={event.name} shtdesc={event['Short Description']} details={event.Details} />
 								))}
 							</div>
 						</div>

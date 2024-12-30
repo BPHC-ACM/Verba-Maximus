@@ -84,18 +84,49 @@ option{
 .bggreen{
 	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
 	background-color:$darkgreen;
+	padding-bottom: 10px;
+
 }
 .bgbrown{
 	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
 	background-color:$darkbrown;
+	padding-bottom: 10px;
+}
+#knowmore{
+	color:$light;
+	text-align: center;
+	font-size:1.2rem;
+	letter-spacing:0.2rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:5px;
+	margin:10px;
+}
+.eventsholder{
+	display:flex;
+	flex-wrap:wrap;
+	gap:30px;
+	justify-content:center;
+	align-items:center;
+	margin:30px;
+}
+.clubname{
+	text-align: center;
+	font-family: $header-font;
+	font-size: 5.5rem;
+	letter-spacing: 1rem;
+	color: $light;
+	padding:  0rem 3rem 1rem 3rem;
+	padding-top:3rem;
+}
+#knowmoretext{
+	display:inline-flex;
+	align-items:center;
 }
 @media only screen and (max-width: 768px){
 	.head{
 		font-size: 4rem;
-		padding: 4rem 0 2rem 0;
-	}
-	#mainheadingev{
-		font-size: 5rem;
 		padding: 4rem 0 2rem 0;
 	}
 	.filter{
@@ -106,9 +137,25 @@ option{
 		font-size:1rem;
 	}
 	.filterlist{
-		font-size:0.5rem;
+		font-size:0.8rem;
+	}
+	.clubname{
+		font-size:4rem;
+	}
+	#knowmore{
+		font-size:0.9rem;
 	}
 }
 .ClubEventsHolder{
 	min-height: 30vh;
+}
+@media only screen and (max-width:1000px){
+	.filterlist{
+		font-size:0.9rem;
+	}
+}
+@media only screen and (max-width:510px){
+	#knowmore{
+		font-size:0.5rem;
+	}
 }
