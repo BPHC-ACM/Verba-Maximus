@@ -82,7 +82,7 @@ const Events = () => {
 							<h2 className="clubname">{club}</h2>
 							<div className="eventsholder">
 								{groupedEvents[club].map((event)=>(
-									<Events_card name={event.name} shtdesc={event['Short Description']} details={event.Details} />
+									<Events_card name={event.name} shtdesc={event['Short Description']} details={event.Details} bglink={event.bglink} rules={event.rules}/>
 								))}
 							</div>
 						</div>

@@ -17,7 +17,13 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Puzzles"
+			"filter":"Puzzles",
+			"bglink":"/assets/events/sherlocked.jpeg",
+			"rules":[
+				"You can participate individually or in teams of up to 3 members.",
+				"Suspects will be introduced in three separate groups during the event, each group bringing new details and evidence. ",
+				"Your task is to interrogate the suspects, analyse the evidence and piece together the entire plot, including the motives, timeline and the main culprit."
+			]
 		},
 		{
 			"name": "Lexicon League",
@@ -29,7 +35,9 @@
 			],
 			"Tags": ["Linguistics", "Word Games", "Competition", "Important"],
 			"Club":"Elas",
-			"filter":"Literary Arts"
+			"filter":"Literary Arts",
+			"bglink":"/assets/events/basic.jpeg",
+			"rules":[]
 		},
 		{
 			"name": "Just a Minute",
@@ -47,7 +55,10 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Literary Arts"
+			"filter":"Literary Arts",
+			"bglink":"/assets/events/basic.jpeg",
+			"rules":["avoid plagiarism, time-wasting tactics like late starts, and even gestures or personal pronouns.", 
+			"Fluency in proper English is non-negotiable, and the other contestants are ever-watchful, ready to pounce on mistakes. "]
 		},
 		{
 			"name": "Shipwrecked",
@@ -66,7 +77,11 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Expression"
+			"filter":"Expression",
+			"bglink":"/assets/events/shipwrecked.jpeg",
+			"rules":["The event has two rounds - Prelims and Finals.",
+					"4-6 participants will be grouped together for one topic.",
+					"Every member has to choose one item for the specified topic and defend why the item they chose deserves the jacket the most. "]
 		},
 		{
 			"name": "Devil's Advocate",
@@ -84,7 +99,14 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Discussions"
+			"filter":"Discussions",
+			"bglink":"/assets/events/da.jpeg",
+			"rules":["Participant Selection: This is an individual event open to all daring debaters. ",
+					" Motion Assignment: Each participant will be given a morally questionable motion to defend. ",
+					"Preparation Time: Participants will have 2 minutes to prepare their arguments.  ",
+					"Debate Format: Each participant gets 1 minute to present their case. ",
+					"Judging Criteria: Participants will be judged on creativity, persuasiveness, confidence, and their ability to present a compelling argument within the time limit. ",
+					"Winning: The participant who best embraces the role of the devil's advocate and convinces the judges wins the title. "]
 		},
 		{
 			"name": "Rhyme Rodeo",
@@ -102,7 +124,9 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Literary Arts"
+			"filter":"Literary Arts",
+			"bglink":"/assets/events/basic.jpeg",
+			"rules":[]
 		},
 		{
 			"name": "Debate Casino",
@@ -120,7 +144,9 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Discussions"
+			"filter":"Discussions",
+			"bglink":"/assets/events/debatecasino.jpeg",
+			"rules":[]
 		},
 		{
 			"name": "Yin-Yang",
@@ -137,7 +163,16 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Literary Arts"
+			"filter":"Literary Arts",
+			"bglink":"/assets/events/yinyang.jpeg",
+			"rules":["Teams must consist of 2 members.",
+					"Each team will create two contrasting yet interconnected pieces of writing that together tell a complete story or convey a unified theme.",
+					"Themes will be revealed at the start of the event.",
+					"You’re free to choose your format—be it poetry, prose, dialogues, or any other form of creative expression.",
+					"Both pieces will be judged as one entry.",
+					"Strictly no plagiarism or use of AI.",
+					"The decisions of the organising committee will be deemed as final in all matters.",
+					"All further details will be revealed during the event."]
 		},
 		{
 			"name": "Antakshari",
@@ -148,7 +183,11 @@
 			],
 			"Tags": ["Bollywood", "Music", "Competition", "Performance"],
 			"Club": "Hindi Tarang",
-			"filter":"Traditional"
+			"filter":"Traditional",
+			"bglink":"/assets/events/basic.jpeg",	
+			"rules":["Round 1: Bollywood Song Guessing",
+					"Round 2: Dialogue Delivery Drama",
+					"Round 3: The Song and Dance Challenge"]
 		},
 		{
 			"name": "Escape Room",
@@ -170,7 +209,9 @@
 				"Escape Room"
 			],
 			"Club": "Hindi Tarang",
-			"filter":"Puzzles"
+			"filter":"Puzzles",
+			"bglink":"/assets/events/helm.jpeg",
+			"rules":[]
 		},
 		{
 			"name": "Geeta Spardha",
@@ -181,7 +222,13 @@
 				"Participants have to recite a minimum of 8 Slokas ."
 			],
 			"Tags": ["Spiritual", "Sanskrit", "Bhagavad Gita", "Recitation"],
-			"Club":"Safl"
+			"Club":"Safl",
+			"bglink":"/assets/events/helm.jpeg",
+			"rules":["The participants will be judged based on the following aspects:",
+					"Memorization -20 points",
+					"Pronunciation -20 points ",
+					"Timing and rhythm -10 points"			
+		]
 		},
 		{
 			"name": "Decipher the Script",
@@ -194,7 +241,15 @@
 			],
 			"Tags": ["Linguistics", "Puzzles", "Decoding", "Problem Solving"],
 			"Club": "Safl",
-			"filter":"Traditional"
+			"filter":"Traditional",
+			"bglink":"/assets/events/helm.jpeg",
+			"rules":["Teams can have a maximum of 4 members.",
+					"Teams must solve each question (e.g., Q1) to progress to the next (e.g., Q2). Skipping questions is not allowed.",
+					"Each question starts with a base score of 100 points.",
+					"For every team that solves the question, the score decreases dynamically at a predetermined rate.",
+					"Use of mobile phones, internet, or external tools is strictly prohibited. This is a test of your raw skills and teamwork.",
+					"Collaboration within your team is encouraged, but no inter-team discussions or assistance is allowed.",
+					"Any disputes or clarifications will be resolved by the organizing committee, and their decision will be binding."]
 		},
 		{
 			"name": "Bamboozled",
@@ -215,7 +270,12 @@
 				"Problem Solving"
 			],
 			"Club":"Safl",
-			"filter":"Puzzles"
+			"filter":"Puzzles",
+			"bglink":"/assets/events/bamboozled.webp",
+			"rules":["Teams: Each team consists of 3 players.",
+					"Rounds: The event consists of 4 rounds, each featuring a different game.",
+					"Eliminations: Teams will face elimination after Rounds 2 and 3, based on their performance.",
+					"Final Showdown: The remaining teams will face off in a high-stakes finale to determine the winner."]
 		},
 		{
 			"name": "HELM Quiz",
@@ -228,7 +288,14 @@
 			],
 			"Tags": ["Quiz", "History", "Etymology", "Literature", "Mythology"],
 			"Club":"Quiz Club",
-			"filter":"Quizzes"
+			"filter":"Quizzes",
+			"bglink":"/assets/events/helm.jpeg",
+			"rules":["This quiz will have two rounds",
+					"The first round will be a preliminary round of 20 questions.",
+					"Top 6 teams from the first round will qualify for the finals.",
+					" The final round will be a bounce and pounce format with some additional rounds.",
+					"Top 3 teams in the finals will be the winners"
+				]
 		},
 		{
 			"name": "Prose Pose Parade",
@@ -239,7 +306,10 @@
 			],
 			"Tags": ["Fashion", "Impersonation", "Performance", "Creativity"],
 			"Club":"Fashion Club",
-			"filter":"Expression"
+			"filter":"Expression",
+			"bglink":"/assets/events/basic.jpeg",
+			"rules":["The speech will be for 3 minutes and you will be judged based on how well you have impersonated the character you have chosen both in terms of fashion as well as elocution"]
+
 		},
 		{
 			"name": "Bullseye",
@@ -250,7 +320,11 @@
 			],
 			"Tags": ["Quiz", "Art", "Media", "Mythology", "Literature"],
 			"Club":"Journal Club",
-			"filter":"Discussions"
+			"filter":"Discussions",
+			"bglink":"/assets/events/bullseye.jpeg",
+			"rules":["Pen and paper quiz",
+					"Teams of upto 3-4 (mergers and splits could be there)",
+					"Round based, teams eliminated every couple of rounds"]
 		},
 		{
 			"name": "Handout Handicrafts",
@@ -261,7 +335,9 @@
 			],
 			"Tags": ["Creativity", "Design", "Presentation", "Handicrafts"],
 			"Club":"Fashion Club",
-			"filter":"Traditional"
+			"filter":"Traditional",
+			"bglink":"/assets/events/basic.jpeg",
+			"rules":["Have to stick to the format of course title - IC - Scope and Objective - Books - Course Plan - Evaluation scheme - Makeup requirements (example templates will be provided)"]
 		},
 		{
 			"name": "Symphonies of the Soul",
@@ -273,7 +349,9 @@
 			],
 			"Tags": ["Music", "Poetry", "Creativity", "Collaboration"],
 			"Club":"Music Club",
-			"filter":"Expression"
+			"filter":"Expression",
+			"bglink":"/assets/events/music.jpeg",
+			"rules":[]
 		},
 		{
 			"name": "A.R.G",
@@ -291,7 +369,9 @@
 				"Important"
 			],
 			"Club":"Elas",
-			"filter":"Puzzles"
+			"filter":"Puzzles",
+			"bglink":"/assets/events/arg.jpeg",
+			"rules":[]
 		}
 ]
 
