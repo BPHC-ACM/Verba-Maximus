@@ -42,7 +42,7 @@
 
 	&:hover {
 		cursor: pointer;
-		transform: scale(1.05);
+		transform: scale(1.025);
 		transition: 0.25s;
 		@media only screen and (max-width: 768px) {
 			transform: none;
