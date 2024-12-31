@@ -3,7 +3,7 @@
 .EVENTS {
 	background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
 	background-color: $darkbrown;
-
+}
 	.Searchnfilter {
 		display: flex;
 		flex-direction: column;
@@ -74,11 +74,164 @@
 		caret-color: $light;
 	}
 
-	option {
-		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
-		background-color: $darkbrown;
-		border: 10px solid $darkbrown;
-		border-radius: 75px;
+
+.Searchnfilter{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin:50px;
+	gap:30px;
+}
+.filter{
+	color:$light;
+	display:flex;
+	align-items:center;
+	gap:30px;
+	font-size:1.5rem;
+}
+.filterlist {
+    border-radius: 75px;
+    display: flex;
+    font-size: 1.1rem;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    span {
+        padding: 10px;
+        border-radius: 75px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $light;
+            color: black;
+            transition: 0.35s;
+        }
+
+        &.active {
+            background-color: $light;
+            color: black;
+            font-weight: 500;
+        }
+    }
+}
+
+.dropdown {
+    width: 100%; 
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+	color:$light;
+	text-align:center;
+	background-color:$darkbrown;
+    appearance: none;
+}
+
+@media (min-width: 769px) {
+    .dropdown {
+        display: none; // Hide dropdown on larger screens
+    }
+}
+
+@media (max-width: 768px) {
+    .filterlist {
+        display: none; // Hide filterlist on mobile screens
+    }
+}
+
+.searchinput{
+	height:50px;
+	width:60vw;
+	border-radius:75px;
+	padding-left:20px;
+	font-size: 1.2rem;
+	font-weight: 550;
+	color: $light;
+	letter-spacing:2px;
+	caret-color:$light;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: border-color 0.3s;
+}
+
+.glass {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	// border-radius: 0.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+}
+.searchinput:focus{
+	border: 1px solid black;
+	caret-color:$light;
+}
+
+option{
+	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
+	background-color:$darkbrown;
+	border:10px solid $darkbrown;
+	border-radius:75px;
+}
+.head{
+	font-family: $header-font;
+	font-size: 6rem;
+	padding: 4rem 0;
+	word-spacing: 1.5rem;
+	text-align: center;
+	color:$light;
+}
+.bggreen{
+	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
+	background-color:$darkgreen;
+	padding-bottom: 10px;
+
+}
+.bgbrown{
+	background-image:url('https://www.transparenttextures.com/patterns/cartographer.png');
+	background-color:$darkbrown;
+	padding-bottom: 10px;
+}
+#knowmore{
+	color:$light;
+	text-align: center;
+	font-size:1.2rem;
+	letter-spacing:0.075rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:5px;
+	margin:10px;
+}
+.eventsholder{
+	display:flex;
+	flex-wrap:wrap;
+	gap:30px;
+	justify-content:center;
+	align-items:center;
+	margin:30px;
+}
+.clubname{
+	text-align: center;
+	font-family: $header-font;
+	font-size: 5.5rem;
+	letter-spacing: 1rem;
+	color: $light;
+	padding:  0rem 3rem 1rem 3rem;
+	padding-top:3rem;
+}
+#knowmoretext{
+	display:inline-flex;
+	align-items:center;
+}
+@media only screen and (max-width: 768px){
+	#mainheadingev{
+		font-size:5rem;
 	}
 	.head {
 		font-family: $header-font;
@@ -164,5 +317,25 @@
 		.filterlist {
 			font-size: 0.5rem;
 		}
+	}
+	.handclick{
+		height: 20px;
+	}
+}
+
+.ClubEventsHolder{
+	min-height: 30vh;
+}
+@media only screen and (max-width:1000px){
+	.filterlist{
+		font-size:0.5rem;
+	}
+}
+@media only screen and (max-width:510px){
+	#knowmore{
+		font-size:0.5rem;
+	}
+	.handclick{
+		height: 15px;
 	}
 }
