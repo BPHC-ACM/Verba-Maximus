@@ -45,8 +45,7 @@ const Events = () => {
                    	 	onChange={(e) => setSearchTerm(e.target.value)}
               	  	/>
 				<div className="filter">
-                	<div>Filter:</div>
-                	<div className="filterlist">
+                	<div className="filterlist glass">
                     	{[
                         	"All",
                         	"Expression",
@@ -60,8 +59,7 @@ const Events = () => {
                             	key={category}
                             	onClick={() => 
 									setFilter(category)
-								
-									}
+								}  className={filter === category ? "active" : ""}
                         	>
                             	{category}
                        		</span>
