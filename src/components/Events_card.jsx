@@ -57,14 +57,13 @@ const Events_card = (props) => {
                 width: '8px',
               },
               '&::-webkit-scrollbar-thumb': {
-                backgroundColor: 'rgb(64, 32, 4)', 
+                backgroundColor: 'rgb(139, 117, 97)', 
                 borderRadius: '4px', 
               },
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("${props.bglink}")`, 
-              backgroundSize: 'cover', 
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center', 
-              borderRadius: '10px'
+              bgcolor: 'background.paper',
+	            boxShadow: 24,
+	            p: 4,
+	            borderRadius: 2,
           }} className='modal'>
             <Typography variant='h2'>{props.name}</Typography>
             <Box sx={{ mt: 2 }}>
@@ -76,7 +75,8 @@ const Events_card = (props) => {
             </Box>
             {props.rules && props.rules.length>0 && (
               <>
-                <Typography variant='h3'>Rules and Instructions</Typography>
+                <Typography variant='h3' style={{ textAlign: 'center', fontSize: '30px', letterSpacing: '3px', fontWeight:100}} 
+                >Rules and Instructions</Typography>
                 <Box sx={{ mt: 2 }}>
                 {props.rules.map((paragraph, index) => (
                 <Typography key={index} variant='body2' paragraph>
