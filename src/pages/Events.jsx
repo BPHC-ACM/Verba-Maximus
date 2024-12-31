@@ -73,8 +73,8 @@ const Events = () => {
 									value={filter}
 									onChange={(e) => setFilter(e.target.value)}
 								>
-									{categories.map((category) => (
-										<option key={category} value={category}>
+									{categories.map((category, index) => (
+										<option key={index} value={category}>
 											{category}
 										</option>
 									))}
@@ -119,8 +119,9 @@ const Events = () => {
 						>
 							<h2 className='clubname'>{club}</h2>
 							<div className='eventsholder'>
-								{groupedEvents[club].map((event) => (
+								{groupedEvents[club].map((event, index) => (
 									<Events_card
+										key={index}
 										name={event.name}
 										shtdesc={event['Short Description']}
 										details={event.Details}
