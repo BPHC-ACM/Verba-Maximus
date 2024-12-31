@@ -40,15 +40,23 @@
 	color:black;
 	transition:0.35s;
 }
+.filterlist span.active {
+	background-color: $light; 
+	color: black;
+	font-weight: 500; 
+  }
 .searchinput{
 	height:50px;
 	width:60vw;
 	border-radius:75px;
 	padding-left:20px;
-	font-size:1.5rem;
+	font-size: 1.2rem;
+	font-weight: 550;
+	color: $light;
 	letter-spacing:2px;
-	caret-color:light;
-	color:$light;
+	caret-color:$light;
+	text-decoration: none;
+	white-space: nowrap;
 	transition: border-color 0.3s;
 }
 
@@ -98,7 +106,7 @@ option{
 	color:$light;
 	text-align: center;
 	font-size:1.2rem;
-	letter-spacing:0.2rem;
+	letter-spacing:0.075rem;
 	display:flex;
 	align-items:center;
 	justify-content:center;

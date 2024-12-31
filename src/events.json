@@ -36,7 +36,7 @@
 			"Tags": ["Linguistics", "Word Games", "Competition", "Important"],
 			"Club":"Elas",
 			"filter":"Literary Arts",
-			"bglink":"/assets/events/basic.jpeg",
+			"bglink":"/assets/events/basic_2.jpg",
 			"rules":[]
 		},
 		{
@@ -56,7 +56,7 @@
 			],
 			"Club":"Elas",
 			"filter":"Literary Arts",
-			"bglink":"/assets/events/basic.jpeg",
+			"bglink":"/assets/events/basic_2.jpg",
 			"rules":["avoid plagiarism, time-wasting tactics like late starts, and even gestures or personal pronouns.", 
 			"Fluency in proper English is non-negotiable, and the other contestants are ever-watchful, ready to pounce on mistakes. "]
 		},
@@ -100,7 +100,7 @@
 			],
 			"Club":"Elas",
 			"filter":"Discussions",
-			"bglink":"/assets/events/da.jpeg",
+			"bglink":"/assets/events/da.jpg",
 			"rules":["Participant Selection: This is an individual event open to all daring debaters. ",
 					" Motion Assignment: Each participant will be given a morally questionable motion to defend. ",
 					"Preparation Time: Participants will have 2 minutes to prepare their arguments.  ",
@@ -125,7 +125,7 @@
 			],
 			"Club":"Elas",
 			"filter":"Literary Arts",
-			"bglink":"/assets/events/basic.jpeg",
+			"bglink":"/assets/events/basic_2.jpg",
 			"rules":[]
 		},
 		{
@@ -184,7 +184,7 @@
 			"Tags": ["Bollywood", "Music", "Competition", "Performance"],
 			"Club": "Hindi Tarang",
 			"filter":"Traditional",
-			"bglink":"/assets/events/basic.jpeg",	
+			"bglink":"/assets/events/basic_2.jpg",	
 			"rules":["Round 1: Bollywood Song Guessing",
 					"Round 2: Dialogue Delivery Drama",
 					"Round 3: The Song and Dance Challenge"]
@@ -307,7 +307,7 @@
 			"Tags": ["Fashion", "Impersonation", "Performance", "Creativity"],
 			"Club":"Fashion Club",
 			"filter":"Expression",
-			"bglink":"/assets/events/basic.jpeg",
+			"bglink":"/assets/events/basic_2.jpg",
 			"rules":["The speech will be for 3 minutes and you will be judged based on how well you have impersonated the character you have chosen both in terms of fashion as well as elocution"]
 
 		},
@@ -336,7 +336,7 @@
 			"Tags": ["Creativity", "Design", "Presentation", "Handicrafts"],
 			"Club":"Fashion Club",
 			"filter":"Traditional",
-			"bglink":"/assets/events/basic.jpeg",
+			"bglink":"/assets/events/basic_2.jpg",
 			"rules":["Have to stick to the format of course title - IC - Scope and Objective - Books - Course Plan - Evaluation scheme - Makeup requirements (example templates will be provided)"]
 		},
 		{
@@ -370,7 +370,7 @@
 			],
 			"Club":"Elas",
 			"filter":"Puzzles",
-			"bglink":"/assets/events/arg.jpeg",
+			"bglink":"/assets/events/basic_2.jpg",
 			"rules":[]
 		}
 ]
