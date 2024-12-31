@@ -21,13 +21,6 @@
 }
 
 .heading {
-	// background: hsla(111, 15%, 24%, 1);
-	// background: linear-gradient(
-	// 	180deg,
-	// 	rgb(171, 101, 25) 0%,
-	// 	rgb(118, 41, 6) 100%
-	// );
-	background-image:url('public/assets/greenbg2.jpg');
 	// background-size:cover;
 	// background-position:center;
 	h1 {
@@ -38,4 +31,30 @@
 		color: $light;
 		padding: 8rem 3rem 1rem 3rem;
 	}
+}
+
+.heading {
+	background-image: url('public/assets/hero.png');
+	background-size: cover; /* Ensures the image scales properly */
+	background-position: top;
+	position: relative; /* Anchor for pseudo-element */
+	width: 100%;
+	overflow: hidden; /* Prevent content spill */
+}
+
+.heading::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.65); /* Dark overlay */
+	z-index: 0; /* Behind the content, but above the background */
+}
+
+/* Ensure all direct content inside .heading is above the overlay */
+.heading > * {
+	position: relative;
+	z-index: 1;
 }
