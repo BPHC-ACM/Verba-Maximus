@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Access = () => {
 	useEffect(() => {
@@ -13,6 +14,7 @@ const Access = () => {
 				<h1>Fest Access</h1>
 			</div>
 			<div className='coming-soon'>Coming Soon</div> {/* Temporary */}
+			<Footer />
 		</div>
 	);
 };
