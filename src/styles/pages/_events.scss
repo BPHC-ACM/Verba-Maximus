@@ -115,23 +115,6 @@
 		background-color: $darkbrown;
 	}
 
-	#knowmore {
-		color: $light;
-		text-align: center;
-		font-size: 1.2rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 5px;
-		margin: 10px;
-
-		#knowmoretext {
-			display: inline-flex;
-			align-items: center;
-			gap: 0.5rem;
-		}
-	}
-
 	.eventsholder {
 		display: flex;
 		flex-wrap: wrap;
@@ -156,9 +139,10 @@
 	.custom-dropdown {
 		position: relative;
 		font-size: 1.25rem;
-		width: 10rem;
+		width: 12rem;
 		text-align: center;
 		.dropdown-list {
+			width: 8.75rem;
 			position: absolute;
 			top: calc(100% + 1rem);
 			z-index: 5;
@@ -177,6 +161,9 @@
 		.dropdown-header {
 			padding: 0.5rem 0.75rem;
 			border-radius: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
 		}
 	}
 
@@ -201,10 +188,6 @@
 
 		.clubname {
 			font-size: 4rem;
-		}
-
-		#knowmore {
-			font-size: 0.9rem;
 		}
 
 		.Searchnfilter {

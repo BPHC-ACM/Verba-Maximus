@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import eventsData from '../events.json';
 import Events_card from '../components/Events_card';
 import { ClickAwayListener } from '@mui/material';
-import { IconClick } from '@tabler/icons-react';
+import { IconFilter } from '@tabler/icons-react';
 
 const groupEventsbyClub = (e) => {
 	return e.reduce((groups, event) => {
@@ -25,7 +25,7 @@ const CustomDropdown = ({ categories, filter, setFilter }) => {
 
 	const handleCategorySelect = (category) => {
 		setFilter(category);
-		setIsOpen(false); // Close dropdown after selection
+		setIsOpen(false);
 	};
 
 	return (
@@ -34,7 +34,7 @@ const CustomDropdown = ({ categories, filter, setFilter }) => {
 				className='dropdown-header glass'
 				onClick={handleDropdownToggle}
 			>
-				{filter}
+				<IconFilter size={24} /> {filter}
 			</div>
 			{isOpen && (
 				<ClickAwayListener onClickAway={() => setIsOpen(false)}>
@@ -62,11 +62,11 @@ const Events = () => {
 	}, []);
 	useEffect(() => {
 		const handleResize = () => {
-			setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+			setIsMobile(window.innerWidth <= 768);
 		};
-		handleResize(); // Initial check
-		window.addEventListener('resize', handleResize); // Listen for resize
-		return () => window.removeEventListener('resize', handleResize); // Cleanup
+		handleResize();
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 	const [filter, setFilter] = useState('All Events');
 	const [searchTerm, setSearchTerm] = useState('');
@@ -133,12 +133,6 @@ const Events = () => {
 					</div>
 				</div>
 				<div className='ClubEventsHolder'>
-					<div id='knowmore'>
-						<p id='knowmoretext'>
-							For additional information, tap on the event
-							<IconClick className='handclick' size={20} />
-						</p>
-					</div>
 					{Object.keys(groupedEvents).map((club) => (
 						<div
 							key={club}
