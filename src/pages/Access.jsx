@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Access = () => {
 	useEffect(() => {
-		document.title = 'Verba Maximus - Access';
+		document.title = 'Verba Maximus - Fest Access';
 	}, []);
 
 	return (
@@ -12,6 +12,7 @@ const Access = () => {
 			<div className='heading'>
 				<h1>Fest Access</h1>
 			</div>
+			<div className='coming-soon'>Coming Soon</div> {/* Temporary */}
 		</div>
 	);
 };
