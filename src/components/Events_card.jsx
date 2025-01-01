@@ -81,12 +81,15 @@ const Events_card = (props) => {
 								variant='h3'
 								style={{
 									textAlign: 'center',
-									fontSize: '30px',
-									letterSpacing: '3px',
-									fontWeight: 100,
+									fontSize: '1.5rem',
+									letterSpacing: '8px',
+									textTransform: 'uppercase',
+									fontWeight: 400,
+									fontFamily: 'Poppins',
+									padding: '1rem 0',
 								}}
 							>
-								Rules and Instructions
+								Rules
 							</Typography>
 							<Box sx={{ mt: 2 }}>
 								{props.rules.map((paragraph, index) => (

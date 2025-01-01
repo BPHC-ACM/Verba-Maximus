@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import eventsData from '../events.json';
 import Events_card from '../components/Events_card';
-import EventCard from '../components/EventCard';
+import { ClickAwayListener } from '@mui/material';
 import { IconClick } from '@tabler/icons-react';
 
 const groupEventsbyClub = (e) => {
@@ -14,6 +14,45 @@ const groupEventsbyClub = (e) => {
 		groups[event.Club].push(event);
 		return groups;
 	}, {});
+};
+
+const CustomDropdown = ({ categories, filter, setFilter }) => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleDropdownToggle = () => {
+		setIsOpen((prev) => !prev);
+	};
+
+	const handleCategorySelect = (category) => {
+		setFilter(category);
+		setIsOpen(false); // Close dropdown after selection
+	};
+
+	return (
+		<div className='custom-dropdown'>
+			<div
+				className='dropdown-header glass'
+				onClick={handleDropdownToggle}
+			>
+				{filter}
+			</div>
+			{isOpen && (
+				<ClickAwayListener onClickAway={() => setIsOpen(false)}>
+					<div className='dropdown-list glass'>
+						{categories.map((category) => (
+							<span
+								key={category}
+								onClick={() => handleCategorySelect(category)}
+								className={filter === category ? 'active' : ''}
+							>
+								{category}
+							</span>
+						))}
+					</div>
+				</ClickAwayListener>
+			)}
+		</div>
+	);
 };
 
 const Events = () => {
@@ -68,17 +107,11 @@ const Events = () => {
 					<div className='filter'>
 						<div>
 							{isMobile ? (
-								<select
-									className='dropdown glass'
-									value={filter}
-									onChange={(e) => setFilter(e.target.value)}
-								>
-									{categories.map((category, index) => (
-										<option key={index} value={category}>
-											{category}
-										</option>
-									))}
-								</select>
+								<CustomDropdown
+									categories={categories}
+									filter={filter}
+									setFilter={setFilter}
+								/>
 							) : (
 								<div className='filterlist glass'>
 									{categories.map((category) => (
