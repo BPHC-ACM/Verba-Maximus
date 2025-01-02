@@ -44,8 +44,13 @@
 		"filter": "Literary Arts",
 		"bglink": "/assets/events/basic_2.jpg",
 		"rules": [
-			"avoid plagiarism, time-wasting tactics like late starts, and even gestures or personal pronouns.",
-			"Fluency in proper English is non-negotiable, and the other contestants are ever-watchful, ready to pounce on mistakes. "
+			"The competition is individual; there are no teammates.",
+			"The moderator's decision is final on all matters.",
+			"Participants must speak on a given topic for 60 seconds, earning 1 point for each second spoken.",
+			"All proper nouns must be introduced at the beginning of the speech.",
+			"Copying or repeating another player's speech will result in penalties.",
+			"Speakers must remain still while speaking and avoid gestures.",
+			"The moderator can introduce special objections during the game."
 		]
 	},
 	{
