@@ -17,7 +17,7 @@ const Home = () => {
 
 	return (
 		<div className='HOME'>
-			<img className='heroimage' src='/assets/hero.png' alt='Hero' />
+			<img className='heroimage' src='/assets/hero.webp' alt='Hero' />
 			<Header />
 			<div className='hero'>
 				<h1>Verba Maximus</h1>
