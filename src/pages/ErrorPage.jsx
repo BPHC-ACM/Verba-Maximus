@@ -19,7 +19,7 @@ const ErrorPage = () => {
 			<div className='content'>
 				<h1 style={{ fontSize: '8rem', marginBottom: '1rem' }}>404</h1>
 				<h2 style={{ fontSize: '2rem', marginBottom: '2rem' }}>
-					Looks like you got lost in the garden!
+					Looks like you got lost!
 				</h2>
 				<button onClick={goHome} className='button'>
 					Go Back Home
