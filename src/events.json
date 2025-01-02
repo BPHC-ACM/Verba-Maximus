@@ -29,23 +29,25 @@
 		"Club": "Elas",
 		"filter": "Literary Arts",
 		"bglink": "/assets/events/basic_2.jpg",
-		"rules": ["Round 1: Word Search",
-				"A classic word puzzle to kick things off! Participants will be given a word grid filled with hidden words.",
-				"Find as many words as possible within the allotted time.",
-				"Words may appear in straight lines, diagonals, or reverse order.",
-				"Each word found earns points; bonus points for finding all hidden words.",
-				"Round 2: Crosswords",
-				"Solve custom crossword puzzles designed to challenge your knowledge and reasoning skills.",
-				"Participants will have a set time to solve the give crosswords",
-				"Correct answers earn points, while incorrect or blank answers receive no points",
-				"Time taken to complete the crossword will be considered in case of a tie.",
-				"Round 3: Categories",
-				"A test of quick thinking and vocabulary. Participants will be given a category and must list as many relevant words as possible.",
-				"Round 4: Wordles",
-				"Taking the popular game Wordle to the next level, this round tests your speed and competency to deduce hidden words with limited time and guesses.",
-				"Each participant will be given a specific time to solve as many words as they can. Points will be for each word guessed .",
-				"The participant that guesses the most number of words within the stipulated time wins the round.",
-				"Bring your A-game and join us for a day of fun and fierce competition. Prizes await the top wordsmiths, and fun is guaranteed for everyone!"]
+		"rules": [
+			"Round 1: Word Search",
+			"A classic word puzzle to kick things off! Participants will be given a word grid filled with hidden words.",
+			"Find as many words as possible within the allotted time.",
+			"Words may appear in straight lines, diagonals, or reverse order.",
+			"Each word found earns points; bonus points for finding all hidden words.",
+			"Round 2: Crosswords",
+			"Solve custom crossword puzzles designed to challenge your knowledge and reasoning skills.",
+			"Participants will have a set time to solve the give crosswords",
+			"Correct answers earn points, while incorrect or blank answers receive no points",
+			"Time taken to complete the crossword will be considered in case of a tie.",
+			"Round 3: Categories",
+			"A test of quick thinking and vocabulary. Participants will be given a category and must list as many relevant words as possible.",
+			"Round 4: Wordles",
+			"Taking the popular game Wordle to the next level, this round tests your speed and competency to deduce hidden words with limited time and guesses.",
+			"Each participant will be given a specific time to solve as many words as they can. Points will be for each word guessed .",
+			"The participant that guesses the most number of words within the stipulated time wins the round.",
+			"Bring your A-game and join us for a day of fun and fierce competition. Prizes await the top wordsmiths, and fun is guaranteed for everyone!"
+		]
 	},
 	{
 		"name": "Just a Minute",
@@ -118,9 +120,11 @@
 		"Club": "Elas",
 		"filter": "Literary Arts",
 		"bglink": "/assets/events/basic_2.jpg",
-		"rules": ["The game is played in teams of 3-5 members. If you're playing individually, we'll pair you up with a team on the spot",
-				"Each participant writes one line of the poem based on the topic and follows the rhyme scheme established by the previous player. This continues until either the poem is finished, or the timer of 5 minutes runs out.",
-				"Poems will be judged on adherence to the topic, creativity, rhyme scheme, grammar and overall flow. The more cohesive and imaginative the verses, the better! Judges will also appreciate clever wordplay and how well each player builds on the previous lines."]
+		"rules": [
+			"The game is played in teams of 3-5 members. If you're playing individually, we'll pair you up with a team on the spot",
+			"Each participant writes one line of the poem based on the topic and follows the rhyme scheme established by the previous player. This continues until either the poem is finished, or the timer of 5 minutes runs out.",
+			"Poems will be judged on adherence to the topic, creativity, rhyme scheme, grammar and overall flow. The more cohesive and imaginative the verses, the better! Judges will also appreciate clever wordplay and how well each player builds on the previous lines."
+		]
 	},
 	{
 		"name": "Debate Casino",
@@ -133,14 +137,15 @@
 		"Club": "Elas",
 		"filter": "Discussions",
 		"bglink": "/assets/events/debatecasino.jpeg",
-		"rules": ["Team Formation: Each team comprises three members.",
-				"Starting Points: Each team begins with 100 points in their virtual casino.",
-				"Betting Rules: Before each 1v1 round, teams must decide how many points to bet on their representative for that round.",
-				"1v1 Debates: One member from each team will engage in a debate on a given topic. Each 1v1 lasts for 5 minutes.",
-				"Scoring: The winner of the 1v1 debate doubles their team's bet amount and adds it to the team’s total points.",
-				 "Strategy: Teams must decide their bets wisely, balancing risks and rewards for future rounds",
-				"Winning: The team with the highest points after all rounds will be crowned the Debate Casino champions."
-			]
+		"rules": [
+			"Team Formation: Each team comprises three members.",
+			"Starting Points: Each team begins with 100 points in their virtual casino.",
+			"Betting Rules: Before each 1v1 round, teams must decide how many points to bet on their representative for that round.",
+			"1v1 Debates: One member from each team will engage in a debate on a given topic. Each 1v1 lasts for 5 minutes.",
+			"Scoring: The winner of the 1v1 debate doubles their team's bet amount and adds it to the team’s total points.",
+			"Strategy: Teams must decide their bets wisely, balancing risks and rewards for future rounds",
+			"Winning: The team with the highest points after all rounds will be crowned the Debate Casino champions."
+		]
 	},
 	{
 		"name": "Yin-Yang",
@@ -165,7 +170,7 @@
 			"All further details will be revealed during the event."
 		]
 	},
-	{ 
+	{
 		"name": "Antakshari",
 		"Short Description": "Celebrate Bollywood through song guessing, dialogue delivery, and a song and dance challenge.",
 		"Details": [
@@ -321,7 +326,7 @@
 			"Ever wanted people to know why you're into your niche? This is the perfect chance to show off the stuff you love.",
 			"Think outside the box and design handouts that creatively showcase your ideas and expertise."
 		],
-		"Club": "Fashion Club",
+		"Club": "Journal Club",
 		"filter": "Traditional",
 		"bglink": "/assets/events/basic_2.jpg",
 		"rules": [
@@ -353,10 +358,11 @@
 		"Club": "Elas",
 		"filter": "Puzzles",
 		"bglink": "/assets/events/basic_2.jpg",
-		"rules": ["Players or Teams will play the game through the medium of Discord.",
-				"The game will have text inputs and a plethora of outputs in the form of text, photos, audios and more.",
-				"Team size is limited to 5 people per team",
-				"Progress can be made through multiple accounts but only the farthest one will be considered as the Team Representative account"
-			]
+		"rules": [
+			"Players or Teams will play the game through the medium of Discord.",
+			"The game will have text inputs and a plethora of outputs in the form of text, photos, audios and more.",
+			"Team size is limited to 5 people per team",
+			"Progress can be made through multiple accounts but only the farthest one will be considered as the Team Representative account"
+		]
 	}
 ]
