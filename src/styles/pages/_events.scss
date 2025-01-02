@@ -115,23 +115,6 @@
 		background-color: $darkbrown;
 	}
 
-	#knowmore {
-		color: $light;
-		text-align: center;
-		font-size: 1.2rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 5px;
-		margin: 10px;
-
-		#knowmoretext {
-			display: inline-flex;
-			align-items: center;
-			gap: 0.5rem;
-		}
-	}
-
 	.eventsholder {
 		display: flex;
 		flex-wrap: wrap;
@@ -146,18 +129,41 @@
 		font-family: $header-font;
 		font-size: 5.5rem;
 		color: $light;
-		padding: 3rem 3rem 1rem 3rem;
+		padding: 2rem 3rem 0rem 3rem;
 	}
 
 	.ClubEventsHolder {
 		min-height: 40vh;
 	}
 
-	/* ===== Media Queries ===== */
-
-	@media (min-width: 769px) {
-		.dropdown {
-			display: none;
+	.custom-dropdown {
+		position: relative;
+		font-size: 1.25rem;
+		width: 12rem;
+		text-align: center;
+		.dropdown-list {
+			width: 8.75rem;
+			position: absolute;
+			top: calc(100% + 1rem);
+			z-index: 5;
+			text-align: center;
+			list-style: none;
+			padding-inline-start: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			padding: 0.5rem 1.5rem;
+			border-radius: 2rem;
+			.active {
+				font-weight: 500;
+			}
+		}
+		.dropdown-header {
+			padding: 0.5rem 0.75rem;
+			border-radius: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
 		}
 	}
 
@@ -182,10 +188,6 @@
 
 		.clubname {
 			font-size: 4rem;
-		}
-
-		#knowmore {
-			font-size: 0.9rem;
 		}
 
 		.Searchnfilter {

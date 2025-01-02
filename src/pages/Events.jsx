@@ -3,8 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import eventsData from '../events.json';
 import Events_card from '../components/Events_card';
-import EventCard from '../components/EventCard';
-import { IconClick } from '@tabler/icons-react';
+import { ClickAwayListener } from '@mui/material';
+import { IconFilter } from '@tabler/icons-react';
 
 const groupEventsbyClub = (e) => {
 	return e.reduce((groups, event) => {
@@ -16,18 +16,55 @@ const groupEventsbyClub = (e) => {
 	}, {});
 };
 
+const CustomDropdown = ({ categories, filter, setFilter }) => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleDropdownToggle = () => {
+		setIsOpen((prev) => !prev);
+	};
+
+	const handleCategorySelect = (category) => {
+		setFilter(category);
+		setIsOpen(false);
+	};
+
+	return (
+		<div className='custom-dropdown'>
+			<div
+				className='dropdown-header glass'
+				onClick={handleDropdownToggle}
+			>
+				<IconFilter size={24} /> {filter}
+			</div>
+			{isOpen && (
+				<ClickAwayListener onClickAway={() => setIsOpen(false)}>
+					<div className='dropdown-list glass'>
+						{categories.map((category) => (
+							<span
+								key={category}
+								onClick={() => handleCategorySelect(category)}
+								className={filter === category ? 'active' : ''}
+							>
+								{category}
+							</span>
+						))}
+					</div>
+				</ClickAwayListener>
+			)}
+		</div>
+	);
+};
+
 const Events = () => {
 	const [isMobile, setIsMobile] = useState(false);
-	useEffect(() => {
-		document.title = 'Verba Maximus - Events';
-	}, []);
+
 	useEffect(() => {
 		const handleResize = () => {
-			setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+			setIsMobile(window.innerWidth <= 768);
 		};
-		handleResize(); // Initial check
-		window.addEventListener('resize', handleResize); // Listen for resize
-		return () => window.removeEventListener('resize', handleResize); // Cleanup
+		handleResize();
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 	const [filter, setFilter] = useState('All Events');
 	const [searchTerm, setSearchTerm] = useState('');
@@ -68,17 +105,11 @@ const Events = () => {
 					<div className='filter'>
 						<div>
 							{isMobile ? (
-								<select
-									className='dropdown glass'
-									value={filter}
-									onChange={(e) => setFilter(e.target.value)}
-								>
-									{categories.map((category, index) => (
-										<option key={index} value={category}>
-											{category}
-										</option>
-									))}
-								</select>
+								<CustomDropdown
+									categories={categories}
+									filter={filter}
+									setFilter={setFilter}
+								/>
 							) : (
 								<div className='filterlist glass'>
 									{categories.map((category) => (
@@ -100,12 +131,6 @@ const Events = () => {
 					</div>
 				</div>
 				<div className='ClubEventsHolder'>
-					<div id='knowmore'>
-						<p id='knowmoretext'>
-							For additional information, tap on the event
-							<IconClick className='handclick' size={20} />
-						</p>
-					</div>
 					{Object.keys(groupedEvents).map((club) => (
 						<div
 							key={club}

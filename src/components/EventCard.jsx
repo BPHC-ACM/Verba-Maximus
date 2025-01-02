@@ -43,7 +43,6 @@ function EventCard({ event }) {
 					</Typography>
 				</CardContent>
 			</Card>
-
 			<Modal open={open} onClose={handleClose}>
 				<Box sx={modalStyle} className='modal'>
 					<Typography variant='h2'>{event.Name}</Typography>
@@ -54,6 +53,14 @@ function EventCard({ event }) {
 							</Typography>
 						))}
 					</Box>
+					<Typography
+						variant='body2'
+						color='text.primary'
+						className='infotext'
+						sx={{ mt: 2, fontStyle: 'italic' }}
+					>
+						For more details, head over to the Events page.
+					</Typography>
 					<Button
 						variant='outlined'
 						color='warning'

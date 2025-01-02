@@ -31,13 +31,13 @@
 	}
 
 	.hero {
-		height: 100vh;
+		height: calc(100vh - 2rem);
+		padding-top: 2rem;
 		width: 70%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-
 		color: $light;
 		text-align: center;
 
@@ -45,7 +45,7 @@
 			font-family: $header-font;
 			font-size: 8.5rem;
 			letter-spacing: 1rem;
-			padding: 4rem 0 0 0;
+			padding: 4rem 0 1rem 0;
 			text-shadow: 0 0 1.5rem #ffffffcc;
 		}
 
@@ -53,6 +53,11 @@
 			text-transform: uppercase;
 			letter-spacing: 1rem;
 			padding: 1rem 0;
+		}
+
+		@media only screen and (max-width: 768px) {
+			height: 100vh;
+			padding-top: 0;
 		}
 	}
 

@@ -46,7 +46,6 @@ const FestAccessPage = () => {
       </div>
 	  <Footer />
     </div>
-  );
-};
+  );}
 
 export default FestAccessPage;

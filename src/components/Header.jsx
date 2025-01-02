@@ -40,7 +40,13 @@ const Header = () => {
 					</div>
 				)}
 				<div className='register-container glass'>
-					<Link to='/register'>Register</Link>
+					<Link
+						to='https://unstop.com/o/xfh3Zyv'
+						target='_blank'
+						rel='noreferrer'
+					>
+						Register
+					</Link>
 				</div>
 			</div>
 		</div>
