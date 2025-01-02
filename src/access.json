@@ -1,0 +1,25 @@
+{
+    "passes": [
+      {
+        "Name": "Events Pass",
+        "Price": "400/-",
+        "Description": "The Events Pass gives the ticket holder access to the 18 literary events planned across the two days of the fest."
+      },
+      {
+        "Name": "Events + Accommodation Pass",
+        "Price": "700/-",
+        "Description": "The Events + Accommodation Pass allows access to all events, along with overnight accommodation at the BITS Pilani, Hyderabad Campus."
+      },
+      {
+        "Name": "Events + Pro Show Pass",
+        "Price": "800/-",
+        "Description": "The Events + Pro Show Pass allows access to all events, along with access to the VM Comedy Night at the BITS Auditorium."
+      },
+      {
+        "Name": "VM '25 Mega Pass",
+        "Price": "900/-",
+        "Description": "The VM '25 Mega Pass allows the ticket holder to experience everything that VM has to offer - with access to all events, accommodation, and entry into the Comedy Night."
+      }
+    ]
+  }
+  
