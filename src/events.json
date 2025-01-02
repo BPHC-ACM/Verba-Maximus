@@ -60,11 +60,13 @@
 		"filter": "Literary Arts",
 		"bglink": "/assets/events/basic_2.jpg",
 		"rules": [
-			"Participants must speak on a topic provided by the moderator while adhering to the rules of JAM. For each second spoken the respective speaker will receive 1 point..",
-			"Other players may clap to object to the current speaker’s speech, should they find a mistake worth penalising. ",
-			"The round goes on till the cumulative time of all the players is 60 seconds. The player with the most points at the end of the round wins.",
-			"Team Structure: This event is an individual competition. Each participant competes solo, without teammates.",
-			"Moderator: There will be an event moderator who will monitor for any mistakes. There will also be a timekeeper who will keep track of the speech timings and points of all the players."
+			"The competition is individual; there are no teammates.",
+			"The moderator's decision is final on all matters.",
+			"Participants must speak on a given topic for 60 seconds, earning 1 point for each second spoken.",
+			"All proper nouns must be introduced at the beginning of the speech.",
+			"Copying or repeating another player's speech will result in penalties.",
+			"Speakers must remain still while speaking and avoid gestures.",
+			"The moderator can introduce special objections during the game."
 		]
 	},
 	{

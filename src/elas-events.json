@@ -1,86 +1,93 @@
 {
 	"events": [
 		{
-			"Name": "Sherlocked",
-			"Short Description": "Solve a complex murder mystery through teamwork, puzzles, and exploration.",
+			"Name": "SHERLOCKED",
+			"Short Description": "Never trust to general impressions, my boy, but concentrate yourself upon details.",
 			"Details": [
-				"In a world of locked rooms, the man with the key is king. Can you unlock the truth behind this thrilling dark tale?",
-				"Join us for a thrilling immersion into a world that challenges players to unravel a 5-hour narrative through teamwork, puzzles, and exploration!",
-				"With the theme Echoes of Eden, this year's ARG invites participants into a richly crafted world filled with lore and mysteries, where each clue and challenge brings them closer to uncovering hidden truths.",
-				"Players navigate through interconnected levels, solve intricate puzzles, and navigate a collaborative storytelling experience designed to engage their creativity and wit."
+				"Do you have it in you to solve a complex murder mystery with intricate plot lines and webs of lies?",
+				"Can you see past the veils of deception from enigmas with dark secrets to hide?",
+				"If in a world of locked rooms - the man with the key is king, can you unlock the truth behind this thrilling dark tale?",
+				"Take part in Sherlocked this year to awaken your inner detective and test your sleuthing skills.",
+				"Are you ready to be Sherlocked?"
 			]
 		},
 		{
-			"Name": "Lexicon League",
-			"Short Description": "Compete in challenging crosswords, word searches, and spelling bees.",
+			"Name": "A.R.G",
+			"Short Description": "Immerse the players/teams into a 5-hour adventure with teamwork, solving puzzles, and exploration.",
 			"Details": [
-				"For fans of NYT games, grammar enthusiasts, and word game lovers, this is the ultimate playground.",
-				"Dive into challenging crosswords, fast-paced word searches, and thrilling spelling bees designed to test your linguistic skills and competitive edge.",
-				"Whether you're a casual word geek or a die-hard language aficionado, this event promises fun, wit, and a celebration of all things words!"
+				"With the theme Echoes of Eden, this year's Augmented Reality Gaming invites participants into a richly crafted world filled with lore and mysteries of Angels, Demons and the all-powerful mother of creation, Eden.",
+				"You will solve clues and progress through challenges trying to figure out why you're in this all-new world and what your purpose is.",
+				"You will make choices that will either result in the dominance of Chaos or the propagation of Peace.",
+				"The game will have text inputs and a plethora of outputs in the form of text, photos, audios, and more."
 			]
 		},
 		{
-			"Name": "Just a Minute",
-			"Short Description": "Engage in fast-paced wordplay where every second and word counts.",
+			"Name": "LEXICON LEAGUE",
+			"Short Description": "Think you can outsmart your friends in a word search? Love logical challenges and solving puzzles?",
 			"Details": [
-				"Enter a realm of linguistic brilliance with JAM, where every word counts.",
-				"Rise to the challenge, where every second adds to your score.",
-				"With only a minute to speak, every pause, every mistake, and every hesitation threatens the balance, as others stand ready to seize on your every flaw.",
-				"Join us to experience a fast-paced word play with fun twists"
+				"Welcome to Lexicon League, where it's all about quick thinking, logic and fun!",
+				"Whether you're a vocabulary virtuoso, a spelling whiz, or just a seasoned NYT gameplayer, this event promises a thrilling day of word-based challenges and fun.",
+				"Featuring wordles, word searches, crosswords and more!",
+				"Bring your A-game and join us for a day of fun and fierce competition. Prizes await the top wordsmiths, and fun is guaranteed for everyone!"
 			]
 		},
 		{
-			"Name": "Shipwrecked",
-			"Short Description": "Embody unique characters and persuade others why you deserve the life jacket on a sinking ship.",
+			"Name": "JAM",
+			"Short Description": "A high-pressure test of wit and eloquence, where speakers must talk on a given topic for 60 seconds.",
 			"Details": [
-				"Embark on a unique challenge with 'Shipwrecked', where participants find themselves on a sinking ship, embodying characters as diverse as the high seas themselves.",
-				"From donuts to cunning villains these characters can be anything and everything!",
-				"It's a mixed bowl to play around satire, wit, banter, pop culture references and beyond.",
-				"In this test of persuasion and spontaneity , the coveted life jacket becomes the focal point, and individuals must articulate why they stand as the most deserving passenger."
+				"Speak without hesitation, repetition, or deviation.",
+				"It's no easy feat—every stutter, unnecessary pause, or filler word can cost you.",
+				"The other contestants are ever-watchful, ready to pounce on mistakes.",
+				"It's a thrilling game of focus and finesse, where even the smallest misstep can make or break your performance."
 			]
 		},
 		{
-			"Name": "Devil's Advocate",
-			"Short Description": "Defend morally challenging opinions and put your debating skills to the test.",
+			"Name": "SHIPWRECKED",
+			"Short Description": "Embark on a unique challenge where participants find themselves on a sinking ship.",
 			"Details": [
-				"Do you often find yourself questioning the rationale behind mainstream morality?",
-				"Do you feel you can force society to rethink their principles purely through argumentation?",
-				"Put your convincing and speaking skills to the test by defending the indefensible and advocating for the most morally reprehensible opinions across geopolitics, culture, science and art with Devil's Advocate."
+				"Participants embody characters as diverse as the high seas themselves. From donuts to cunning villains, these characters can be anything and everything!",
+				"It's a mixed bowl to play around satire, wit, banter, pop culture references, and beyond.",
+				"In this test of persuasion and spontaneity, the coveted life jacket becomes the focal point, and individuals must articulate why they stand as the most deserving passenger."
 			]
 		},
 		{
-			"Name": "Rhyme Rodeo",
-			"Short Description": "Collaborate to create a rhyming poem in a fast-paced, team-based challenge.",
+			"Name": "DEVIL'S ADVOCATE",
+			"Short Description": "Dare to defend the indefensible in this provocative debate event.",
 			"Details": [
-				"Rhyme Rodeo is a fast-paced, collaborative poetry game where teams of 3 to 5 participants take turns crafting stanzas, building on each other's verses to create a flowing, rhyming poem.",
+				"This event challenges participants to argue in favor of morally questionable motions.",
+				"Test your persuasive skills as you step into the shoes of the devil and advocate for ideas that go against conventional ethics.",
+				"It's a battle of rhetoric and creativity where only the boldest and most convincing will triumph!"
+			]
+		},
+		{
+			"Name": "RHYME RODEO",
+			"Short Description": "A fast-paced, collaborative poetry game for teams of 3 to 5 participants.",
+			"Details": [
+				"Teams take turns crafting stanzas, building on each other's verses to create a flowing, rhyming poem.",
 				"The challenge? You've got just 5 minutes to whip up the best masterpiece while keeping the rhyming scheme intact.",
 				"Do you think your team's got what it takes to gallop to glory?"
 			]
 		},
 		{
-			"Name": "Debate Casino",
-			"Short Description": "Participate in themed 3v3 debates and test your reasoning abilities.",
+			"Name": "DEBATE CASINO",
+			"Short Description": "Step into the arena of wit and strategy with this thrilling 3v3 debate event.",
 			"Details": [
-				"Debating is an art which leads us to bring out the zenith of our creative skills.",
-				"It enhances our views and makes us deliver what we want to deliver rather than what the world expects us to deliver.",
-				"Debate Casino is a 3v3 debate with theme based topics where you can push your mental faculties to the extreme and really test the depths of reason."
+				"This event combines the art of argumentation with the excitement of gambling.",
+				"Each team begins with 100 points and strategically places bets on their members for each round of 1v1 debates.",
+				"The stakes are high: the winner of each 1v1 debate doubles the bet amount for their team.",
+				"Show off your debating prowess, make calculated bets, and outwit the competition to emerge victorious!"
 			]
 		},
 		{
-			"Name": "Yin-Yang",
-			"Short Description": "Write complementary pieces that embody the concept of duality and create a harmonious whole.",
+			"Name": "YINYANG",
+			"Short Description": "Create complementary literary pieces that mirror and complete each other.",
 			"Details": [
-				"Black and white. Day and night. Fire and water. The universe has always thrived on the notion of duality and this literary event aims to focus on striking that balance.",
-				"Participate in teams of two to write complementary pieces that together make up a whole."
-			]
-		},
-		{
-			"Name": "A.R.G",
-			"Short Description": "Immerse yourself in a narrative-driven augmented reality puzzle adventure.",
-			"Details": [
-				"Join us for a thrilling immersion into a world that challenges players to unravel a 5-hour narrative through teamwork, puzzles, and exploration!",
-				"With the theme 'Echoes of Eden,' this year's ARG invites participants into a richly crafted world filled with lore and mysteries.",
-				"Each clue and challenge brings them closer to uncovering hidden truths. Players navigate through interconnected levels, solve intricate puzzles, and explore a collaborative storytelling experience designed to engage their creativity and wit."
+				"Without darkness, the stars would have no stage to shine upon.",
+				"Two forces, opposite yet intertwined, forever shaping the rhythm of existence.",
+				"Light and shadow. Chaos and order. Fire and water.",
+				"Every story has two sides—can you master the art of crafting both?",
+				"In teams of two, you'll create complementary literary pieces that mirror and complete each other, like puzzle pieces in the grand design of the cosmos.",
+				"Can you and your partner find balance in the chaos?"
 			]
 		}
 	]
