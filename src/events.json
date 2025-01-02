@@ -3,10 +3,11 @@
 		"name": "Sherlocked",
 		"Short Description": "Solve a complex murder mystery through teamwork, puzzles, and exploration.",
 		"Details": [
-			"In a world of locked rooms, the man with the key is king. Can you unlock the truth behind this thrilling dark tale?",
-			"Join us for a thrilling immersion into a world that challenges players to unravel a 5-hour narrative through teamwork, puzzles, and exploration!",
-			"With the theme Echoes of Eden, this year's ARG invites participants into a richly crafted world filled with lore and mysteries, where each clue and challenge brings them closer to uncovering hidden truths.",
-			"Players navigate through interconnected levels, solve intricate puzzles, and navigate a collaborative storytelling experience designed to engage their creativity and wit."
+			"\"Never trust to general impressions, my boy, but concentrate yourself upon details\"",
+			"Do you have it in you to solve a complex murder mystery with intricate plot lines andwebs of lies? Can you see past the veils of deception from enigmas with dark secretsto hide?",
+			"If in a world of locked rooms - the man with the key is king, can you unlock the truthbehind this thrilling dark tale?",
+			"Take part in sherlocked this year to awaken your inner detective and test yoursleuthing skills.",
+			"Are you ready to be Sherlocked?"
 		],
 
 		"Club": "Elas",
@@ -22,30 +23,48 @@
 		"name": "Lexicon League",
 		"Short Description": "Compete in challenging crosswords, word searches, and spelling bees.",
 		"Details": [
-			"For fans of NYT games, grammar enthusiasts, and word game lovers, this is the ultimate playground.",
-			"Dive into challenging crosswords, fast-paced word searches, and thrilling spelling bees designed to test your linguistic skills and competitive edge.",
-			"Whether you're a casual word geek or a die-hard language aficionado, this event promises fun, wit, and a celebration of all things words!"
+			"Think you can outsmart your friends in a word search? Love logical challenges and solving puzzles? Welcome to Lexicon League – where it’s all about quick thinking, logic and fun!",
+			"Whether you’re a vocabulary virtuoso, a spelling whiz, or just a seasoned NYT gameplayer, this event promises a thrilling day of word-based challenges and fun. Featuring wordles, word searches, crosswords and more!"
 		],
 		"Club": "Elas",
 		"filter": "Literary Arts",
 		"bglink": "/assets/events/basic_2.jpg",
-		"rules": []
+		"rules": ["Round 1: Word Search",
+				"A classic word puzzle to kick things off! Participants will be given a word grid filled with hidden words.",
+				"Find as many words as possible within the allotted time.",
+				"Words may appear in straight lines, diagonals, or reverse order.",
+				"Each word found earns points; bonus points for finding all hidden words.",
+				"Round 2: Crosswords",
+				"Solve custom crossword puzzles designed to challenge your knowledge and reasoning skills.",
+				"Participants will have a set time to solve the give crosswords",
+				"Correct answers earn points, while incorrect or blank answers receive no points",
+				"Time taken to complete the crossword will be considered in case of a tie.",
+				"Round 3: Categories",
+				"A test of quick thinking and vocabulary. Participants will be given a category and must list as many relevant words as possible.",
+				"Round 4: Wordles",
+				"Taking the popular game Wordle to the next level, this round tests your speed and competency to deduce hidden words with limited time and guesses.",
+				"Each participant will be given a specific time to solve as many words as they can. Points will be for each word guessed .",
+				"The participant that guesses the most number of words within the stipulated time wins the round.",
+				"Bring your A-game and join us for a day of fun and fierce competition. Prizes await the top wordsmiths, and fun is guaranteed for everyone!"]
 	},
 	{
 		"name": "Just a Minute",
 		"Short Description": "Engage in fast-paced wordplay where every second and word counts.",
 		"Details": [
-			"Enter a realm of linguistic brilliance with JAM, where every word counts.",
-			"Rise to the challenge, where every second adds to your score.",
-			"With only a minute to speak, every pause, every mistake, and every hesitation threatens the balance, as others stand ready to seize on your every flaw.",
-			"Join us to experience a fast-paced word play with fun twists"
+			"JAM is a high-pressure test of wit and eloquence, where speakers must talk on a given topic for 60 seconds without hesitation, repetition, or deviation.",
+			"It’s no easy feat—every stutter, unnecessary pause, or filler word can cost you.",
+			"The other contestants are ever-watchful, ready to pounce on mistakes.",
+			"It’s a thrilling game of focus and finesse, where even the smallest misstep can make or break your performance."
 		],
 		"Club": "Elas",
 		"filter": "Literary Arts",
 		"bglink": "/assets/events/basic_2.jpg",
 		"rules": [
-			"avoid plagiarism, time-wasting tactics like late starts, and even gestures or personal pronouns.",
-			"Fluency in proper English is non-negotiable, and the other contestants are ever-watchful, ready to pounce on mistakes. "
+			"Participants must speak on a topic provided by the moderator while adhering to the rules of JAM. For each second spoken the respective speaker will receive 1 point..",
+			"Other players may clap to object to the current speaker’s speech, should they find a mistake worth penalising. ",
+			"The round goes on till the cumulative time of all the players is 60 seconds. The player with the most points at the end of the round wins.",
+			"Team Structure: This event is an individual competition. Each participant competes solo, without teammates.",
+			"Moderator: There will be an event moderator who will monitor for any mistakes. There will also be a timekeeper who will keep track of the speech timings and points of all the players."
 		]
 	},
 	{
@@ -70,9 +89,9 @@
 		"name": "Devil's Advocate",
 		"Short Description": "Defend morally challenging opinions and put your debating skills to the test.",
 		"Details": [
-			"Do you often find yourself questioning the rationale behind mainstream morality?",
-			"Do you feel you can force society to rethink their principles purely through argumentation?",
-			"Put your convincing and speaking skills to the test by defending the indefensible and advocating for the most morally reprehensible opinions across geopolitics, culture, science and art with Devil's Advocate."
+			"Dare to defend the indefensible in Devil's Advocate! This provocative debate event challenges participants to argue in favor of morally questionable motions.",
+			"Test your persuasive skills as you step into the shoes of the devil and advocate for ideas that go against conventional ethics.",
+			"It's a battle of rhetoric and creativity where only the boldest and most convincing will triumph!"
 		],
 		"Club": "Elas",
 		"filter": "Discussions",
@@ -97,27 +116,38 @@
 		"Club": "Elas",
 		"filter": "Literary Arts",
 		"bglink": "/assets/events/basic_2.jpg",
-		"rules": []
+		"rules": ["The game is played in teams of 3-5 members. If you're playing individually, we'll pair you up with a team on the spot",
+				"Each participant writes one line of the poem based on the topic and follows the rhyme scheme established by the previous player. This continues until either the poem is finished, or the timer of 5 minutes runs out.",
+				"Poems will be judged on adherence to the topic, creativity, rhyme scheme, grammar and overall flow. The more cohesive and imaginative the verses, the better! Judges will also appreciate clever wordplay and how well each player builds on the previous lines."]
 	},
 	{
 		"name": "Debate Casino",
 		"Short Description": "Participate in themed 3v3 debates and test your reasoning abilities.",
 		"Details": [
-			"Debating is an art which leads us to bring out the zenith of our creative skills.",
-			"It enhances our views and makes us deliver what we want to deliver rather than what the world expects us to deliver.",
-			"Debate Casino is a 3v3 debate with theme based topics where you can push your mental faculties to the extreme and really test the depths of reason."
+			"Step into the arena of wit and strategy with Debate Casino! This thrilling 3v3 debate event combines the art of argumentation with the excitement of gambling.",
+			"Each team begins with 100 points and strategically places bets on their members for each round of 1v1 debates.",
+			"The stakes are high: the winner of each 1v1 debate doubles the bet amount for their team. Show off your debating prowess, make calculated bets, and outwit the competition to emerge victorious!"
 		],
 		"Club": "Elas",
 		"filter": "Discussions",
 		"bglink": "/assets/events/debatecasino.jpeg",
-		"rules": []
+		"rules": ["Team Formation: Each team comprises three members.",
+				"Starting Points: Each team begins with 100 points in their virtual casino.",
+				"Betting Rules: Before each 1v1 round, teams must decide how many points to bet on their representative for that round.",
+				"1v1 Debates: One member from each team will engage in a debate on a given topic. Each 1v1 lasts for 5 minutes.",
+				"Scoring: The winner of the 1v1 debate doubles their team's bet amount and adds it to the team’s total points.",
+				 "Strategy: Teams must decide their bets wisely, balancing risks and rewards for future rounds",
+				"Winning: The team with the highest points after all rounds will be crowned the Debate Casino champions."
+			]
 	},
 	{
 		"name": "Yin-Yang",
 		"Short Description": "Write complementary pieces that embody the concept of duality and create a harmonious whole.",
 		"Details": [
-			"Black and white. Day and night. Fire and water. The universe has always thrived on the notion of duality and this literary event aims to focus on striking that balance.",
-			"Participate in teams of two to write complementary pieces that together make up a whole."
+			"Without darkness, the stars would have no stage to shine upon. Two forces, opposite yet intertwined, forever shaping the rhythm of existence. Light and shadow. Chaos and order. Fire and water. Every story has two sides— can you master the art of crafting both?",
+			"Yin-Yang is your chance to explore the beauty of duality. In teams of two, you’ll create complementary literary pieces that mirror and complete each other, like puzzle pieces in the grand design of the cosmos.",
+			"One side may burn bright like the sun, the other cool and mysterious as the moon. Together, they form a narrative as balanced as the universe itself.",
+			"Are you ready to embrace the art of opposites and weave them into one harmonious tale?"
 		],
 		"Club": "Elas",
 		"filter": "Literary Arts",
@@ -133,7 +163,7 @@
 			"All further details will be revealed during the event."
 		]
 	},
-	{
+	{ 
 		"name": "Antakshari",
 		"Short Description": "Celebrate Bollywood through song guessing, dialogue delivery, and a song and dance challenge.",
 		"Details": [
@@ -223,7 +253,11 @@
 			"Teams: Each team consists of 3 players.",
 			"Rounds: The event consists of 4 rounds, each featuring a different game.",
 			"Eliminations: Teams will face elimination after Rounds 2 and 3, based on their performance.",
-			"Final Showdown: The remaining teams will face off in a high-stakes finale to determine the winner."
+			"Final Showdown: The remaining teams will face off in a high-stakes finale to determine the winner.",
+			"Team Composition: Once formed, teams cannot be changed or swapped during the event.",
+			"Fair Play: Any attempt to cheat, disrupt, or manipulate the games outside of the event's structure will result in immediate disqualification.",
+			"Coordination: Follow all instructions provided by the coordinators. Failure to comply may lead to penalties or elimination.",
+			"Respect: Maintain a respectful environment for all participants 4. and organizers."
 		]
 	},
 	{
@@ -239,6 +273,8 @@
 		"filter": "Quizzes",
 		"bglink": "/assets/events/helm.jpeg",
 		"rules": [
+			"Team Size: 1-3 members",
+			"Judging Criteria: None",
 			"This quiz will have two rounds",
 			"The first round will be a preliminary round of 20 questions.",
 			"Top 6 teams from the first round will qualify for the finals.",
@@ -307,13 +343,18 @@
 		"name": "A.R.G",
 		"Short Description": "Immerse yourself in a narrative-driven augmented reality puzzle adventure.",
 		"Details": [
-			"Join us for a thrilling immersion into a world that challenges players to unravel a 5-hour narrative through teamwork, puzzles, and exploration!",
-			"With the theme 'Echoes of Eden,' this year's ARG invites participants into a richly crafted world filled with lore and mysteries.",
-			"Each clue and challenge brings them closer to uncovering hidden truths. Players navigate through interconnected levels, solve intricate puzzles, and explore a collaborative storytelling experience designed to engage their creativity and wit."
+			"ARG will immerse the players/teams into a world that challenges them to unravel a 5-hour adventure through teamwork, solving a bunch of puzzles, and exploration of an entirely new reality!",
+			"With the theme Echoes of Eden, this year’s ARG invites participants into a richly crafted world filled with lore and mysteries of Angels, Demons and the all powerful mother of creation, Eden.",
+			"You will solve clues and progress through challenges trying to figure out why you're in this all new world and what your purpose is.",
+			"You will make choices that will either result in the dominance of Chaos or the propagation of Peace."
 		],
 		"Club": "Elas",
 		"filter": "Puzzles",
 		"bglink": "/assets/events/basic_2.jpg",
-		"rules": []
+		"rules": ["Players or Teams will play the game through the medium of Discord.",
+				"The game will have text inputs and a plethora of outputs in the form of text, photos, audios and more.",
+				"Team size is limited to 5 people per team",
+				"Progress can be made through multiple accounts but only the farthest one will be considered as the Team Representative account"
+			]
 	}
 ]
