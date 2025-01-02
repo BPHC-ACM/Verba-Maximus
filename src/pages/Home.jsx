@@ -11,10 +11,6 @@ import {
 import Footer from '../components/Footer';
 
 const Home = () => {
-	useEffect(() => {
-		document.title = 'Verba Maximus - Home';
-	}, []);
-
 	return (
 		<div className='HOME'>
 			<img className='heroimage' src='/assets/hero.webp' alt='Hero' />

@@ -57,9 +57,7 @@ const CustomDropdown = ({ categories, filter, setFilter }) => {
 
 const Events = () => {
 	const [isMobile, setIsMobile] = useState(false);
-	useEffect(() => {
-		document.title = 'Verba Maximus - Events';
-	}, []);
+
 	useEffect(() => {
 		const handleResize = () => {
 			setIsMobile(window.innerWidth <= 768);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ErrorPage = () => {
@@ -7,6 +7,10 @@ const ErrorPage = () => {
 	const goHome = () => {
 		navigate('/home');
 	};
+
+	useEffect(() => {
+		document.title = ' Verba Maximus - Page Not Found';
+	}, []);
 
 	return (
 		<div className='ERRORPAGE'>

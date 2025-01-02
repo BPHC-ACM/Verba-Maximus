@@ -1,4 +1,6 @@
-import { Route, Routes, Navigate } from 'react-router-dom';
+import React from 'react';
+import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import Access from './pages/Access';
@@ -6,9 +8,52 @@ import ErrorPage from './pages/ErrorPage';
 import Schedule from './pages/Schedule';
 import ScrollToTop from './components/ScrollToTop';
 
-export default function App() {
+const App = () => {
+	const location = useLocation();
+	const validRoutes = ['/home', '/events', '/fest-access', '/schedule'];
+	const isValidRoute = validRoutes.includes(location.pathname);
+
+	const getCanonicalUrl = () => {
+		switch (location.pathname) {
+			case '/home':
+				return 'https://verba-maximus.netlify.app/home';
+			case '/events':
+				return 'https://verba-maximus.netlify.app/events';
+			case '/schedule':
+				return 'https://verba-maximus.netlify.app/schedule';
+			case '/fest-access':
+				return 'https://verba-maximus.netlify.app/fest-access';
+			default:
+				return 'https://verba-maximus.netlify.app';
+		}
+	};
+
+	const formatTitle = (pathname) => {
+		const formattedPath = pathname
+			.split('/')
+			.filter(Boolean)
+			.map((part) => {
+				let formattedPart =
+					part.charAt(0).toUpperCase() + part.slice(1);
+				if (formattedPart === 'Fest-access') {
+					formattedPart = 'Fest-Access';
+				}
+				return formattedPart.replace('-', ' ');
+			})
+			.join(' - ');
+		return formattedPath || 'Page Not Found';
+	};
+
 	return (
 		<>
+			<Helmet>
+				<link rel='canonical' href={getCanonicalUrl()} />
+				<title>
+					Verba Maximus -{' '}
+					{isValidRoute ? formatTitle(location.pathname) : 'Error'}
+				</title>
+			</Helmet>
+
 			<ScrollToTop />
 			<Routes>
 				<Route path='/' element={<Navigate to='/home' />} />
@@ -20,4 +65,6 @@ export default function App() {
 			</Routes>
 		</>
 	);
-}
+};
+
+export default App;

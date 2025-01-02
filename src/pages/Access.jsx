@@ -3,10 +3,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const Access = () => {
-	useEffect(() => {
-		document.title = 'Verba Maximus - Fest Access';
-	}, []);
-
 	return (
 		<div className='ACCESS'>
 			<Header />
