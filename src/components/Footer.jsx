@@ -13,6 +13,7 @@ const Footer = () => {
 					to='https://www.instagram.com/vm.bphc'
 					rel='noopener'
 					target='_blank'
+					aria-label='Visit the Verba Maximus Instagram page'
 				>
 					<IconBrandInstagram size={24} color='#e2ddc5' />
 				</Link>
@@ -20,6 +21,7 @@ const Footer = () => {
 					to='https://www.facebook.com/verbamaximus'
 					rel='noopener'
 					target='_blank'
+					aria-label='Visit the Verba Maximus Facebook page'
 				>
 					<IconBrandFacebook size={24} color='#e2ddc5' />
 				</Link>
