@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import words from '../words.json';
 import possibleGuesses from '../possible_guess.json';
 import englishWords from '../english_word.json';
-
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 const Wordle = () => {
 	const maxAttempts = 6;
 
@@ -90,13 +91,13 @@ const Wordle = () => {
 		};
 	}, [currentGuess, gameOver]);
 
-	const getLetterStyle = (letter, index, isCurrent = false) => {
-		if (isCurrent) return { backgroundColor: 'lightgray' };
-
-		if (solution[index] === letter) return { backgroundColor: 'green' };
-		if (solution.includes(letter)) return { backgroundColor: 'yellow' };
-		return { backgroundColor: 'gray' };
+	const getLetterClass = (letter, index, isCurrent = false) => {
+		if (isCurrent) return 'glass';
+		if (solution[index] === letter) return 'correct-box';
+		if (solution.includes(letter)) return 'present-box';
+		return 'glass';
 	};
+	
 
 	const keyboardLayout = [
 		'Q.W.E.R.T.Y.U.I.O.P',
@@ -106,97 +107,62 @@ const Wordle = () => {
 	];
 
 	return (
-		<div style={{ textAlign: 'center', marginTop: '20px' }}>
-			<h1>Wordle</h1>
-
+		<div>
+			<Header/>
+			<div className="heading">
+				<h1>Wordle</h1>
+			</div>
+			<div className="darkbrown">
+			<div className="boxholder">
 			{guesses.map((guess, i) => (
 				<div
 					key={i}
 					style={{
 						display: 'flex',
 						justifyContent: 'center',
-						margin: '5px',
-					}}
+						
+					} } 
 				>
 					{Array(5)
 						.fill('')
 						.map((_, j) => (
 							<div
-								key={j}
-								style={{
-									width: '40px',
-									height: '40px',
-									margin: '2px',
-									border: '1px solid black',
-									display: 'flex',
-									alignItems: 'center',
-									justifyContent: 'center',
-									fontSize: '20px',
-									fontWeight: 'bold',
-									textTransform: 'uppercase',
-									...getLetterStyle(
-										i === attempt
-											? currentGuess[j] || ''
-											: guess[j] || '',
-										j,
-										i === attempt
-									),
-								}}
+    							key={j}
+    							className={`box ${getLetterClass(
+        									i === attempt ? currentGuess[j] || '' : guess[j] || '',
+        									j,
+       			 							i === attempt
+    									)}`}
 							>
-								{i === attempt
-									? currentGuess[j] || ''
-									: guess[j] || ''}
-							</div>
+    						{i === attempt ? currentGuess[j] || '' : guess[j] || ''}
+						</div>
 						))}
 				</div>
 			))}
-
-			<div style={{ marginTop: '20px' }}>
-				{keyboardLayout.map((row, i) => (
-					<div
-						key={i}
-						style={{
-							margin: '5px',
-							display: 'flex',
-							justifyContent: 'center',
-						}}
-					>
-						{row.split('.').map((key) => (
-							<button
-								key={key}
-								onClick={() =>
-									handleKeyPress(
-										key === 'ENTER'
-											? 'Enter'
-											: key === 'BACKSPACE'
-											? 'Backspace'
-											: key
-									)
-								}
-								style={{
-									margin: '3px',
-									padding:
-										key === 'ENTER' || key === 'BACKSPACE'
-											? '10px 15px'
-											: '10px',
-									fontSize: '14px',
-									fontWeight: 'bold',
-									textTransform: 'uppercase',
-									cursor: 'pointer',
-									minWidth:
-										key === 'ENTER' || key === 'BACKSPACE'
-											? '70px'
-											: '40px',
-								}}
-							>
-								{key}
-							</button>
-						))}
-					</div>
-				))}
 			</div>
+			
 
-			{gameOver && <h2 style={{ marginTop: '20px' }}>{message}</h2>}
+			<div className="keyboard">
+    			{keyboardLayout.map((row, rowIndex) => (
+        		<div key={rowIndex} className="keyboard-row">
+            		{row.split('.').map((key, keyIndex) => (
+                	<button
+                    	key={keyIndex}
+                    	className={`key glass ${key === 'ENTER' || key === 'BACKSPACE' ? 'large-key' : ''}`}
+                    	onClick={() => handleKeyPress(key)}
+                		>
+                    	{key}
+                	</button>
+            		))}
+        		</div>
+    			))}
+				</div>
+
+
+			</div>	
+
+			<div className="message">{gameOver && <h2>{message}</h2>}</div>
+			<Footer />
 		</div>
 	);
 };

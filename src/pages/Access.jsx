@@ -38,7 +38,7 @@ const FestAccessPage = () => {
 				<h1 id='mainheadingev'>Fest Access</h1>
 			</div>
 			<h1 className='fest-title'>Choose Your Pass</h1>
-			<Link className='pass-container' to='https://unstop.com/o/xfh3Zyv'>
+			<Link className='pass-container' to='https://unstop.com/o/xfh3Zyv' target="_blank">
 				{passes.map((pass, index) => (
 					<div className='pass-card' key={index}>
 						<h2>{pass.name}</h2>
