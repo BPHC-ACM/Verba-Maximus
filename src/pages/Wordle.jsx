@@ -33,9 +33,9 @@ const Wordle = () => {
 	const handleKeyPress = (key) => {
 		if (gameOver) return;
 
-		if (key === 'ENTER') {
+		if (key === 'Enter') {
 			handleSubmit();
-		} else if (key === 'BACKSPACE') {
+		} else if (key === 'Backspace') {
 			setCurrentGuess((prev) => prev.slice(0, -1));
 		} else if (currentGuess.length < 5 && /^[A-Z]$/.test(key)) {
 			setCurrentGuess((prev) => prev + key);
@@ -103,7 +103,7 @@ const Wordle = () => {
 		'Q.W.E.R.T.Y.U.I.O.P',
 		'A.S.D.F.G.H.J.K.L',
 		'Z.X.C.V.B.N.M',
-		'ENTER.BACKSPACE',
+		'Enter.Backspace',
 	];
 
 	return (
@@ -148,7 +148,7 @@ const Wordle = () => {
             		{row.split('.').map((key, keyIndex) => (
                 	<button
                     	key={keyIndex}
-                    	className={`key glass ${key === 'ENTER' || key === 'BACKSPACE' ? 'large-key' : ''}`}
+                    	className={`key glass ${key === 'Enter' || key === 'Backspace' ? 'large-key' : ''}`}
                     	onClick={() => handleKeyPress(key)}
                 		>
                     	{key}
