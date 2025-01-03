@@ -33,9 +33,9 @@ const Wordle = () => {
 	const handleKeyPress = (key) => {
 		if (gameOver) return;
 
-		if (key === 'Enter') {
+		if (key === 'ENTER') {
 			handleSubmit();
-		} else if (key === 'Backspace') {
+		} else if (key === 'BACKSPACE') {
 			setCurrentGuess((prev) => prev.slice(0, -1));
 		} else if (currentGuess.length < 5 && /^[A-Z]$/.test(key)) {
 			setCurrentGuess((prev) => prev + key);
