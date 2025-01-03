@@ -6,11 +6,18 @@ import Events from './pages/Events';
 import Access from './pages/Access';
 import ErrorPage from './pages/ErrorPage';
 import Schedule from './pages/Schedule';
+import Wordle from './pages/Wordle';
 import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
 	const location = useLocation();
-	const validRoutes = ['/home', '/events', '/fest-access', '/schedule'];
+	const validRoutes = [
+		'/home',
+		'/events',
+		'/fest-access',
+		'/schedule',
+		'/wordle',
+	];
 	const isValidRoute = validRoutes.includes(location.pathname);
 
 	const getCanonicalUrl = () => {
@@ -23,6 +30,8 @@ const App = () => {
 				return 'https://verba-maximus.netlify.app/schedule';
 			case '/fest-access':
 				return 'https://verba-maximus.netlify.app/fest-access';
+			case '/wordle':
+				return 'https://verba-maximus.netlify.app/wordle';
 			default:
 				return 'https://verba-maximus.netlify.app';
 		}
@@ -61,6 +70,7 @@ const App = () => {
 				<Route path='/events' element={<Events />} />
 				<Route path='/fest-access' element={<Access />} />
 				<Route path='/schedule' element={<Schedule />} />
+				<Route path='/wordle' element={<Wordle />} />
 				<Route path='*' element={<ErrorPage />} />
 			</Routes>
 		</>
