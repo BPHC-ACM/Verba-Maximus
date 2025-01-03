@@ -22,7 +22,7 @@ const Wordle = () => {
 		});
 		const wordOfTheDay = words.find((entry) => entry.Date === today);
 		if (wordOfTheDay) {
-			setSolution(wordOfTheDay.Word.toUpperCase());
+			setSolution(wordOfTheDay.Word[0].toUpperCase());
 		} else {
 			setMessage('Error: No word for today!');
 			setGameOver(true);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Home from './pages/Home';
 import Events from './pages/Events';
 import Access from './pages/Access';
@@ -55,13 +55,17 @@ const App = () => {
 
 	return (
 		<>
-			<Helmet>
-				<link rel='canonical' href={getCanonicalUrl()} />
-				<title>
-					Verba Maximus -{' '}
-					{isValidRoute ? formatTitle(location.pathname) : 'Error'}
-				</title>
-			</Helmet>
+			<HelmetProvider>
+				<Helmet>
+					<link rel='canonical' href={getCanonicalUrl()} />
+					<title>
+						Verba Maximus -{' '}
+						{isValidRoute
+							? formatTitle(location.pathname)
+							: 'Error'}
+					</title>
+				</Helmet>
+			</HelmetProvider>
 
 			<ScrollToTop />
 			<Routes>
