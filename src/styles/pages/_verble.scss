@@ -74,6 +74,10 @@
 	button {
 		cursor: pointer;
 	}
+	@media (max-width: 768px) {
+		margin-top: 18rem;
+		width: 80%;
+	}
 }
 .key {
 	width: 50px;

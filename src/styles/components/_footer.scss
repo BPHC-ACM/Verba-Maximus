@@ -9,8 +9,11 @@
 	color: $light;
 	> * {
 		padding: 1.5rem;
+		@media only screen and (max-width: 768px) {
+			padding: 1.25rem;
+		}
 	}
-	.socials > * {
+	.socials > a {
 		padding: 1rem;
 		@media only screen and (max-width: 768px) {
 			padding: 1rem 1.25rem 1rem 0;
