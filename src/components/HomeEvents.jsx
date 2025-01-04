@@ -1,6 +1,6 @@
 import React from 'react';
 import EventCard from './EventCard';
-import { Grid, Container, Typography } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 import { events } from '../elas-events.json';
 
 function HomeEvents() {
@@ -9,7 +9,7 @@ function HomeEvents() {
 			<Grid container spacing={1} justifyContent='center'>
 				{events.map((event, index) => (
 					<Grid item key={index}>
-						<EventCard event={event} />
+						<EventCard event={event} showDetailsFooter={true} />
 					</Grid>
 				))}
 			</Grid>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import eventsData from '../events.json';
-import Events_card from '../components/Events_card';
+import EventCard from '../components/EventCard';
 import { ClickAwayListener } from '@mui/material';
 import { IconFilter } from '@tabler/icons-react';
 
@@ -145,13 +145,15 @@ const Events = () => {
 							<h2 className='clubname'>{club}</h2>
 							<div className='eventsholder'>
 								{groupedEvents[club].map((event, index) => (
-									<Events_card
+									<EventCard
 										key={index}
-										name={event.name}
-										shtdesc={event['Short Description']}
-										details={event.Details}
-										bglink={event.bglink}
-										rules={event.rules}
+										event={{
+											Name: event.name,
+											'Short Description':
+												event['Short Description'],
+											Details: event.Details,
+											Rules: event.rules,
+										}}
 									/>
 								))}
 							</div>

@@ -13,18 +13,39 @@ const modalStyle = {
 	top: '50%',
 	left: '50%',
 	transform: 'translate(-50%, -50%)',
-	width: 400,
+	width: '70vw',
+	maxHeight: '80vh',
+	overflowY: 'auto',
 	bgcolor: 'background.paper',
 	boxShadow: 24,
 	p: 4,
 	borderRadius: 2,
+	'&::-webkit-scrollbar': {
+		width: '8px',
+	},
+	'&::-webkit-scrollbar-thumb': {
+		backgroundColor: 'rgb(139, 117, 97)',
+		borderRadius: '4px',
+	},
 };
 
-function EventCard({ event }) {
+const EventCard = ({
+	event,
+	name,
+	shtdesc,
+	details,
+	rules,
+	showDetailsFooter,
+}) => {
 	const [open, setOpen] = useState(false);
 
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
+
+	const eventName = name || event?.Name;
+	const shortDescription = shtdesc || event?.['Short Description'];
+	const eventDetails = details || event?.Details || [];
+	const eventRules = rules || event?.Rules || [];
 
 	return (
 		<div className='EVENTCARD'>
@@ -37,35 +58,71 @@ function EventCard({ event }) {
 				onClick={handleOpen}
 			>
 				<CardContent>
-					<Typography variant='h5'>{event.Name}</Typography>
+					<Typography variant='h5'>{eventName}</Typography>
 					<Typography variant='body2' color='text.secondary'>
-						{event['Short Description']}
+						{shortDescription}
 					</Typography>
 				</CardContent>
 			</Card>
+
 			<Modal open={open} onClose={handleClose}>
 				<Box sx={modalStyle} className='modal'>
-					<Typography variant='h2'>{event.Name}</Typography>
+					<Typography variant='h2'>{eventName}</Typography>
 					<Box sx={{ mt: 2 }}>
-						{event.Details.map((paragraph, index) => (
+						{eventDetails.map((paragraph, index) => (
 							<Typography key={index} variant='body2' paragraph>
 								{paragraph}
 							</Typography>
 						))}
 					</Box>
-					<Typography
-						variant='body2'
-						color='text.primary'
-						className='infotext'
-						sx={{ mt: 2, fontStyle: 'italic' }}
-					>
-						For more details, head over to the Events page.
-					</Typography>
+
+					{eventRules.length > 0 && (
+						<>
+							<Typography
+								variant='h3'
+								style={{
+									textAlign: 'center',
+									fontSize: '1.5rem',
+									letterSpacing: '8px',
+									textTransform: 'uppercase',
+									fontWeight: 400,
+									fontFamily: 'Poppins',
+									padding: '1rem 0',
+								}}
+							>
+								Rules
+							</Typography>
+							<Box sx={{ mt: 2 }}>
+								{eventRules.map((paragraph, index) => (
+									<Typography
+										key={index}
+										variant='body2'
+										paragraph
+									>
+										{paragraph}
+									</Typography>
+								))}
+							</Box>
+						</>
+					)}
+
+					{showDetailsFooter && (
+						<Typography
+							variant='body2'
+							color='text.primary'
+							className='infotext'
+							sx={{ mt: 2, fontStyle: 'italic' }}
+						>
+							For more details, head over to the Events page.
+						</Typography>
+					)}
+
 					<Button
-						variant='outlined'
+						variant='filled'
 						color='warning'
 						onClick={handleClose}
 						sx={{ marginTop: 2 }}
+						className='glass'
 					>
 						Close
 					</Button>
@@ -73,6 +130,6 @@ function EventCard({ event }) {
 			</Modal>
 		</div>
 	);
-}
+};
 
 export default EventCard;
