@@ -31,7 +31,8 @@ const Verble = () => {
 		});
 		const wordOfTheDay = words.find((entry) => entry.Date === today);
 		if (wordOfTheDay) {
-			setSolution(wordOfTheDay.Word[0].toUpperCase());
+			setSolution(wordOfTheDay.Word.toUpperCase());
+			console.log(wordOfTheDay.Word.toUpperCase());
 		} else {
 			setMessage('Error: No word for today!');
 			setGameOver(true);
@@ -177,7 +178,6 @@ const Verble = () => {
 					</Button>
 				</div>
 
-				{/* How to Play Modal */}
 				<Modal
 					open={openHowToPlay}
 					onClose={handleHowToPlayClose}
