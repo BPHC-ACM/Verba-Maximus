@@ -69,7 +69,7 @@ const Wordle = () => {
 				})
 		);
 		const wordleNumber = wordEntry ? wordEntry.Wordle : 'N/A';
-		const text = `Wordle #${wordleNumber} (${formattedDate})\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\n`;
+		const text = `Wordle #${wordleNumber} (${formattedDate})\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\nhttps://verba-maximus.netlify.app/wordle`;
 
 		setShareText(text);
 	};
@@ -220,7 +220,6 @@ const Wordle = () => {
 									.share({
 										title: 'Wordle Result',
 										text: shareText,
-										url: 'https://verba-maximus.netlify.app/wordle',
 									})
 									.catch((error) =>
 										console.error('Sharing failed:', error)
