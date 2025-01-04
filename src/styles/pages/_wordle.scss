@@ -1,110 +1,116 @@
 @use '../variables' as *;
 
-
 .glass {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
-    color:$light;
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+	color: $light;
 }
-.darkbrown{
-    background-color:$darkbrown;
-    background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+.darkbrown {
+	background-color: $darkbrown;
+	background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
 }
-.boxholder{
-    padding:50px;
+.boxholder {
+	padding: 50px;
 }
 .box {
-    width: 45px;
-    height: 45px;
-    margin: 2.5px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
-    color:$light;
+	width: 45px;
+	height: 45px;
+	margin: 2.5px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+	color: $light;
 }
 .correct-box {
-    color: #66b56d; 
+	color: #66b56d;
 }
 
 .present-box {
-    color: #e8c547; 
+	color: #e8c547;
 }
 
 .absent-box {
-    color: #8c8c8c; 
+	color: #8c8c8c;
 }
-.keyboard{
-    padding-bottom:10px;
+.keyboard {
+	padding-bottom: 10px;
 }
-.message{
-    background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
-    background-color:$darkbrown;
-    color:$light;
-    text-align:center;
-    padding:20px;
-
+.message {
+	position: absolute;
+	background-color: $darkbrown;
+	color: $light;
+	text-align: center;
+	padding: 20px;
+	margin-top: 20rem;
+	width: 20rem;
+	height: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 1rem;
+	button {
+		cursor: pointer;
+	}
 }
-/* Default key styling */
-/* Default key styling */
 .key {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-transform: uppercase;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	text-transform: uppercase;
 }
-
 
 .large-key {
-    width: 100px; 
-    height: 50px; 
-    font-size: 14px; 
+	width: 100px;
+	height: 50px;
+	font-size: 14px;
 }
 
 .keyboard-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
-    .key {
-        width: 35px;
-        height: 35px;
-        font-size: 12px;
-        margin: 3px;
-    }
+	.key {
+		width: 35px;
+		height: 35px;
+		font-size: 12px;
+		margin: 3px;
+	}
 
-    .large-key {
-        width: 80px;
-        height: 35px; 
-        font-size: 9px; 
-    }
+	.large-key {
+		width: 80px;
+		height: 35px;
+		font-size: 9px;
+	}
 
-    .keyboard-row {
-        margin-bottom: 5px;
-    }
+	.keyboard-row {
+		margin-bottom: 5px;
+	}
 }
-
-

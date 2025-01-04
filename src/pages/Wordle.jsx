@@ -5,7 +5,7 @@ import possibleGuesses from '../possible_guess.json';
 import englishWords from '../english_word.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Snackbar } from '@mui/material';
+import { Snackbar, Modal } from '@mui/material';
 
 const Wordle = () => {
 	const maxAttempts = 6;
@@ -214,44 +214,40 @@ const Wordle = () => {
 				</div>
 			</div>
 
-			<div className='message'>
-				{gameOver && (
-					<>
-						<h2>{message}</h2>
-						<button
-							onClick={() => {
-								if (window.innerWidth <= 768) {
-									navigator
-										.share({
-											title: 'Wordle Result',
-											text: shareText,
-											url: 'https://verba-maximus.netlify.app/wordle',
-										})
-										.catch((error) =>
-											console.error(
-												'Sharing failed:',
-												error
-											)
-										);
-								} else {
-									navigator.clipboard
-										.writeText(shareText)
-										.then(() => {
-											setAlert(true);
-										});
-								}
-							}}
-							className='key glass'
-						>
-							<IconShare size={14} />
-						</button>
-					</>
-				)}
-			</div>
+			<Modal open={gameOver} onClose={() => setG(false)}>
+				<div className='message'>
+					<h2>{message}</h2>
+					<button
+						onClick={() => {
+							if (window.innerWidth <= 768) {
+								navigator
+									.share({
+										title: 'Wordle Result',
+										text: shareText,
+										url: 'https://verba-maximus.netlify.app/wordle',
+									})
+									.catch((error) =>
+										console.error('Sharing failed:', error)
+									);
+							} else {
+								navigator.clipboard
+									.writeText(shareText)
+									.then(() => {
+										setAlert(true);
+									});
+							}
+						}}
+						className='key glass'
+					>
+						<IconShare size={14} />
+					</button>
+				</div>
+			</Modal>
 
 			<Snackbar
 				anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
 				open={isAlert}
+				autoHideDuration={5000}
 				onClose={() => setAlert(false)}
 				message='Copied to Clipboard'
 			/>
