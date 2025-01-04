@@ -1,1 +1,70 @@
 @use '../variables' as *;
+
+.SCHEDULE {
+	.content {
+		background-color: $darkgreen;
+		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+		.day-header {
+			text-align: center;
+			font-family: $header-font;
+			font-size: 4.5rem;
+			color: $light;
+			padding: 2rem 0;
+			@media only screen and (max-width: 768px) {
+				font-size: 2.5rem;
+			}
+		}
+		.grid-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.grid {
+				width: 80%;
+				@media only screen and (max-width: 768px) {
+					width: 100%;
+				}
+
+				h6 {
+					font-weight: 600;
+					text-align: center;
+				}
+
+				.divider {
+					border-color: $light;
+					opacity: 0.25;
+				}
+
+				.glass {
+					color: $light;
+					background: linear-gradient(
+						135deg,
+						rgba(255, 255, 255, 0.1),
+						rgba(255, 255, 255, 0)
+					);
+					backdrop-filter: blur(10px);
+					-webkit-backdrop-filter: blur(10px);
+					border: 1px solid rgba(255, 255, 255, 0.18);
+					box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+					transition: transform 0.25s;
+
+					&:hover {
+						transform: scale(1.025);
+						@media only screen and (max-width: 768px) {
+							transform: none;
+						}
+					}
+					.card-content {
+						height: 7rem;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-evenly;
+						@media only screen and (max-width: 768px) {
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}

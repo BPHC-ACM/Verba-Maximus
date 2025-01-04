@@ -1,0 +1,173 @@
+[
+	{
+		"day": "Saturday - 25th January",
+		"events": [
+			{
+				"name": "Handouts Handicrafts",
+				"startTime": "09:00",
+				"endTime": "12:00",
+				"club": "Journal Club",
+				"location": ""
+			},
+			{
+				"name": "Bamboozled",
+				"startTime": "10:00",
+				"endTime": "14:00",
+				"club": "Safl",
+				"location": ""
+			},
+			{
+				"name": "Devil's Advocate Preliminaries",
+				"startTime": "11:00",
+				"endTime": "14:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "A.R.G",
+				"startTime": "11:00",
+				"endTime": "16:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "YinYang",
+				"startTime": "12:00",
+				"endTime": "15:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Rhyme Rodeo",
+				"startTime": "13:00",
+				"endTime": "16:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "J.A.M Preliminaries",
+				"startTime": "13:00",
+				"endTime": "16:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Lexicon League",
+				"startTime": "14:00",
+				"endTime": "18:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Symphonies",
+				"startTime": "16:00",
+				"endTime": "18:00",
+				"club": "Music Club",
+				"location": ""
+			},
+			{
+				"name": "Comedy Night",
+				"startTime": "18:00",
+				"endTime": "21:00",
+				"club": "",
+				"location": ""
+			}
+		]
+	},
+	{
+		"day": "Sunday - 26th January",
+		"events": [
+			{
+				"name": "Devil's Advocate Finals",
+				"startTime": "10:00",
+				"endTime": "12:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Shloka Event",
+				"startTime": "10:00",
+				"endTime": "12:00",
+				"club": "Safl",
+				"location": ""
+			},
+			{
+				"name": "Shipwrecked Preliminaries",
+				"startTime": "10:00",
+				"endTime": "13:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Escape Room",
+				"startTime": "10:00",
+				"endTime": "19:00",
+				"club": "Hindi Tarang",
+				"location": ""
+			},
+			{
+				"name": "J.A.M Semi-Finals",
+				"startTime": "11:00",
+				"endTime": "13:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "H.E.L.M Quiz",
+				"startTime": "12:00",
+				"endTime": "16:00",
+				"club": "Quiz Club",
+				"location": ""
+			},
+			{
+				"name": "Bullseye",
+				"startTime": "13:00",
+				"endTime": "16:00",
+				"club": "Journal Club",
+				"location": ""
+			},
+			{
+				"name": "Debate Casino",
+				"startTime": "13:00",
+				"endTime": "17:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "J.A.M Finals",
+				"startTime": "14:00",
+				"endTime": "16:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Prose Pose Parade",
+				"startTime": "15:00",
+				"endTime": "17:00",
+				"club": "Fashion Club",
+				"location": ""
+			},
+			{
+				"name": "Shipwrecked Finals",
+				"startTime": "15:00",
+				"endTime": "17:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Sherlocked",
+				"startTime": "16:00",
+				"endTime": "20:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
+				"name": "Bollywood Antakshari",
+				"startTime": "18:00",
+				"endTime": "21:00",
+				"club": "Hindi Tarang",
+				"location": ""
+			}
+		]
+	}
+]
