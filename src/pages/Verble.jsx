@@ -5,9 +5,9 @@ import possibleGuesses from '../possible_guess.json';
 import englishWords from '../english_word.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Snackbar, Modal } from '@mui/material';
+import { Snackbar, Modal, Button, Box, Typography } from '@mui/material';
 
-const Wordle = () => {
+const Verble = () => {
 	const maxAttempts = 6;
 
 	const [solution, setSolution] = useState('');
@@ -17,8 +17,11 @@ const Wordle = () => {
 	const [gameOver, setGameOver] = useState(false);
 	const [message, setMessage] = useState('');
 	const [shareText, setShareText] = useState('');
-	const [didWin, setDidWin] = useState(false);
 	const [isAlert, setAlert] = useState(false);
+	const [openHowToPlay, setOpenHowToPlay] = useState(false);
+
+	const handleHowToPlayOpen = () => setOpenHowToPlay(true);
+	const handleHowToPlayClose = () => setOpenHowToPlay(false);
 
 	useEffect(() => {
 		const today = new Date().toLocaleDateString('en-US', {
@@ -68,8 +71,8 @@ const Wordle = () => {
 					day: 'numeric',
 				})
 		);
-		const wordleNumber = wordEntry ? wordEntry.Wordle : 'N/A';
-		const text = `Wordle #${wordleNumber} (${formattedDate})\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\nhttps://verba-maximus.netlify.app/wordle`;
+		const verbleNumber = wordEntry ? wordEntry.Verble : 'N/A';
+		const text = `Verble #${verbleNumber} (${formattedDate})\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\nhttps://verba-maximus.netlify.app/verble`;
 
 		setShareText(text);
 	};
@@ -107,7 +110,6 @@ const Wordle = () => {
 
 		if (currentGuess === solution) {
 			setMessage('🎉 You guessed it right!');
-			setDidWin(true);
 			setGameOver(true);
 			generateShareText();
 		} else if (attempt + 1 === maxAttempts) {
@@ -155,9 +157,85 @@ const Wordle = () => {
 		<div>
 			<Header />
 			<div className='heading'>
-				<h1>Wordle</h1>
+				<h1>Verble</h1>
 			</div>
 			<div className='darkbrown'>
+				<div
+					style={{
+						textAlign: 'center',
+						paddingTop: '20px',
+						marginBottom: '-30px',
+						color: '#e2ddc5',
+					}}
+				>
+					<Button
+						variant='filled'
+						className='how-to-play'
+						onClick={handleHowToPlayOpen}
+					>
+						How to Play?
+					</Button>
+				</div>
+
+				{/* How to Play Modal */}
+				<Modal
+					open={openHowToPlay}
+					onClose={handleHowToPlayClose}
+					aria-labelledby='how-to-play-title'
+					aria-describedby='how-to-play-description'
+				>
+					<Box
+						sx={{
+							position: 'absolute',
+							top: '50%',
+							left: '50%',
+							transform: 'translate(-50%, -50%)',
+							width: 300,
+							bgcolor: 'background.paper',
+							borderRadius: 2,
+							boxShadow: 24,
+							p: 4,
+						}}
+					>
+						<Typography
+							id='how-to-play-title'
+							variant='h6'
+							sx={{ fontWeight: 'bold', marginBottom: 2 }}
+						>
+							How To Play
+						</Typography>
+						<Typography
+							id='how-to-play-description'
+							variant='body1'
+							sx={{ marginBottom: 1 }}
+						>
+							Guess the Verble in 6 tries.
+						</Typography>
+						<Typography variant='body1' sx={{ marginBottom: 1 }}>
+							Each guess must be a valid 5-letter word.
+						</Typography>
+						<Typography variant='body1' sx={{ marginBottom: 1 }}>
+							The color of the tiles will change to show how close
+							your guess was to the word.
+						</Typography>
+						<Typography variant='body1' sx={{ marginBottom: 1 }}>
+							<strong>Colour Legend:</strong>
+						</Typography>
+						<Typography variant='body1'>
+							{
+								'🟩 The letter is in the word and in the correct spot.'
+							}
+						</Typography>
+						<Typography variant='body1'>
+							{
+								'🟨 The letter is in the word but in the wrong spot.'
+							}
+						</Typography>
+						<Typography variant='body1'>
+							{'⬛️ The letter is not in the word in any spot.'}
+						</Typography>
+					</Box>
+				</Modal>
 				<div className='boxholder'>
 					{guesses.map((guess, i) => (
 						<div
@@ -218,7 +296,7 @@ const Wordle = () => {
 							if (window.innerWidth <= 768) {
 								navigator
 									.share({
-										title: 'Wordle Result',
+										title: 'Verble Result',
 										text: shareText,
 									})
 									.catch((error) =>
@@ -251,4 +329,4 @@ const Wordle = () => {
 	);
 };
 
-export default Wordle;
+export default Verble;

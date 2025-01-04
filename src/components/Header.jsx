@@ -28,6 +28,7 @@ const Header = () => {
 								<Link to='/events'>Events</Link>
 								<Link to='/fest-access'>Fest Access</Link>
 								<Link to='/schedule'>Schedule</Link>
+								<Link to='/verble'>Verble</Link>
 							</div>
 						)}
 					</>
@@ -37,6 +38,7 @@ const Header = () => {
 						<Link to='/events'>Events</Link>
 						<Link to='/fest-access'>Fest Access</Link>
 						<Link to='/schedule'>Schedule</Link>
+						<Link to='/verble'>Verble</Link>
 					</div>
 				)}
 				<div className='register-container glass'>

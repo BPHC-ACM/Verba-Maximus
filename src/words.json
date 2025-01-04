@@ -1,127 +1,127 @@
 [
 	{
 		"Date": "1/2/2025",
-		"Wordle": -3,
-		"Word": ["arena", "adele"]
+		"Verble": -3,
+		"Word": "arena"
 	},
 	{
 		"Date": "1/3/2025",
-		"Wordle": -2,
-		"Word": ["pearl", "drake"]
+		"Verble": -2,
+		"Word": "pearl"
 	},
 	{
 		"Date": "1/4/2025",
-		"Wordle": -1,
-		"Word": ["atmos", "joker"]
+		"Verble": -1,
+		"Word": "atmos"
 	},
 	{
 		"Date": "1/5/2025",
-		"Wordle": 0,
-		"Word": ["prezi", "flash"]
+		"Verble": 0,
+		"Word": "prezi"
 	},
 	{
 		"Date": "1/5/2025",
-		"Wordle": 1,
-		"Word": ["arena", "adele"]
+		"Verble": 1,
+		"Word": "arena"
 	},
 	{
 		"Date": "1/6/2025",
-		"Wordle": 2,
-		"Word": ["pearl", "drake"]
+		"Verble": 2,
+		"Word": "pearl"
 	},
 	{
 		"Date": "1/7/2025",
-		"Wordle": 3,
-		"Word": ["atmos", "joker"]
+		"Verble": 3,
+		"Word": "atmos"
 	},
 	{
 		"Date": "1/8/2025",
-		"Wordle": 4,
-		"Word": ["prezi", "flash"]
+		"Verble": 4,
+		"Word": "prezi"
 	},
 	{
 		"Date": "1/9/2025",
-		"Wordle": 5,
-		"Word": ["ghots", "kanye"]
+		"Verble": 5,
+		"Word": "ghots"
 	},
 	{
 		"Date": "1/10/2025",
-		"Wordle": 6,
-		"Word": ["elasi", "kylie"]
+		"Verble": 6,
+		"Word": "elasi"
 	},
 	{
 		"Date": "1/11/2025",
-		"Wordle": 7,
-		"Word": ["spons", "elvis"]
+		"Verble": 7,
+		"Word": "spons"
 	},
 	{
 		"Date": "1/12/2025",
-		"Wordle": 8,
-		"Word": ["ecell", "ariel"]
+		"Verble": 8,
+		"Word": "ecell"
 	},
 	{
 		"Date": "1/13/2025",
-		"Wordle": 9,
-		"Word": ["intro", "simba"]
+		"Verble": 9,
+		"Word": "intro"
 	},
 	{
 		"Date": "1/14/2025",
-		"Wordle": 10,
-		"Word": ["treat", "shrek"]
+		"Verble": 10,
+		"Word": "treat"
 	},
 	{
 		"Date": "1/15/2025",
-		"Wordle": 11,
-		"Word": ["assoc", "moana"]
+		"Verble": 11,
+		"Word": "assoc"
 	},
 	{
 		"Date": "1/16/2025",
-		"Wordle": 12,
-		"Word": ["merch", "flynn"]
+		"Verble": 12,
+		"Word": "merch"
 	},
 	{
 		"Date": "1/17/2025",
-		"Wordle": 13,
-		"Word": ["acads", "mulan"]
+		"Verble": 13,
+		"Word": "acads"
 	},
 	{
 		"Date": "1/18/2025",
-		"Wordle": 14,
-		"Word": ["inaug", "goofy"]
+		"Verble": 14,
+		"Word": "inaug"
 	},
 	{
 		"Date": "1/19/2025",
-		"Wordle": 15,
-		"Word": ["birla", "pluto"]
+		"Verble": 15,
+		"Word": "birla"
 	},
 	{
 		"Date": "1/20/2025",
-		"Wordle": 16,
-		"Word": ["huels", "alice"]
+		"Verble": 16,
+		"Word": "huels"
 	},
 	{
 		"Date": "1/21/2025",
-		"Wordle": 17,
-		"Word": ["opels", "bambi"]
+		"Verble": 17,
+		"Word": "opels"
 	},
 	{
 		"Date": "1/22/2025",
-		"Wordle": 18,
-		"Word": ["rocks", "genie"]
+		"Verble": 18,
+		"Word": "rocks"
 	},
 	{
 		"Date": "1/23/2025",
-		"Wordle": 19,
-		"Word": ["verba", "belle"]
+		"Verble": 19,
+		"Word": "verba"
 	},
 	{
 		"Date": "1/24/2025",
-		"Wordle": 20,
-		"Word": ["profs", "adele"]
+		"Verble": 20,
+		"Word": "profs"
 	},
 	{
 		"Date": "1/25/2025",
-		"Wordle": 21,
-		"Word": ["meera", "drake"]
+		"Verble": 21,
+		"Word": "meera"
 	}
 ]
