@@ -32,7 +32,6 @@ const Verble = () => {
 		const wordOfTheDay = words.find((entry) => entry.Date === today);
 		if (wordOfTheDay) {
 			setSolution(wordOfTheDay.Word.toUpperCase());
-			console.log(wordOfTheDay.Word.toUpperCase());
 		} else {
 			setMessage('Error: No word for today!');
 			setGameOver(true);
@@ -43,14 +42,30 @@ const Verble = () => {
 		const grid = guesses
 			.filter((guess) => guess)
 			.map((guess) => {
-				return guess
-					.split('')
-					.map((letter, i) => {
-						if (solution[i] === letter) return '🟩';
-						if (solution.includes(letter)) return '🟨';
-						return '⬛';
-					})
-					.join('');
+				const solutionArray = solution.split('');
+				const guessArray = guess.split('');
+				const result = Array(5).fill('');
+
+				guessArray.forEach((letter, i) => {
+					if (solutionArray[i] === letter) {
+						result[i] = '🟩';
+						solutionArray[i] = null;
+					}
+				});
+
+				guessArray.forEach((letter, i) => {
+					if (result[i] === '') {
+						const index = solutionArray.indexOf(letter);
+						if (index !== -1) {
+							result[i] = '🟨';
+							solutionArray[index] = null;
+						} else {
+							result[i] = '⬛';
+						}
+					}
+				});
+
+				return result.join('');
 			})
 			.join('\n');
 
@@ -73,7 +88,11 @@ const Verble = () => {
 				})
 		);
 		const verbleNumber = wordEntry ? wordEntry.Verble : 'N/A';
-		const text = `Verble #${verbleNumber} (${formattedDate})\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\nhttps://verba-maximus.netlify.app/verble`;
+
+		const linesUsed = guesses.filter((guess) => guess).length;
+		const text = `Verble #${verbleNumber} (${formattedDate}) ${
+			gameOver ? linesUsed : 'X'
+		}/6\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\nhttps://verba-maximus.netlify.app/verble`;
 
 		setShareText(text);
 	};
@@ -140,11 +159,29 @@ const Verble = () => {
 		};
 	}, [currentGuess, gameOver]);
 
-	const getLetterClass = (letter, index, isCurrent = false) => {
-		if (isCurrent) return 'glass';
-		if (solution[index] === letter) return 'correct-box';
-		if (solution.includes(letter)) return 'present-box';
-		return 'glass';
+	const getLetterClass = (guess, solution) => {
+		const result = Array(5).fill('glass');
+		const solutionArray = solution.split('');
+		const guessArray = guess.split('');
+
+		guessArray.forEach((letter, i) => {
+			if (solutionArray[i] === letter) {
+				result[i] = 'correct-box';
+				solutionArray[i] = null;
+			}
+		});
+
+		guessArray.forEach((letter, i) => {
+			if (result[i] === 'glass') {
+				const index = solutionArray.indexOf(letter);
+				if (index !== -1) {
+					result[i] = 'present-box';
+					solutionArray[index] = null;
+				}
+			}
+		});
+
+		return result;
 	};
 
 	const keyboardLayout = [
@@ -247,22 +284,27 @@ const Verble = () => {
 						>
 							{Array(5)
 								.fill('')
-								.map((_, j) => (
-									<div
-										key={j}
-										className={`box ${getLetterClass(
-											i === attempt
-												? currentGuess[j] || ''
-												: guess[j] || '',
-											j,
-											i === attempt
-										)}`}
-									>
-										{i === attempt
+								.map((_, j) => {
+									const letter =
+										i === attempt
 											? currentGuess[j] || ''
-											: guess[j] || ''}
-									</div>
-								))}
+											: guess[j] || '';
+									const classes =
+										i < attempt
+											? getLetterClass(guess, solution)[j]
+											: i === attempt
+											? 'glass'
+											: '';
+
+									return (
+										<div
+											key={j}
+											className={`box ${classes}`}
+										>
+											{letter}
+										</div>
+									);
+								})}
 						</div>
 					))}
 				</div>
