@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const passes = [
 	{
 		name: 'Events Only',
-		price: '₹400',
+		price: '₹500',
 		description:
 			'The Events Pass gives the ticket holder access to the 18 literary events planned across the two days of the fest.',
 	},
@@ -38,7 +38,11 @@ const FestAccessPage = () => {
 				<h1 id='mainheadingev'>Fest Access</h1>
 			</div>
 			<h1 className='fest-title'>Choose Your Pass</h1>
-			<Link className='pass-container' to='https://unstop.com/o/xfh3Zyv' target="_blank">
+			<Link
+				className='pass-container'
+				to='https://unstop.com/o/xfh3Zyv'
+				target='_blank'
+			>
 				{passes.map((pass, index) => (
 					<div className='pass-card' key={index}>
 						<h2>{pass.name}</h2>
