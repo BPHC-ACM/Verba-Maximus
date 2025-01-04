@@ -2,6 +2,8 @@
 @use 'sass:color' as color;
 
 .EVENTCARD {
+	transition: 0.25s;
+
 	.glass {
 		background: linear-gradient(
 			135deg,
@@ -12,7 +14,7 @@
 		-webkit-backdrop-filter: blur(10px);
 		border-radius: 0.35rem;
 		box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
-		transition: transform 0.25s;
+		transition: 0.25s;
 
 		> div {
 			height: 7rem;
