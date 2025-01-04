@@ -1,22 +1,22 @@
 [
 	{
 		"Date": "1/2/2025",
-		"Wordle": 1292,
+		"Wordle": -3,
 		"Word": ["arena", "adele"]
 	},
 	{
 		"Date": "1/3/2025",
-		"Wordle": 1293,
+		"Wordle": -2,
 		"Word": ["pearl", "drake"]
 	},
 	{
 		"Date": "1/4/2025",
-		"Wordle": 1294,
+		"Wordle": -1,
 		"Word": ["atmos", "joker"]
 	},
 	{
 		"Date": "1/5/2025",
-		"Wordle": 1295,
+		"Wordle": 0,
 		"Word": ["prezi", "flash"]
 	},
 	{
