@@ -73,7 +73,7 @@ const Wordle = () => {
 		const linesUsed = guesses.filter((guess) => guess.length !== 0);
 		const guessCount = didWin ? linesUsed + 1 : 'X';
 
-		const text = `Wordle #${wordleNumber} (${formattedDate}) ${guessCount}/6\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here: https://verba-maximus.netlify.app/wordle`;
+		const text = `Wordle #${wordleNumber} (${formattedDate}) ${guessCount}/6\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\n`;
 
 		setShareText(text);
 	};
