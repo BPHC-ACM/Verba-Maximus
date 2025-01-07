@@ -89,11 +89,9 @@ const Verble = () => {
 		);
 		const verbleNumber = wordEntry ? wordEntry.Verble : 'N/A';
 
-		const linesUsed = guesses.filter((guess) => guess).length;
-		const text = `Verble #${verbleNumber} (${formattedDate}) ${
-			gameOver ? linesUsed : 'X'
-		}/6\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\nhttps://verba-maximus.netlify.app/verble`;
-
+		const linesUsed = guesses.filter((guess) => guess !== '').length + 1;
+		const text = `Verble #${verbleNumber} (${formattedDate}) ${linesUsed}/6\n\n${grid}\n🟩🟩🟩🟩🟩\n\nPlay here:\nhttps://verba-maximus.netlify.app/verble`;
+		console.log(text);
 		setShareText(text);
 	};
 
@@ -333,29 +331,34 @@ const Verble = () => {
 			<Modal open={gameOver} onClose={() => setG(false)}>
 				<div className='message'>
 					<h2>{message}</h2>
-					<button
-						onClick={() => {
-							if (window.innerWidth <= 768) {
-								navigator
-									.share({
-										title: 'Verble Result',
-										text: shareText,
-									})
-									.catch((error) =>
-										console.error('Sharing failed:', error)
-									);
-							} else {
-								navigator.clipboard
-									.writeText(shareText)
-									.then(() => {
-										setAlert(true);
-									});
-							}
-						}}
-						className='key glass'
-					>
-						<IconShare size={14} />
-					</button>
+					{guesses[5] === '' && (
+						<button
+							onClick={() => {
+								if (window.innerWidth <= 768) {
+									navigator
+										.share({
+											title: 'Verble Result',
+											text: shareText,
+										})
+										.catch((error) =>
+											console.error(
+												'Sharing failed:',
+												error
+											)
+										);
+								} else {
+									navigator.clipboard
+										.writeText(shareText)
+										.then(() => {
+											setAlert(true);
+										});
+								}
+							}}
+							className='key glass'
+						>
+							<IconShare size={14} />
+						</button>
+					)}
 				</div>
 			</Modal>
 
