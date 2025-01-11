@@ -59,17 +59,17 @@
 				"location": ""
 			},
 			{
+				"name": "Sherlocked",
+				"startTime": "16:00",
+				"endTime": "20:00",
+				"club": "Elas",
+				"location": ""
+			},
+			{
 				"name": "Symphonies",
 				"startTime": "16:00",
 				"endTime": "18:00",
 				"club": "Music Club",
-				"location": ""
-			},
-			{
-				"name": "Comedy Night",
-				"startTime": "18:00",
-				"endTime": "21:00",
-				"club": "",
 				"location": ""
 			}
 		]
@@ -155,17 +155,17 @@
 				"location": ""
 			},
 			{
-				"name": "Sherlocked",
-				"startTime": "16:00",
-				"endTime": "20:00",
-				"club": "Elas",
+				"name": "Bollywood Antakshari",
+				"startTime": "15:00",
+				"endTime": "18:00",
+				"club": "Hindi Tarang",
 				"location": ""
 			},
 			{
-				"name": "Bollywood Antakshari",
+				"name": "Comedy Night",
 				"startTime": "18:00",
 				"endTime": "21:00",
-				"club": "Hindi Tarang",
+				"club": "",
 				"location": ""
 			}
 		]
