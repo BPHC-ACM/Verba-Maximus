@@ -19,6 +19,7 @@ const Verble = () => {
 	const [shareText, setShareText] = useState('');
 	const [isAlert, setAlert] = useState(false);
 	const [openHowToPlay, setOpenHowToPlay] = useState(false);
+	const [keyStates, setKeyStates] = useState({});
 
 	const handleHowToPlayOpen = () => setOpenHowToPlay(true);
 	const handleHowToPlayClose = () => setOpenHowToPlay(false);
@@ -37,6 +38,30 @@ const Verble = () => {
 			setGameOver(true);
 		}
 	}, []);
+
+	const updateKeyStates = (guess, solution) => {
+		const newKeyStates = { ...keyStates };
+		const solutionArray = solution.split('');
+		const guessArray = guess.split('');
+
+		guessArray.forEach((letter, i) => {
+			if (solutionArray[i] === letter) {
+				newKeyStates[letter] = 'correct-box';
+				solutionArray[i] = null;
+			}
+			if (!newKeyStates[letter]) {
+				const index = solutionArray.indexOf(letter);
+				if (index !== -1) {
+					newKeyStates[letter] = 'present-box';
+					solutionArray[index] = null;
+				} else {
+					newKeyStates[letter] = 'absent-box';
+				}
+			}
+		});
+
+		setKeyStates(newKeyStates);
+	};
 
 	const generateShareText = () => {
 		const grid = guesses
@@ -126,6 +151,7 @@ const Verble = () => {
 		newGuesses[attempt] = currentGuess;
 		setGuesses(newGuesses);
 
+		updateKeyStates(currentGuess, solution);
 		if (currentGuess === solution) {
 			setMessage('🎉 You guessed it right!');
 			setGameOver(true);
@@ -316,6 +342,8 @@ const Verble = () => {
 								<button
 									key={keyIndex}
 									className={`key glass ${
+										keyStates[key] || ''
+									} ${
 										key === 'Enter' || key === 'Backspace'
 											? 'large-key'
 											: ''
