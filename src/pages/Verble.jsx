@@ -175,6 +175,8 @@ const Verble = () => {
 				if (index !== -1) {
 					result[i] = 'present-box';
 					solutionArray[index] = null;
+				} else {
+					result[i] = 'absent-box';
 				}
 			}
 		});
