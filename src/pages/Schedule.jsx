@@ -65,7 +65,7 @@ const Schedule = () => {
 													className='clubname'
 												>
 													<strong>Club:</strong>{' '}
-													{event.club.toUpperCase()}
+													{event.club}
 												</Typography>
 											)}
 											{event.location && (
