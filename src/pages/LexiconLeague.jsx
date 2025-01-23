@@ -138,6 +138,12 @@ const LexiconLeague = () => {
 		if (currentGuess === solution) {
 			setMessage('🎉 You guessed it right!');
 			setGameOver(true);
+
+			setWordsCompleted((prev) => {
+				const newCount = prev + 1;
+				localStorage.setItem('wordsCompleted', newCount);
+				return newCount;
+			});
 		} else if (attempt + 1 === maxAttempts) {
 			setMessage(`😢 Game over! The word was ${solution}`);
 			setGameOver(true);
@@ -146,12 +152,6 @@ const LexiconLeague = () => {
 		if (currentGuess === solution || attempt + 1 === maxAttempts) {
 			setTimeout(() => {
 				setKeyStates({});
-
-				setWordsCompleted((prev) => {
-					const newCount = prev + 1;
-					localStorage.setItem('wordsCompleted', newCount);
-					return newCount;
-				});
 
 				const newWord =
 					words[
