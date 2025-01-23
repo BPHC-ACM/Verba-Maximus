@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import { Modal, Button, Box, Typography } from '@mui/material';
 
 const Keyboard = React.memo(({ keyboardLayout, keyStates, handleKeyPress }) => (
-	<div className='keyboard'>
+	<div className='keyboard' style={{ paddingBottom: '20px' }}>
 		{keyboardLayout.map((row, rowIndex) => (
 			<div key={rowIndex} className='keyboard-row'>
 				{row.split('.').map((key, keyIndex) => (
@@ -311,7 +311,7 @@ const LexiconLeague = () => {
 						</Typography>
 					</Box>
 				</Modal>
-				<div className='boxholder'>
+				<div className='boxholder' style={{ margin: '0.75rem' }}>
 					{guesses.map((guess, i) => (
 						<GuessRow
 							key={i}
