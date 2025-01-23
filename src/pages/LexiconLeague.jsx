@@ -229,10 +229,6 @@ const LexiconLeague = () => {
 
 	return (
 		<div>
-			<Header />
-			<div className='heading'>
-				<h1>Lexicon League</h1>
-			</div>
 			<div className='darkbrown'>
 				<div
 					style={{
