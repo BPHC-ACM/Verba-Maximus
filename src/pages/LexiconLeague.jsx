@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { IconShare } from '@tabler/icons-react';
 import words from '../lexicon-league.json';
+import { IconTrashXFilled } from '@tabler/icons-react';
 import possibleGuesses from '../possible_guess.json';
 import englishWords from '../english_word.json';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Snackbar, Modal, Button, Box, Typography } from '@mui/material';
+import { Modal, Button, Box, Typography } from '@mui/material';
 
 const Keyboard = React.memo(({ keyboardLayout, keyStates, handleKeyPress }) => (
 	<div className='keyboard'>
@@ -54,7 +53,6 @@ const GuessRow = React.memo(
 
 const LexiconLeague = () => {
 	const maxAttempts = 6;
-
 	const [solution, setSolution] = useState('');
 	const [guesses, setGuesses] = useState(Array(maxAttempts).fill(''));
 	const [currentGuess, setCurrentGuess] = useState('');
@@ -69,8 +67,13 @@ const LexiconLeague = () => {
 
 	const handleHowToPlayOpen = () => setOpenHowToPlay(true);
 	const handleHowToPlayClose = () => setOpenHowToPlay(false);
+	const clearLocalStorage = () => {
+		localStorage.clear();
+		alert('Refresh page to confirm reset!');
+	};
 
 	useEffect(() => {
+		document.body.style.overflow = 'hidden';
 		const randomIndex = Math.floor(Math.random() * words.length);
 		const randomWord = words[randomIndex];
 		setSolution(randomWord.toUpperCase());
@@ -320,7 +323,12 @@ const LexiconLeague = () => {
 						/>
 					))}
 				</div>
-				<div className='counter'>Words Completed: {wordsCompleted}</div>
+				<div className='counter'>
+					Words Completed: {wordsCompleted}{' '}
+					<IconTrashXFilled size={16} onClick={clearLocalStorage}>
+						Reset Local Storage
+					</IconTrashXFilled>
+				</div>
 
 				<Keyboard
 					keyboardLayout={keyboardLayout}
