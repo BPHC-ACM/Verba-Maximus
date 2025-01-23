@@ -232,7 +232,7 @@ const LexiconLeague = () => {
 
 	return (
 		<div>
-			<div className='darkbrown'>
+			<div className='darkbrown' style={{ height: 'calc(100vh - 70px)' }}>
 				<div
 					style={{
 						textAlign: 'center',
