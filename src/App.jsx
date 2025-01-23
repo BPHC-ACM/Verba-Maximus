@@ -7,6 +7,7 @@ import Access from './pages/Access';
 import ErrorPage from './pages/ErrorPage';
 import Schedule from './pages/Schedule';
 import Verble from './pages/Verble';
+import LexiconLeague from './pages/LexiconLeague';
 import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 		'/fest-access',
 		'/schedule',
 		'/verble',
+		'/lexicon-league',
 	];
 	const isValidRoute = validRoutes.includes(location.pathname);
 
@@ -32,6 +34,8 @@ const App = () => {
 				return 'https://verba-maximus.netlify.app/fest-access';
 			case '/verble':
 				return 'https://verba-maximus.netlify.app/verble';
+			case '/lexicon-league':
+				return 'https://verba-maximus.netlify.app/lexicon-league';
 			default:
 				return 'https://verba-maximus.netlify.app';
 		}
@@ -46,6 +50,8 @@ const App = () => {
 					part.charAt(0).toUpperCase() + part.slice(1);
 				if (formattedPart === 'Fest-access') {
 					formattedPart = 'Fest-Access';
+				} else if (formattedPart === 'Lexicon-league') {
+					formattedPart = 'Lexicon-League';
 				}
 				return formattedPart.replace('-', ' ');
 			})
@@ -75,6 +81,7 @@ const App = () => {
 				<Route path='/fest-access' element={<Access />} />
 				<Route path='/schedule' element={<Schedule />} />
 				<Route path='/verble' element={<Verble />} />
+				<Route path='/lexicon-league' element={<LexiconLeague />} />
 				<Route path='*' element={<ErrorPage />} />
 			</Routes>
 		</>
