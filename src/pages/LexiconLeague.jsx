@@ -7,6 +7,51 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Snackbar, Modal, Button, Box, Typography } from '@mui/material';
 
+const Keyboard = React.memo(({ keyboardLayout, keyStates, handleKeyPress }) => (
+	<div className='keyboard'>
+		{keyboardLayout.map((row, rowIndex) => (
+			<div key={rowIndex} className='keyboard-row'>
+				{row.split('.').map((key, keyIndex) => (
+					<button
+						key={keyIndex}
+						className={`key glass ${keyStates[key] || ''} ${
+							key === 'Enter' || key === 'Backspace'
+								? 'large-key'
+								: ''
+						}`}
+						onClick={() => handleKeyPress(key)}
+					>
+						{key}
+					</button>
+				))}
+			</div>
+		))}
+	</div>
+));
+
+const GuessRow = React.memo(
+	({ guess, solution, isCurrent, currentGuess, getLetterClass }) => (
+		<div style={{ display: 'flex', justifyContent: 'center' }}>
+			{Array(5)
+				.fill('')
+				.map((_, j) => {
+					const letter = isCurrent
+						? currentGuess[j] || ''
+						: guess[j] || '';
+					const classes = isCurrent
+						? 'glass'
+						: getLetterClass(guess, solution)[j];
+
+					return (
+						<div key={j} className={`box ${classes}`}>
+							{letter}
+						</div>
+					);
+				})}
+		</div>
+	)
+);
+
 const LexiconLeague = () => {
 	const maxAttempts = 6;
 
@@ -129,6 +174,7 @@ const LexiconLeague = () => {
 	};
 
 	useEffect(() => {
+		let timeout;
 		const handlePhysicalKeyPress = (event) => {
 			const key = event.key.toUpperCase();
 			if (key === 'ENTER') {
@@ -142,6 +188,7 @@ const LexiconLeague = () => {
 
 		window.addEventListener('keydown', handlePhysicalKeyPress);
 		return () => {
+			clearTimeout(timeout);
 			window.removeEventListener('keydown', handlePhysicalKeyPress);
 		};
 	}, [currentGuess, gameOver]);
@@ -267,62 +314,23 @@ const LexiconLeague = () => {
 				</Modal>
 				<div className='boxholder'>
 					{guesses.map((guess, i) => (
-						<div
+						<GuessRow
 							key={i}
-							style={{
-								display: 'flex',
-								justifyContent: 'center',
-							}}
-						>
-							{Array(5)
-								.fill('')
-								.map((_, j) => {
-									const letter =
-										i === attempt
-											? currentGuess[j] || ''
-											: guess[j] || '';
-									const classes =
-										i < attempt
-											? getLetterClass(guess, solution)[j]
-											: i === attempt
-											? 'glass'
-											: '';
-
-									return (
-										<div
-											key={j}
-											className={`box ${classes}`}
-										>
-											{letter}
-										</div>
-									);
-								})}
-						</div>
+							guess={guess}
+							solution={solution}
+							isCurrent={i === attempt}
+							getLetterClass={getLetterClass}
+							currentGuess={currentGuess}
+						/>
 					))}
 				</div>
 				<div className='counter'>Words Completed: {wordsCompleted}</div>
 
-				<div className='keyboard'>
-					{keyboardLayout.map((row, rowIndex) => (
-						<div key={rowIndex} className='keyboard-row'>
-							{row.split('.').map((key, keyIndex) => (
-								<button
-									key={keyIndex}
-									className={`key glass ${
-										keyStates[key] || ''
-									} ${
-										key === 'Enter' || key === 'Backspace'
-											? 'large-key'
-											: ''
-									}`}
-									onClick={() => handleKeyPress(key)}
-								>
-									{key}
-								</button>
-							))}
-						</div>
-					))}
-				</div>
+				<Keyboard
+					keyboardLayout={keyboardLayout}
+					keyStates={keyStates}
+					handleKeyPress={handleKeyPress}
+				/>
 			</div>
 
 			<Modal open={gameOver} onClose={() => setG(false)}>
