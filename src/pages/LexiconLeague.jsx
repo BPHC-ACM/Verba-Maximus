@@ -73,7 +73,6 @@ const LexiconLeague = () => {
 	};
 
 	useEffect(() => {
-		document.body.style.overflow = 'hidden';
 		const randomIndex = Math.floor(Math.random() * words.length);
 		const randomWord = words[randomIndex];
 		setSolution(randomWord.toUpperCase());
@@ -232,7 +231,8 @@ const LexiconLeague = () => {
 
 	return (
 		<div>
-			<div className='darkbrown' style={{ height: 'calc(100vh - 70px)' }}>
+			<div className='darkbrown'>
+				<div className='header'>LEXICON LEAGUE</div>
 				<div
 					style={{
 						textAlign: 'center',
