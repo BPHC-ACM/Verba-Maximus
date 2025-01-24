@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import words from '../lexicon-league.json';
+import wordlist from '../lexicon-league.json';
 import { IconTrashXFilled } from '@tabler/icons-react';
 import possibleGuesses from '../possible_guess.json';
 import englishWords from '../english_word.json';
@@ -53,6 +53,7 @@ const GuessRow = React.memo(
 
 const LexiconLeague = () => {
 	const maxAttempts = 6;
+	const [words, setWords] = useState(wordlist);
 	const [solution, setSolution] = useState('');
 	const [guesses, setGuesses] = useState(Array(maxAttempts).fill(''));
 	const [currentGuess, setCurrentGuess] = useState('');
@@ -73,9 +74,9 @@ const LexiconLeague = () => {
 	};
 
 	useEffect(() => {
-		const randomIndex = Math.floor(Math.random() * words.length);
-		const randomWord = words[randomIndex];
-		setSolution(randomWord.toUpperCase());
+		const shuffledWords = [...words].sort(() => Math.random() - 0.5);
+		setWords(shuffledWords);
+		setSolution(shuffledWords[0].toUpperCase());
 	}, []);
 
 	const updateKeyStates = (guess, solution) => {
@@ -153,12 +154,17 @@ const LexiconLeague = () => {
 			setTimeout(() => {
 				setKeyStates({});
 
-				const newWord =
-					words[
-						Math.floor(Math.random() * words.length)
-					].toUpperCase();
-				console.log('New word:', newWord);
-				setSolution(newWord);
+				if (words.length > 1) {
+					const remainingWords = words.slice(1);
+					setWords(remainingWords);
+					setSolution(remainingWords[0].toUpperCase());
+				} else {
+					const shuffledWords = [...words].sort(
+						() => Math.random() - 0.5
+					);
+					setWords(shuffledWords);
+					setSolution(shuffledWords[0].toUpperCase());
+				}
 
 				setGuesses(Array(maxAttempts).fill(''));
 				setCurrentGuess('');
