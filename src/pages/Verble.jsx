@@ -25,18 +25,19 @@ const Verble = () => {
 	const handleHowToPlayClose = () => setOpenHowToPlay(false);
 
 	useEffect(() => {
-		const today = new Date().toLocaleDateString('en-US', {
-			year: 'numeric',
-			month: 'numeric',
-			day: 'numeric',
-		});
-		const wordOfTheDay = words.find((entry) => entry.Date === today);
-		if (wordOfTheDay) {
-			setSolution(wordOfTheDay.Word.toUpperCase());
-		} else {
-			setMessage('Error: No word for today!');
-			setGameOver(true);
-		}
+	    const date = new Date();
+	    const day = date.getDate();
+	    const month = date.getMonth() + 1;
+	    const year = date.getFullYear();
+	    const today = `${day}/${month}/${year}`;
+	
+	    const wordOfTheDay = words.find((entry) => entry.Date === today);
+	    if (wordOfTheDay) {
+	        setSolution(wordOfTheDay.Word.toUpperCase());
+	    } else {
+	        setMessage('Error: No word for today!');
+	        setGameOver(true);
+	    }
 	}, []);
 
 	const updateKeyStates = (guess, solution) => {
