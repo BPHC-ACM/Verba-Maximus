@@ -43,7 +43,7 @@ const Header = () => {
 				)}
 				<div className='register-container glass'>
 					<Link
-						to='https://unstop.com/o/xfh3Zyv'
+						to='https://unifest.in/fests/61?fest=verba-maximus-2026'
 						target='_blank'
 						rel='noreferrer'
 					>
