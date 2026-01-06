@@ -359,7 +359,7 @@ const Verble = () => {
 				</div>
 			</div>
 
-			<Modal open={gameOver} onClose={() => setG(false)}>
+			<Modal open={gameOver} onClose={() => setGameOver(false)}>
 				<div className='message'>
 					<h2>{message}</h2>
 					{guesses[5] === '' && (
