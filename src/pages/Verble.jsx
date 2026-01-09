@@ -224,7 +224,7 @@ const Verble = () => {
 			<div className='heading'>
 				<h1>Verble</h1>
 			</div>
-			<div className='darkbrown'>
+			<div className='violet'>
 				<div
 					style={{
 						textAlign: 'center',

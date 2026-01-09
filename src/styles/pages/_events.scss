@@ -1,8 +1,8 @@
 @use '../variables' as *;
 
 .EVENTS {
-	background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
-	background-color: $darkbrown;
+	background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+	background-color: $violet;
 
 	.Searchnfilter {
 		display: flex;
@@ -76,7 +76,7 @@
 		border-radius: 8px;
 		color: $light;
 		text-align: center;
-		background-color: $darkbrown;
+		background-color: $violet;
 		appearance: none;
 	}
 
@@ -103,16 +103,16 @@
 
 	.bggreen,
 	.bgbrown {
-		background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+		background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
 		padding-bottom: 0.75rem;
 	}
 
 	.bggreen {
-		background-color: $darkgreen;
+		background-color: $grey;
 	}
 
 	.bgbrown {
-		background-color: $darkbrown;
+		background-color: $violet;
 	}
 
 	.eventsholder {

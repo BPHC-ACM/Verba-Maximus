@@ -12,9 +12,9 @@
 	box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
 	color: $light;
 }
-.darkbrown {
-	background-color: $darkbrown;
-	background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+.violet {
+	background-color: $violet;
+	background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
 }
 .boxholder {
 	padding: 50px;
@@ -57,7 +57,7 @@
 }
 .message {
 	position: absolute;
-	background-color: $darkbrown;
+	background-color: $violet;
 	color: $light;
 	text-align: center;
 	padding: 20px;
