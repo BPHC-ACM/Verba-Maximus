@@ -17,7 +17,9 @@
 		object-fit: cover;
 		object-position: bottom;
 		z-index: -2;
+		filter: brightness(2.5);
 	}
+
 
 	&::before {
 		content: '';
@@ -46,7 +48,7 @@
 			font-size: 8.5rem;
 			letter-spacing: 1rem;
 			padding: 4rem 0 1rem 0;
-			text-shadow: 0 0 1.5rem #ffffffcc;
+			text-shadow: 0 0 1rem #ffffffcc;
 		}
 
 		h2 {
@@ -122,11 +124,9 @@
 		}
 
 		&.glass {
-			background: linear-gradient(
-				135deg,
-				rgba(255, 255, 255, 0.1),
-				rgba(255, 255, 255, 0)
-			);
+			background: linear-gradient(135deg,
+					rgba(255, 255, 255, 0.1),
+					rgba(255, 255, 255, 0));
 			backdrop-filter: blur(10px);
 			-webkit-backdrop-filter: blur(10px);
 			border-radius: 0.5rem;
@@ -141,6 +141,7 @@
 				font-size: 4rem;
 				padding: 2rem 0;
 			}
+
 			h2 {
 				letter-spacing: 0.5rem;
 				font-size: 1rem;

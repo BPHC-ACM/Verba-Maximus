@@ -13,25 +13,25 @@ import Footer from '../components/Footer';
 const Home = () => {
 	return (
 		<div className='HOME'>
-			<img className='heroimage' src='/assets/hero.webp' alt='Hero' />
+			<img className='heroimage' src='/assets/2026/hero1.webp' alt='Hero' />
 			<Header />
 			<div className='hero'>
 				<h1>Verba Maximus</h1>
-				<h2>echoes of eden</h2>
+				<h2>Luna Obscura</h2>
 				<div className='dates glass'>
 					<div className='start'>
 						<div className='month'>JAN</div>
-						<div className='date'>25</div>
+						<div className='date'>31</div>
 					</div>
 					<IconArrowRight size={20} />
 					<div className='end'>
-						<div className='month'>JAN</div>
-						<div className='date'>26</div>
+						<div className='month'>Feb</div>
+						<div className='date'>1</div>
 					</div>
 				</div>
 			</div>
 			<div className='introduction'>
-				<h1>Echoes of Eden</h1>
+				<h1>Luna Obscura</h1>
 				<p>
 					Verba Maximus is BITS Pilani, Hyderabad Campus’ annual
 					literary fest, organized by the passionate minds of the
