@@ -21,7 +21,7 @@
 }
 
 .heading {
-	background-image: url('/assets/hero.webp');
+	background-image: url('/assets/2026/hero1.webp');
 	background-size: cover;
 	background-position: top;
 	position: relative;
@@ -63,8 +63,8 @@
 	font-family: $header-font;
 	font-size: 3rem;
 	color: $light;
-	background-color: $darkgreen;
-	background-image: url('https://www.transparenttextures.com/patterns/cartographer.png');
+	background-color: $grey;
+	background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
 	@media only screen and (max-width: 768px) {
 		min-height: calc(100vh - 304px);
 	}

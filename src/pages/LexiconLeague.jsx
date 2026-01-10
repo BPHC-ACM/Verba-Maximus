@@ -237,7 +237,7 @@ const LexiconLeague = () => {
 
 	return (
 		<div>
-			<div className='darkbrown'>
+			<div className='violet'>
 				<div className='header'>LEXICON LEAGUE</div>
 				<div
 					style={{

@@ -1,14 +1,7 @@
 [
 	{
-		"day": "Saturday - 25th January",
+		"day": "Saturday - 31st January",
 		"events": [
-			{
-				"name": "Handouts Handicrafts",
-				"startTime": "09:00",
-				"endTime": "12:00",
-				"club": "Journal Club",
-				"location": "F106"
-			},
 			{
 				"name": "Bamboozled",
 				"startTime": "15:00",
@@ -38,20 +31,6 @@
 				"location": "G203 & G202"
 			},
 			{
-				"name": "YinYang",
-				"startTime": "12:00",
-				"endTime": "15:00",
-				"club": "ELAS",
-				"location": "G104"
-			},
-			{
-				"name": "Rhyme Rodeo",
-				"startTime": "13:00",
-				"endTime": "16:00",
-				"club": "ELAS",
-				"location": "F107"
-			},
-			{
 				"name": "J.A.M Preliminaries",
 				"startTime": "13:00",
 				"endTime": "16:00",
@@ -75,7 +54,7 @@
 		]
 	},
 	{
-		"day": "Sunday - 26th January",
+		"day": "Sunday - 1st February",
 		"events": [
 			{
 				"name": "Devil's Advocate Finals",
@@ -99,20 +78,6 @@
 				"location": "F105"
 			},
 			{
-				"name": "Shipwrecked Preliminaries",
-				"startTime": "10:00",
-				"endTime": "17:00",
-				"club": "ELAS",
-				"location": "F107"
-			},
-			{
-				"name": "Escape Room",
-				"startTime": "10:00",
-				"endTime": "18:00",
-				"club": "Hindi Tarang",
-				"location": "F208"
-			},
-			{
 				"name": "J.A.M Semi-Finals",
 				"startTime": "11:00",
 				"endTime": "13:00",
@@ -127,32 +92,11 @@
 				"location": "G103"
 			},
 			{
-				"name": "Bullseye",
-				"startTime": "13:00",
-				"endTime": "16:00",
-				"club": "Journal Club",
-				"location": "F104"
-			},
-			{
-				"name": "Debate Casino",
-				"startTime": "13:00",
-				"endTime": "17:00",
-				"club": "ELAS",
-				"location": "G104 & G105"
-			},
-			{
 				"name": "Prose Pose Parade",
 				"startTime": "15:00",
 				"endTime": "17:00",
 				"club": "Fashion Club",
 				"location": "LTC"
-			},
-			{
-				"name": "Bollywood Antakshari",
-				"startTime": "15:00",
-				"endTime": "17:00",
-				"club": "Hindi Tarang",
-				"location": "F207"
 			},
 			{
 				"name": "Comedy Night",

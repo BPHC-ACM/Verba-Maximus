@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Sherlocked",
-		"Short Description": "Solve a complex murder mystery through teamwork, puzzles, and exploration.",
+		"Short Description": "A mystery challenge where participants unravel clues and secrets to solve a complex murder case.",
 		"Details": [
 			"\"Never trust to general impressions, my boy, but concentrate yourself upon details\"",
 			"Do you have it in you to solve a complex murder mystery with intricate plot lines andwebs of lies? Can you see past the veils of deception from enigmas with dark secretsto hide?",
@@ -23,8 +23,9 @@
 		"name": "Lexicon League",
 		"Short Description": "Compete in challenging crosswords, word searches, and spelling bees.",
 		"Details": [
-			"Think you can outsmart your friends in a word search? Love logical challenges and solving puzzles? Welcome to Lexicon League - where it's all about quick thinking, logic and fun!",
-			"Whether you're a vocabulary virtuoso, a spelling whiz, or just a seasoned NYT gameplayer, this event promises a thrilling day of word-based challenges and fun. Featuring verbles, word searches, crosswords and more!"
+			"For fans of NYT games, grammar enthusiasts, and word game lovers, this is the ultimate playground.",
+				"Dive into challenging crosswords, fast-paced word searches, and thrilling spelling bees designed to test your linguistic skills and competitive edge.",
+				"Whether you ’ re a casual word geek or a die-hard language aficionado, this event promises fun, wit, and a celebration of all things words!"
 		],
 		"Club": "ELAS",
 		"filter": "Literary Arts",
@@ -50,13 +51,12 @@
 		]
 	},
 	{
-		"name": "Just a Minute",
-		"Short Description": "Engage in fast-paced wordplay where every second and word counts.",
+		"name": "ECLIPSE TRIALS",
+		"Short Description": "A multi-round literary challenge with interactive word games, where participants qualify through prelims to reach a gameshow-style finale.",
 		"Details": [
-			"JAM is a high-pressure test of wit and eloquence, where speakers must talk on a given topic for 60 seconds without hesitation, repetition, or deviation.",
-			"It's no easy feat—every stutter, unnecessary pause, or filler word can cost you.",
-			"The other contestants are ever-watchful, ready to pounce on mistakes.",
-			"It's a thrilling game of focus and finesse, where even the smallest misstep can make or break your performance."
+			"Eclipse Trials is a multi-round literary event themed around Luna Obscura.",
+			"It features three preliminary rounds with fun, interactive word-based challenges.", 
+			"Participants must qualify in at least two rounds to advance. The event concludes with a gameshow-style final round, conducted over two days of the fest."
 		],
 		"Club": "ELAS",
 		"filter": "Literary Arts",
@@ -72,18 +72,18 @@
 		]
 	},
 	{
-		"name": "Shipwrecked",
-		"Short Description": "Embody unique characters and persuade others why you deserve the life jacket on a sinking ship.",
+		"name": "JAM",
+		"Short Description": "A fast-paced word game where participants must speak quickly and accurately, with every pause, mistake, and hesitation affecting their score.",
 		"Details": [
-			"Embark on a unique challenge with 'Shipwrecked', where participants find themselves on a sinking ship, embodying characters as diverse as the high seas themselves.",
-			"From donuts to cunning villains these characters can be anything and everything!",
-			"It's a mixed bowl to play around satire, wit, banter, pop culture references and beyond.",
-			"In this test of persuasion and spontaneity , the coveted life jacket becomes the focal point, and individuals must articulate why they stand as the most deserving passenger."
+			"Enter a realm of linguistic brilliance with JAM, where every word counts.",
+			"Rise to the challenge, where every second adds to your score.",
+			"With only a minute to speak, every pause, every mistake, and every hesitation threatens the balance, as others stand ready to seize on your every flaw." ,
+			"Join us to experience a fast-paced word play with fun twists."
 		],
 		"Club": "ELAS",
 		"filter": "Expression",
 		"bglink": "/assets/events/shipwrecked.jpeg",
-		"rules": [
+		"rules": [ 
 			"The event has two rounds - Prelims and Finals.",
 			"4-6 participants will be grouped together for one topic.",
 			"Every member has to choose one item for the specified topic and defend why the item they chose deserves the jacket the most. "
@@ -91,11 +91,11 @@
 	},
 	{
 		"name": "Devil's Advocate",
-		"Short Description": "Defend morally challenging opinions and put your debating skills to the test.",
+		"Short Description": "Challenge your persuasive skills by defending the indefensible across politics, culture, science, and art.",
 		"Details": [
-			"Dare to defend the indefensible in Devil's Advocate! This provocative debate event challenges participants to argue in favor of morally questionable motions.",
-			"Test your persuasive skills as you step into the shoes of the devil and advocate for ideas that go against conventional ethics.",
-			"It's a battle of rhetoric and creativity where only the boldest and most convincing will triumph!"
+			"Do you often find yourself questioning the rationale behind mainstream morality?", 
+			"Do you feel you can force society to rethink their principles purely through argumentation?",
+			"Put your convincing and speaking skills to the test by defending the indefensible and advocating for the most morally reprehensible opinions across geopolitics, culture, science and art with Devil’ s Advocate."
 		],
 		"Club": "ELAS",
 		"filter": "Discussions",
@@ -110,12 +110,12 @@
 		]
 	},
 	{
-		"name": "Rhyme Rodeo",
-		"Short Description": "Collaborate to create a rhyming poem in a fast-paced, team-based challenge.",
+		"name": "Literary Labyrinth",
+		"Short Description": "A creative scavenger hunt where participants decode hidden clues in prose and poetry and craft original writings to reach the final round.",
 		"Details": [
-			"Rhyme Rodeo is a fast-paced, collaborative poetry game where teams of 3 to 5 participants take turns crafting stanzas, building on each other's verses to create a flowing, rhyming poem.",
-			"The challenge? You've got just 5 minutes to whip up the best masterpiece while keeping the rhyming scheme intact.",
-			"Do you think your team's got what it takes to gallop to glory?"
+			"Literary Labyrinth is for those whose love to look between the lines, and figure out the inner meaning of prose and poetry.", 
+			"A scavenger hunt meant to scratch the creative part of your mind: you must identify the hidden key in the clues to lead you to your final destination.",
+			"Along the way, you are tasked to create a unique written piece using your imaginative prowess, leading you into the ultimate round."
 		],
 		"Club": "ELAS",
 		"filter": "Literary Arts",
@@ -127,12 +127,12 @@
 		]
 	},
 	{
-		"name": "Debate Casino",
-		"Short Description": "Participate in themed 3v3 debates and test your reasoning abilities.",
+		"name": "Moonlight Margins",
+		"Short Description": "A multi-round creative writing event testing participants’ skills across stories, poetry, journaling, and more, scored to find the top three winners.",
 		"Details": [
-			"Step into the arena of wit and strategy with Debate Casino! This thrilling 3v3 debate event combines the art of argumentation with the excitement of gambling.",
-			"Each team begins with 100 points and strategically places bets on their members for each round of 1v1 debates.",
-			"The stakes are high: the winner of each 1v1 debate doubles the bet amount for their team. Show off your debating prowess, make calculated bets, and outwit the competition to emerge victorious!"
+			"A literary event that will involve multiple creative writing rounds, covering a variety of literary forms such as fictional short stories, poetry, journaling, argumentative writing etc.", 
+			"These will be designed to test the creative thinking and literary prowess of participants.", 
+			"The entries will be judged using predetermined rubrics, and scored accordingly, and the three participants with highest total points will win the event."
 		],
 		"Club": "ELAS",
 		"filter": "Discussions",
@@ -148,33 +148,11 @@
 		]
 	},
 	{
-		"name": "Yin-Yang",
-		"Short Description": "Write complementary pieces that embody the concept of duality and create a harmonious whole.",
-		"Details": [
-			"Without darkness, the stars would have no stage to shine upon. Two forces, opposite yet intertwined, forever shaping the rhythm of existence. Light and shadow. Chaos and order. Fire and water. Every story has two sides— can you master the art of crafting both?",
-			"Yin-Yang is your chance to explore the beauty of duality. In teams of two, you'll create complementary literary pieces that mirror and complete each other, like puzzle pieces in the grand design of the cosmos.",
-			"One side may burn bright like the sun, the other cool and mysterious as the moon. Together, they form a narrative as balanced as the universe itself.",
-			"Are you ready to embrace the art of opposites and weave them into one harmonious tale?"
-		],
-		"Club": "ELAS",
-		"filter": "Literary Arts",
-		"bglink": "/assets/events/yinyang.jpeg",
-		"rules": [
-			"Teams must consist of 2 members.",
-			"Each team will create two contrasting yet interconnected pieces of writing that together tell a complete story or convey a unified theme.",
-			"Themes will be revealed at the start of the event.",
-			"You're free to choose your format—be it poetry, prose, dialogues, or any other form of creative expression.",
-			"Both pieces will be judged as one entry.",
-			"Strictly no plagiarism or use of AI.",
-			"The decisions of the organising committee will be deemed as final in all matters.",
-			"All further details will be revealed during the event."
-		]
-	},
-	{
 		"name": "Antakshari",
-		"Short Description": "Celebrate Bollywood through song guessing, dialogue delivery, and a song and dance challenge.",
+		"Short Description": "A lively Bollywood-themed Antakshari with song guessing, dramatic dialogues, and song-and-dance challenges leading to a grand finale.",
 		"Details": [
 			"Get ready for an exciting journey through the magic of Bollywood with VM Antakshari by Hindi Tarang!",
+			"The competition heats up as teams showcase their creativity and passion for Bollywood, leading to a grand finale where the ultimate Antakshari champions will be crowned!",
 			"This event blends nostalgia, fun, and friendly competition with three thrilling rounds:"
 		],
 		"Club": "Hindi Tarang",
@@ -187,29 +165,12 @@
 		]
 	},
 	{
-		"name": "Escape Room",
-		"Short Description": "Solve puzzles inspired by Hindi literature and mythology to prevent the Kurukshetra War.",
-		"Details": [
-			"Recall the epic tale of the Mahabharata.",
-			"You will be transported to the eve of the great Kurukshetra War. Unravel the intricate plot, decipher ancient prophecies, and prevent the catastrophic battle.",
-			"A dimly lit chamber adorned with ancient symbols and artifacts. The room is filled with cryptic clues and puzzles inspired by the epic tale, including references to renowned Hindi literature like the works of Tulsidas, Premchand, Dinkar to name a few.",
-			"Decipher a codes hidden within a series of riddles and shayari , inspired by the poetic style of eminent hindi poets.",
-			"Solve puzzles and strategic dilemmas related to hindi mythology.",
-			"By solving these challenges, and decoding the final pass code, you can avert the war, restore peace, and emerge as the hero of the Mahabharata.",
-			"The Escape room combines intricate storytelling that blends history, mythology, philosophy, and the rich literary heritage of Hindi literature."
-		],
-		"Club": "Hindi Tarang",
-		"filter": "Puzzles",
-		"bglink": "/assets/events/helm.jpeg",
-		"rules": []
-	},
-	{
 		"name": "Geeta Spardha",
-		"Short Description": "Recite slokas from the Bhagavad Gita and demonstrate your understanding of Sanskrit.",
+		"Short Description": "A sloka recitation event where participants chant verses from the Bhagavad Gita, judged on memorization, pronunciation, and rhythm.",
 		"Details": [
 			"Geeta spardha is an event where participants, typically students or devotees, recite slokas of Bhagavad Gita from any adhyay of their choice",
 			"The purpose of the competition is to encourage participants to engage deeply with the holy bhagavad Gita and appreciate the Sanskrit language.",
-			"Participants have to recite a minimum of 8 Slokas ."
+			"Participants have to recite a minimum of 8 Slokas."
 		],
 		"Club": "SAFL",
 		"bglink": "/assets/events/helm.jpeg",
@@ -221,121 +182,71 @@
 		]
 	},
 	{
-		"name": "Decipher the Script",
-		"Short Description": "Decode ancient and futuristic scripts, testing your linguistic prowess.",
+		"name": "Bamboozled",
+		"Short Description": "A high-stakes strategy game inspired by psychological anime, testing trust, deception, and teamwork across intense multi-round challenges.",
 		"Details": [
-			"Embark on a thrilling linguistic journey with Decipher the Script - a competition where ancient mysteries meet futuristic challenges.",
-			"Participants will decode cryptic symbols, complex patterns, and enigmatic scripts that transcend time. From deciphering ancient hieroglyphs to interpreting futuristic symbols, this event demands sharp wit, creativity, and a keen eye for detail.",
-			"This isn't just a competition—it's a mind-bending quest to unravel the very essence of language.",
-			"Rally your team, refine your decoding skills, and dive into the unparalleled world of linguistic prowess. Will you emerge victorious in uncovering the hidden secrets?"
+			"Step into the electrifying world of Bamboozled, where cunning strategy meets heart-pounding adventure.", 
+			"Inspired by the mind-bending tension of anime like Tomodachi Game and Kakegurui, this event is not just a game – it’s a battle of wits, loyalty, and survival.", 
+			"Prepare to question every decision as you face thrilling challenges that will test your trust, tactics, and teamwork.",
+			"Across four uniquely intense rounds, you 'll dive into games that will push your mental acumen to the limit.", 
+			"Each round will introduce a new layer of complexity, from navigating shifting alliances to mastering deception and probability.", 
+			"Every game will challenge a different facet of your intellect and instincts, ensuring there ' s never a dull moment.", 
+			"With every elimination, the stakes climb higher, keeping you on the edge of your seat.",
+			"Let the games begin – and may the sharpest minds prevail."
 		],
 		"Club": "SAFL",
 		"filter": "Traditional",
 		"bglink": "/assets/events/helm.jpeg",
 		"rules": [
-			"Teams can have a maximum of 4 members.",
-			"Teams must solve each question (e.g., Q1) to progress to the next (e.g., Q2). Skipping questions is not allowed.",
-			"Each question starts with a base score of 100 points.",
-			"For every team that solves the question, the score decreases dynamically at a predetermined rate.",
-			"Use of mobile phones, internet, or external tools is strictly prohibited. This is a test of your raw skills and teamwork.",
-			"Collaboration within your team is encouraged, but no inter-team discussions or assistance is allowed.",
-			"Any disputes or clarifications will be resolved by the organizing committee, and their decision will be binding."
-		]
-	},
-	{
-		"name": "Bamboozled",
-		"Short Description": "Inspired by anime, this strategic adventure tests trust, tactics, and teamwork across four intense rounds.",
-		"Details": [
-			"Step into the electrifying world of Bamboozled, where cunning strategy meets heart-pounding adventure.",
-			"Inspired by the mind-bending tension of anime like Tomodachi Game and Kakegurui, this event is not just a game - it's a battle of wits, loyalty, and survival.",
-			"Prepare to question every decision as you face thrilling challenges that will test your trust, tactics, and teamwork.",
-			"Across four uniquely intense rounds, you'll dive into games that will push your mental acumen to the limit. Each round will introduce a new layer of complexity, from navigating shifting alliances to mastering deception and probability.",
-			"Every game will challenge a different facet of your intellect and instincts, ensuring there's never a dull moment. With every elimination, the stakes climb higher, keeping you on the edge of your seat.",
-			"Let the games begin - and may the sharpest minds prevail."
-		],
-		"Club": "SAFL",
-		"filter": "Puzzles",
-		"bglink": "/assets/events/bamboozled.webp",
-		"rules": [
-			"Teams: Each team consists of 3 players.",
-			"Rounds: The event consists of 4 rounds, each featuring a different game.",
-			"Eliminations: Teams will face elimination after Rounds 2 and 3, based on their performance.",
-			"Final Showdown: The remaining teams will face off in a high-stakes finale to determine the winner.",
-			"Team Composition: Once formed, teams cannot be changed or swapped during the event.",
-			"Fair Play: Any attempt to cheat, disrupt, or manipulate the games outside of the event's structure will result in immediate disqualification.",
-			"Coordination: Follow all instructions provided by the coordinators. Failure to comply may lead to penalties or elimination.",
-			"Respect: Maintain a respectful environment for all participants 4. and organizers."
+			"Each team consists of 3 players. Once formed, teams cannot be changed or swapped during the event.",
+			"The event consists of 4 rounds, each featuring a different game. Teams will face elimination after Rounds 2 and 3, based on their performance.",
+			"The remaining teams will face off in a high-stakes finale to determine the winner.",
+			"Any attempt to cheat, disrupt, or manipulate the games outside of the event ' s structure will result in immediate disqualification.",
+			"Follow all instructions provided by the coordinators. Failure to comply may lead to penalties or elimination. Maintain a respectful environment for all participants and organizers. Get ready to be bamboozled!"
 		]
 	},
 	{
 		"name": "H.E.L.M Quiz",
-		"Short Description": "Test your knowledge of history, etymology, literature, and mythology in this intellectually stimulating quiz.",
+		"Short Description": "An intellectually engaging quiz exploring History, Etymology, Literature, and Mythology through thought-provoking rounds.",
 		"Details": [
-			"The H.E.L.M Quiz is a fascinating journey through the realms of History, Etymology, Literature, and Mythology.",
-			"It's an intellectually stimulating event that invites participants to delve into the stories, origins, and cultural treasures that shape our world.",
-			"Whether you're a history buff, a lover of words, a literary enthusiast, or intrigued by ancient myths and legends, the HELM Quiz offers a unique opportunity to explore these interconnected fields.",
-			"With thought-provoking questions and engaging rounds, it's an event that challenges the mind while celebrating the richness of human heritage."
+			"The HELM Quiz is a fascinating journey through the realms of History, Etymology, Literature, and Mythology.", 
+			"It’ s an intellectually stimulating event that invites participants to delve into the stories, origins, and cultural treasures that shape our world.", 
+			"Whether you’re a history buff, a lover of words, a literary enthusiast, or intrigued by ancient myths and legends, the HELM Quiz offers a unique opportunity to explore these interconnected fields.", 
+			"With thought-provoking questions and engaging rounds, it’ s an event that challenges the mind while celebrating the richness of human heritage."
 		],
 		"Club": "Quiz Club",
 		"filter": "Quizzes",
 		"bglink": "/assets/events/helm.jpeg",
 		"rules": [
 			"Team Size: 1-3 members",
+			"Mode: Offline",
 			"Judging Criteria: None",
+			"No. of Rounds: 2 (Prelims + Finals)",
+			"Would be hosted by Quiz Club",
 			"This quiz will have two rounds",
 			"The first round will be a preliminary round of 20 questions.",
 			"Top 6 teams from the first round will qualify for the finals.",
-			" The final round will be a bounce and pounce format with some additional rounds.",
+			"The final round will be a bounce and pounce format with some additional rounds",
 			"Top 3 teams in the finals will be the winners"
 		]
 	},
 	{
 		"name": "Prose Pose Parade",
-		"Short Description": "Impersonate iconic figures through costume in this creative fashion event.",
+		"Short Description": "A character portrayal event where participants dress as iconic figures and deliver speeches capturing their persona and essence.",
 		"Details": [
-			"This event invites participants to step into the world of fiction or nonfiction by dressing up as iconic personalities, fictional characters, or literary figures.",
+			"This event invites participants to step into the world of fiction or nonfiction by dressing up as iconic personalities, fictional characters, or literary figures.", 
 			"Attendees will not only showcase their creativity in costume design but also present captivating speeches emulating the body language and essence of their chosen personas."
 		],
 		"Club": "Fashion Club",
 		"filter": "Expression",
 		"bglink": "/assets/events/basic_2.jpg",
 		"rules": [
-			"The speech will be for 3 minutes and you will be judged based on how well you have impersonated the character you have chosen both in terms of fashion as well as elocution"
-		]
-	},
-	{
-		"name": "Bullseye",
-		"Short Description": "Participate in a round-based quiz testing your knowledge across various domains.",
-		"Details": [
-			"Eden is not as idyllic as it seems... This Verba Maximus, the Journal Club brings back Bullseye, a thrilling round based quiz that challenges your knowledge of art, media, mythology, literature, and all things related.",
-			"Venture through paradise eternal as we test how deep your wisdom goes, and claim prizes for you and your companions."
-		],
-		"Club": "Journal Club",
-		"filter": "Quizzes",
-		"bglink": "/assets/events/bullseye.jpeg",
-		"rules": [
-			"Pen and paper quiz",
-			"Teams of upto 3-4 (mergers and splits could be there)",
-			"Round based, teams eliminated every couple of rounds"
-		]
-	},
-	{
-		"name": "Handout Handicrafts",
-		"Short Description": "Design creative handouts to showcase your passion and expertise on a niche topic.",
-		"Details": [
-			"Ever wanted people to know why you're into your niche? This is the perfect chance to show off the stuff you love.",
-			"Think outside the box and design handouts that creatively showcase your ideas and expertise."
-		],
-		"Club": "Journal Club",
-		"filter": "Traditional",
-		"bglink": "/assets/events/basic_2.jpg",
-		"rules": [
-			"Have to stick to the format of course title - IC - Scope and Objective - Books - Course Plan - Evaluation scheme - Makeup requirements (example templates will be provided)"
+			"The speech will be for 3 minutes and you will be judged based on how well you have impersonated the character you have chosen both in terms of fashion as well as elocution."
 		]
 	},
 	{
 		"name": "Symphonies of the Soul",
-		"Short Description": "Let music inspire you to write poetry in this collaborative event.",
+		"Short Description": "A creative writing event where live music inspires participants to craft original poems and lyrics.",
 		"Details": [
 			"Lose yourself in the music, and translate the moment into words.",
 			"The Music club is here to bring out the poet within you. They play the instruments and you write the songs.",
@@ -345,24 +256,5 @@
 		"filter": "Expression",
 		"bglink": "/assets/events/music.jpeg",
 		"rules": []
-	},
-	{
-		"name": "A.R.G",
-		"Short Description": "Immerse yourself in a narrative-driven augmented reality puzzle adventure.",
-		"Details": [
-			"ARG will immerse the players/teams into a world that challenges them to unravel a 5-hour adventure through teamwork, solving a bunch of puzzles, and exploration of an entirely new reality!",
-			"With the theme Echoes of Eden, this year's ARG invites participants into a richly crafted world filled with lore and mysteries of Angels, Demons and the all powerful mother of creation, Eden.",
-			"You will solve clues and progress through challenges trying to figure out why you're in this all new world and what your purpose is.",
-			"You will make choices that will either result in the dominance of Chaos or the propagation of Peace."
-		],
-		"Club": "ELAS",
-		"filter": "Puzzles",
-		"bglink": "/assets/events/basic_2.jpg",
-		"rules": [
-			"Players or Teams will play the game through the medium of Discord.",
-			"The game will have text inputs and a plethora of outputs in the form of text, photos, audios and more.",
-			"Team size is limited to 5 people per team",
-			"Progress can be made through multiple accounts but only the farthest one will be considered as the Team Representative account"
-		]
 	}
 ]
