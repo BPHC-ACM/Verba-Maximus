@@ -1,0 +1,132 @@
+@use '../variables' as *;
+
+.PARTNERS {
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  background-color: $violet;
+  min-height: 100vh;
+
+  /* Heading — mirrors .head logic */
+  .heading {
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+
+    #mainheadingev {
+      font-family: $header-font;
+      font-size: 6rem;
+      word-spacing: 1.5rem;
+      color: $light;
+    }
+  }
+
+  /* Wrapper */
+  .partners-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem 4rem;
+  }
+
+  /* Grid behaves like eventsholder */
+  .partners-grid {
+    width: 100%;
+    max-width: 1100px;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Partner card == club section feel */
+  .partner-card {
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    background-color: $grey;
+
+    border-radius: 2rem;
+    padding: 2rem 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    transition: transform 0.35s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    p {
+      font-family: $header-font;
+      font-size: 1.4rem;
+      color: $light;
+      margin: 0;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  }
+
+  /* Clickable logo */
+  .partner-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 180px;
+      max-height: 100px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.06);
+    }
+  }
+
+  /* Reuse glass EXACTLY */
+  .glass {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  /* Alternate violet/grey like bgbrown/bggreen */
+  .partner-card:nth-child(even) {
+    background-color: $violet;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .heading {
+      #mainheadingev {
+        font-size: 4rem;
+      }
+    }
+
+    .partners-grid {
+      padding: 1.5rem;
+      gap: 1.5rem;
+    }
+
+    .partner-card {
+      padding: 1.5rem 2rem;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .partner-link img {
+      max-width: 150px;
+      max-height: 80px;
+    }
+  }
+}

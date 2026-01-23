@@ -29,6 +29,7 @@ const Header = () => {
 								<Link to='/fest-access'>Fest Access</Link>
 								<Link to='/schedule'>Schedule</Link>
 								<Link to='/verble'>Verble</Link>
+								<Link to='/partners'>Partners</Link>
 							</div>
 						)}
 					</>
@@ -39,6 +40,7 @@ const Header = () => {
 						<Link to='/fest-access'>Fest Access</Link>
 						<Link to='/schedule'>Schedule</Link>
 						<Link to='/verble'>Verble</Link>
+						<Link to='/partners'>Partners</Link>
 					</div>
 				)}
 				<div className='register-container glass'>

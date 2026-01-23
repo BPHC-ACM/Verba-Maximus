@@ -7,6 +7,7 @@ import Access from './pages/Access';
 import ErrorPage from './pages/ErrorPage';
 import Schedule from './pages/Schedule';
 import Verble from './pages/Verble';
+import Partners from './pages/Partners';
 import LexiconLeague from './pages/LexiconLeague';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -18,6 +19,7 @@ const App = () => {
 		'/fest-access',
 		'/schedule',
 		'/verble',
+		'/partners',
 		'/lexicon-league',
 	];
 	const isValidRoute = validRoutes.includes(location.pathname);
@@ -81,6 +83,7 @@ const App = () => {
 				<Route path='/fest-access' element={<Access />} />
 				<Route path='/schedule' element={<Schedule />} />
 				<Route path='/verble' element={<Verble />} />
+				<Route path='/partners' element={<Partners />} />
 				<Route path='/lexicon-league' element={<LexiconLeague />} />
 				<Route path='*' element={<ErrorPage />} />
 			</Routes>
