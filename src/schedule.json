@@ -3,51 +3,51 @@
 		"day": "Saturday - 31st January",
 		"events": [
 			{
-				"name": "Bamboozled",
-				"startTime": "15:00",
-				"endTime": "18:00",
-				"club": "SAFL",
-				"location": "G103"
+				"name": "J.A.M. Prelims",
+				"startTime": "13:00",
+				"endTime": "16:00",
+				"club": "ELAS",
+				"location": "G101"
 			},
 			{
-				"name": "H.E.L.M Quiz",
-				"startTime": "12:00",
-				"endTime": "16:00",
-				"club": "Quiz Club",
-				"location": "F104"
+				"name": "Moonlit Margins",
+				"startTime": "14:00",
+				"endTime": "17:00",
+				"club": "ELAS",
+				"location": "F108"
 			},
 			{
 				"name": "Devil's Advocate Preliminaries",
-				"startTime": "11:00",
-				"endTime": "14:00",
+				"startTime": "15:00",
+				"endTime": "18:00",
 				"club": "ELAS",
-				"location": "F109"
+				"location": "F107"
 			},
 			{
 				"name": "A.R.G",
-				"startTime": "10:00",
-				"endTime": "18:00",
+				"startTime": "12:00",
+				"endTime": "17:00",
 				"club": "ELAS",
-				"location": "G203 & G202"
+				"location": "G102 & G103"
 			},
 			{
 				"name": "J.A.M Preliminaries",
 				"startTime": "13:00",
 				"endTime": "16:00",
 				"club": "ELAS",
-				"location": "G103"
+				"location": "G101"
 			},
 			{
-				"name": "Sherlocked",
-				"startTime": "16:00",
-				"endTime": "21:00",
-				"club": "ELAS",
-				"location": "F102"
+				"name": "Antakshari",
+				"startTime": "15:00",
+				"endTime": "18:00",
+				"club": "Hindi Tarang",
+				"location": "F104"
 			},
 			{
 				"name": "Symphonies of the Soul",
-				"startTime": "16:00",
-				"endTime": "18:00",
+				"startTime": "13:00",
+				"endTime": "16:00",
 				"club": "Music Club",
 				"location": "OAT"
 			}
@@ -61,49 +61,49 @@
 				"startTime": "10:00",
 				"endTime": "12:00",
 				"club": "ELAS",
-				"location": "F109"
+				"location": "F107"
 			},
 			{
-				"name": "Geetha Spardha",
-				"startTime": "11:00",
-				"endTime": "13:00",
-				"club": "SAFL",
-				"location": "G102"
+				"name": "H.E.L.M. Quiz",
+				"startTime": "12:00",
+				"endTime": "16:00",
+				"club": "Quiz Club",
+				"location": "F102"
 			},
 			{
 				"name": "Lexicon League",
-				"startTime": "14:00",
-				"endTime": "18:00",
+				"startTime": "13:00",
+				"endTime": "17:00",
 				"club": "ELAS",
 				"location": "F105"
 			},
 			{
 				"name": "J.A.M Semi-Finals",
-				"startTime": "11:00",
-				"endTime": "13:00",
+				"startTime": "12:00",
+				"endTime": "14:00",
 				"club": "ELAS",
-				"location": "G103"
+				"location": "G101"
 			},
 			{
 				"name": "J.A.M Finals",
-				"startTime": "14:00",
-				"endTime": "16:00",
+				"startTime": "15:00",
+				"endTime": "17:00",
 				"club": "ELAS",
-				"location": "G103"
+				"location": "G101"
 			},
 			{
 				"name": "Prose Pose Parade",
-				"startTime": "15:00",
-				"endTime": "17:00",
+				"startTime": "13:00",
+				"endTime": "15:00",
 				"club": "Fashion Club",
 				"location": "LTC"
 			},
 			{
-				"name": "Comedy Night",
-				"startTime": "18:00",
-				"endTime": "20:00",
-				"club": "",
-				"location": "Auditorium"
+				"name": "Literary Labyrinth",
+				"startTime": "10:00",
+				"endTime": "12:00",
+				"club": "ELAS",
+				"location": "LTC"
 			}
 		]
 	}
