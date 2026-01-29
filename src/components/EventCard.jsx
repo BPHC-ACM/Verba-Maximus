@@ -64,8 +64,8 @@ const EventCard = ({
 					</Typography>
 				</CardContent>
 			</Card>
-
-			<Modal open={open} onClose={handleClose}>
+			{/* Change to open for state to work but right now not needed */}
+			<Modal open={false} onClose={handleClose}>
 				<Box sx={modalStyle} className='modal'>
 					<Typography variant='h2'>{eventName}</Typography>
 					<Box sx={{ mt: 2 }}>
